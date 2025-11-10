@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Chapter 4 Screening: Insructions for Screening Set Up (Project Leads) | Data Extraction in Systematic Reviews</title>
+<meta name="author" content="James Scott Parrott">
+<meta name="description" content="This chapter is meant for team members setting up the screening tasks. For instructions for screeners, see XXX For many systematic reviews, a thorough search will result in hundreds or thousands...">
+<meta name="generator" content="bookdown 0.43 with bs4_book()">
+<meta property="og:title" content="Chapter 4 Screening: Insructions for Screening Set Up (Project Leads) | Data Extraction in Systematic Reviews">
+<meta property="og:type" content="book">
+<meta property="og:url" content="https://home-leap.github.io/VADRR-Manual/vadrr-screener.html">
+<meta property="og:description" content="This chapter is meant for team members setting up the screening tasks. For instructions for screeners, see XXX For many systematic reviews, a thorough search will result in hundreds or thousands...">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Chapter 4 Screening: Insructions for Screening Set Up (Project Leads) | Data Extraction in Systematic Reviews">
+<meta name="twitter:description" content="This chapter is meant for team members setting up the screening tasks. For instructions for screeners, see XXX For many systematic reviews, a thorough search will result in hundreds or thousands...">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.9.0/transition.js"></script><script src="libs/bs3compat-0.9.0/tabs.js"></script><script src="libs/bs3compat-0.9.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><script src="https://kit.fontawesome.com/757b392c5d.js" crossorigin="anonymous"></script><link rel="stylesheet" href="https://code.cdn.mozilla.net/fonts/fira.css">
+<style>
+
+    :root {
+      --background-color: #FFFEFA;
+      --text-color: #000;
+      --highlight-color: #277DB0;
+      --border-color: #999896;
+      --grey-color: #6C6C6C;
+      --line-color: #eee;
+      --bg-box: #f5f5f5;
+      --box-border-color: #eeeeee;
+      --code-bg: #f8f8f8;
+      --code-chunk-bg: linear-gradient(160deg,#f8f8f8 0, #f1f1f1 100%);
+      --code-text-color: #212529;
+      --hr-border-top: 1px solid rgba(0,0,0,0.1);
+      --table-text-color: #000;
+      --toc-active: #eee;
+      --form-color: #4D4C4B;
+      --form-background-color: #FFFEFA;
+      --form-border: 1px solid #999896;
+      --aa-cursor-background-color: #B2D7FF;
+    }
+
+
+    [data-theme="dark"] {
+      --background-color: #2b2b2b;
+      --text-color: #ffffff;
+      --highlight-color: #34a8ed;
+      --border-color: yellow;
+      --grey-color: #cfcfcf;
+      --line-color: #575757;
+      --bg-box: #474747;
+      --box-border-color: #474747;
+      --code-bg: #474747;
+      --code-chunk-bg: linear-gradient(160deg,#CDCDCD 0,#f1f1f1 100%);
+      --code-text-color: #ffffff;
+      --hr-border-top: 1px solid #575757;
+      --table-text-color: #ffffff;
+      --toc-active: #474747;
+      --form-color: #cfcfcf;
+      --form-background-color: #474747;
+      --form-border: 1px solid #575757;
+      --aa-cursor-background-color: #2b2b2b;
+    }
+
+    .algolia-autocomplete .aa-dropdown-menu .aa-suggestion {
+      color: var(--form-color);
+      border-bottom: 1px var(--form-border) solid;
+      background-color: var(--form-background-color);
+    }
+
+    .algolia-autocomplete .aa-dropdown-menu .aa-suggestion.aa-cursor {
+      background-color: var(--aa-cursor-background-color);
+    }
+
+    strong {
+      font-weight: 500;
+    }
+
+    .form-control {
+      color: var(--form-color);
+      background-color: var(--form-background-color);
+      border: var(--form-border);
+    }
+
+    .form-control:focus {
+      color: var(--text-color);
+      background-color: var(--form-background-color);
+      border: var(--form-border);
+    }
+
+
+    nav[data-toggle="toc"] .nav a.nav-link.active, nav[data-toggle="toc"] .nav .nav-link.active > li > a {
+        background-color: var(--toc-active);
+    }
+
+    .btn-circle.btn-md {
+      width: 50px;
+      height: 50px;
+      padding: 7px 10px;
+      border-radius: 25px;
+      font-size: 10px;
+      text-align: center;
+    }
+
+
+    .lightable-classic td {
+      color: var(--text-color);
+    }
+
+    .popover {
+      max-width: 40% !important;
+    }
+
+    .table {
+      color: var(--table-text-color);
+    }
+
+    hr {
+      border-top: var(--hr-border-top);
+    }
+
+    code {
+      background-color: var(--code-bg);
+      color: var(--code-text-color);
+    }
+
+    pre {
+      background-image: var(--code-chunk-bg);
+    }
+
+    body {
+      background-color: var(--background-color);
+      color: var(--text-color);
+    }
+
+    a {
+      color: var(--highlight-color);
+    }
+
+    .header-section-number {
+      color: var(--grey-color);
+    }
+
+    small.text-muted {
+      color: var(--grey-color) !important;
+    }
+
+
+    .firstcharacter {
+      color: var(--highlight-color);
+    }
+
+    p.caption {
+      color: var(--grey-color);
+    }
+
+    .figure {
+      border-top: 2px solid var(--line-color);
+      border-bottom: 2px solid var(--line-color);
+    }
+
+
+    .inline-figure {
+      border: 0;
+      box-shadow: none;
+    }
+
+    .boxinfo {
+      padding: 1em 1em 1em 3em;
+      margin-bottom: 10px;
+      background: var(--bg-box);
+      position:relative;
+      border-width: 3px;
+      border-style: solid;
+      border-color: var(--box-border-color);
+      border-radius: .25rem;
+    }
+
+    .boxinfo:before {
+        content: '\f0eb';
+        font-family: "Font Awesome 5 Free";
+        left:20px;
+        position:absolute;
+        font-size: 30px;
+        color: var(--highlight-color);
+     }
+
+    .boxempty {
+      padding: 1em 1em 1em 1.1em;
+      margin-bottom: 10px;
+      background: var(--bg-box);
+      position:relative;
+      border-width: 3px;
+      border-style: solid;
+      border-color: var(--box-border-color);
+      border-radius: .25rem;
+    }
+
+    .boxempty:before {
+        content: '\f0eb';
+        font-family: FontAwesome;
+        left:0px;
+        position:absolute;
+        font-size: 30px;
+        color: transparent;
+     }
+
+    .boximportant {
+      padding: 1em 1em 1em 3em;
+      margin-bottom: 10px;
+      background: var(--bg-box);
+      position:relative;
+      border-width: 3px;
+      border-style: solid;
+      border-color: var(--box-border-color);
+      border-radius: .25rem;
+    }
+
+    .boximportant:before {
+        content: '\f06a';
+        font-family: FontAwesome;
+        left:13px;
+        position:absolute;
+        font-size: 30px;
+        color: var(--highlight-color);
+     }
+
+    .boxreport {
+      padding: 1em 1em 1em 3em;
+      margin-bottom: 10px;
+      background: var(--bg-box);
+      position:relative;
+      border-width: 3px;
+      border-style: solid;
+      border-color: var(--box-border-color);
+      border-radius: .25rem;
+    }
+
+    .boxreport:before {
+        content: '\f570';
+        font-family: FontAwesome;
+        left:15px;
+        position:absolute;
+        font-size: 30px;
+        color: var(--highlight-color);
+     }
+
+    .boxdmetar {
+      padding: 1em 1em 1em 3em;
+      margin-bottom: 10px;
+      background: var(--bg-box);
+      position:relative;
+      border-width: 3px;
+      border-style: solid;
+      border-color: var(--box-border-color);
+      border-radius: .25rem;
+    }
+
+    .csl-entry {
+      margin-bottom: 20px;
+      padding-left: 1.5em;
+      text-indent:-1.5em;
+    }
+
+    .boxdmetar:before {
+        content: '\f4f7';
+        font-family: FontAwesome;
+        left:10px;
+        position:absolute;
+        font-size: 30px;
+        color: var(--highlight-color);
+     }
+
+    .boxquestion {
+      padding: 1em 1em 1em 3em;
+      margin-bottom: 10px;
+      background: var(--bg-box);
+      position:relative;
+      border-width: 3px;
+      border-style: solid;
+      border-color: var(--box-border-color);
+      border-radius: .25rem;
+    }
+
+    .boxquestion:before {
+        content: '\f059';
+        font-family: FontAwesome;
+        left:12px;
+        position:absolute;
+        font-size: 30px;
+        color: var(--highlight-color);
+     }
+
+    .mode-switch {
+      font-size: 0.9rem;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: .25rem;
+    }
+
+
+    .firstcharacter {
+      color: var(--highlight-color);
+      float: left;
+      font-size: 40px;
+      line-height: 50px;
+      padding-bottom: 2px;
+      padding-right: 8px;
+      padding-left: 2px;
+    }
+
+
+    .btn-circle.btn-sm {
+        width: 30px;
+        height: 30px;
+        padding: 6px 0px;
+        border-radius: 15px;
+        font-size: 20px;
+        text-align: center;
+    }
+    .btn-circle.btn-md {
+        width: 50px;
+        height: 50px;
+        padding: 7px 10px;
+        border-radius: 25px;
+        font-size: 20px;
+        text-align: center;
+    }
+    .btn-circle.btn-xl {
+        width: 60px;
+        height: 60px;
+        padding: 7px 7px;
+        border-radius: 35px;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    #critical-btn.btn-secondary {
+      background-color: var(--grey-color);
+      border-color: var(--grey-color);
+    }
+
+    .sticky-item {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+    }
+
+
+
+    </style>
+<link rel="shortcut icon" href="favicon.ico">
+<script type="text/x-mathjax-config">
+    const popovers = document.querySelectorAll('a.footnote-ref[data-toggle="popover"]');
+    for (let popover of popovers){
+      const div = document.createElement('div');
+      div.setAttribute('style', 'position: absolute; top: 0, left:0; width:0, height:0, overflow: hidden; visibility: hidden;');
+      div.innerHTML = popover.getAttribute('data-content');
+
+      // Will this work with TeX on its own line?
+      var has_math = div.querySelector("span.math");
+      if (has_math) {
+        document.body.appendChild(div);
+      	MathJax.Hub.Queue(["Typeset", MathJax.Hub, div]);
+      	MathJax.Hub.Queue(function(){
+          popover.setAttribute('data-content', div.innerHTML);
+      	})
+      }
+    }
+    </script><link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script><script type="text/javascript">
+      // Add switch element
+      document.addEventListener('DOMContentLoaded', function(event){
+        let darkSwitch = document.createElement('div');
+        darkSwitch.innerHTML = "<div class='sticky-item'><button type='button' id='critical-btn' class='btn btn-dark btn-circle btn-xl'>🌓</button></div>"
+        document.body.appendChild(darkSwitch);
+      })
+
+    $(document).ready(function() {
+
+        $("#critical-btn").click(function () {
+
+            if ($(this).hasClass('btn-dark')){
+                $('#critical-btn').removeClass('btn-dark').addClass('btn-secondary');
+                $(this).addClass('btn-secondary').removeClass('btn-dark');
+            }
+
+            else if ($(this).hasClass('btn-secondary')){
+                $('#critical-btn').removeClass('btn-secondary').addClass('btn-dark');
+                $(this).addClass('btn-dark').removeClass('btn-secondary');
+            }
+
+        })
+    })
+    </script><script type="text/javascript">
+      // Wait for document to load
+      document.addEventListener("DOMContentLoaded", function(event) {
+        document.documentElement.setAttribute("data-theme", "light");
+
+        // Get our button switcher
+        var themeSwitcher = document.getElementById("critical-btn");
+
+        // When our button gets clicked
+        themeSwitcher.onclick = function() {
+          // Get the current selected theme, on the first run
+          // it should be `light`
+          var currentTheme = document.documentElement.getAttribute("data-theme");
+
+          // Switch between `dark` and `light`
+          var switchToTheme = currentTheme === "dark" ? "light" : "dark"
+
+          // Set our currenet theme to the new one
+          document.documentElement.setAttribute("data-theme", switchToTheme);
+
+          // Save current selection
+          localStorage.setItem('themeMode', switchToTheme);
+
+        }
+      });
+
+      // keep selection across pages
+      document.addEventListener('DOMContentLoaded', function(event){
+        const currentTheme = localStorage.getItem('themeMode')
+        if (currentTheme === 'dark'){
+        document.documentElement.setAttribute("data-theme", 'dark');
+          if ($("#critical-btn").hasClass('btn-dark')) {
+            $('#critical-btn').removeClass('btn-dark').addClass('btn-secondary');
+            $('#critical-btn').addClass('btn-secondary').removeClass('btn-dark');
+          }
+        } else {
+        document.documentElement.setAttribute("data-theme", 'light');
+          if ($("#critical-btn").hasClass('btn-secondary')) {
+            $('#critical-btn').removeClass('btn-secondary').addClass('btn-dark');
+            $('#critical-btn').addClass('btn-dark').removeClass('btn-secondary');
+          }
+      }})
+    </script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
+    
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  </style>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="font-awesome.min.css">
+</head>
+<body data-spy="scroll" data-target="#toc">
+
+<div class="container-fluid">
+<div class="row">
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+
+    <div class="d-flex align-items-start justify-content-between">
+      <h1>
+        <a href="index.html" title="Navigating VADRR">Data Extraction in Systematic Reviews</a>:
+        <small class="text-muted">Navigating VADRR</small>
+      </h1>
+      <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
+    </div>
+
+    <div id="main-nav" class="collapse-lg">
+      <form role="search">
+        <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
+</form>
+
+      <nav aria-label="Table of contents"><h2>Table of contents</h2>
+        <ul class="book-toc list-unstyled">
+<li><a class="" href="index.html">About</a></li>
+<li class="book-part">Navigating VADRR</li>
+<li><a class="" href="start.html"><span class="header-section-number">1</span> Getting Started</a></li>
+<li><a class="" href="setup.html"><span class="header-section-number">2</span> Setting Up Your Project</a></li>
+<li><a class="" href="upload.html"><span class="header-section-number">3</span> Uploading Article Citations</a></li>
+<li><a class="active" href="vadrr-screener.html"><span class="header-section-number">4</span> Screening: Insructions for Screening Set Up (Project Leads)</a></li>
+<li><a class="" href="screening-instructions-for-screeners.html"><span class="header-section-number">5</span> Screening: Instructions for Screeners</a></li>
+<li><a class="" href="template.html"><span class="header-section-number">6</span> Tips for Creating a Data Extraction Template</a></li>
+</ul>
+
+        <div class="book-extra">
+          
+        </div>
+      </nav>
+</div>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="vadrr-screener" class="section level1" number="4">
+<h1>
+<span class="header-section-number">4</span> Screening: Insructions for Screening Set Up (Project Leads)<a class="anchor" aria-label="anchor" href="#vadrr-screener"><i class="fas fa-link"></i></a>
+</h1>
+<hr>
+<p>This chapter is meant for team members setting up the screening tasks. For instructions for screeners, see XXX</p>
+<p>For many systematic reviews, a thorough search will result in hundreds or thousands of potential articles. The Institutes of Medicine guidelines indicate that title/abstract screening should be carried out by two or more members of the review team working independently (see Standards for Finding and Assessing Individual Studies <a href="https://www.ncbi.nlm.nih.gov/books/NBK209517/#ddd00096">Standards for Finding and Assessing Individual Studies – Finding What Works in Health Care – NCBI Bookshelf</a>.</p>
+<p>Double-screening thousands of titles and abstracts can be difficult and time-consuming.</p>
+<p>However, VADRR incorporates a screening tool that uses advanced machine learning (ML) models to help your team more efficiently identify studies appropriate for your project.</p>
+<h2>
+How does it work?
+<a class="anchor" aria-label="anchor" href="#vadrr-screener"><i class="fas fa-link"></i></a>
+</h2>
+<p>The ML screener uses the inclusion/exclusion decisions of the team members to create a prediction (calculate a probability) score for every article. It then rearranges the articles to pull the ones most likely to be included to the front of the screening queue.</p>
+<p>Because the ML model relies on team member screenings to formulate the model, n=100 initial screens are needed to generate the model. So, you won’t see results right away. However, any “pearls” (articles that you have already pre-identified for inclusion) that are manually marked for inclusion in the Project Dashboard (see 11.0 Using the Project Dashboard), are factored into the ML model by default. So, when beginning a project, if you already have a set of “pearl” articles, you will want to manually mark those for inclusion in the Project Dashboard.</p>
+<p>In this tutorial, we will walk you through the different screening setup options, how to screen, and how to use the ML model results to make a decision regarding when to stop screening.</p>
+<p><span style="color: blue;">Yes, that’s right, you may not need to screen thousands of articles!</span> Once you meet your stopping criteria (below), your team can stop screening (letting the ML model “screen” the rest for you).</p>
+<h2>
+Organization of This Section
+<a class="anchor" aria-label="anchor" href="#vadrr-screener"><i class="fas fa-link"></i></a>
+</h2>
+<p>This part of the tutorial is set up in two sections:</p>
+<p><a href="https://home-leap.github.io/VADRR-Manual/vadrr-screener.html#leaders">4.1 Resources for Team Leaders</a>: This section provides information for how to set up the screening team, how to set up the screener so that it meets your team’s needs (there are many options for this), and how to track progress.</p>
+<p><a href="https://home-leap.github.io/VADRR-Manual/vadrr-screener.html#screenerS">4.2 Resources for Screeners</a>: This section provides basic instructions for members of the screening team–how to effectively use the tool.</p>
+<p><br></p>
+<div id="leaders" class="section level2" number="4.1">
+<h2>
+<span class="header-section-number">4.1</span> Screening Tool Resources for Team Leaders<a class="anchor" aria-label="anchor" href="#leaders"><i class="fas fa-link"></i></a>
+</h2>
+<hr>
+<p>In the following, we provide step-by-step instructions for project managers to set up and carry out title/article screening for their projects.</p>
+<div id="first-step-upload-your-citations-and-then-find-the-abstracttitle-screener" class="section level3" number="4.1.1">
+<h3>
+<span class="header-section-number">4.1.1</span> First Step: Upload Your Citations and Then Find the Abstract/Title Screener<a class="anchor" aria-label="anchor" href="#first-step-upload-your-citations-and-then-find-the-abstracttitle-screener"><i class="fas fa-link"></i></a>
+</h3>
+<p>Before you can use the Abstract Screening tool, you need to upload your citations (see <a href="https://home-leap.github.io/VADRR-Manual/upload.html#upload">3.0 Uploading Article Citations</a>). Once you have done this, all the citations are automatically entered into the Abstract Screening Unscreened status on the Project Dashboard.</p>
+<div class="inline-figure"><img src="_figs/1-cites-in-project-dashboard.png"></div>
+<p>Once your citations appear here, you are ready to set up the Abstract Screener.</p>
+<p>To get to the Abstract Screener, simply click on the Screening link in the upper navigation bar and select Abstract Screening.</p>
+<div class="inline-figure"><img src="_figs/2-abstract-screening-link.png"></div>
+<p>Before getting started, you will need set up your screening—that is, determine who on your team will screen and how they will screen.</p>
+</div>
+<div id="deciding-on-the-screening-team-and-approach" class="section level3" number="4.1.2">
+<h3>
+<span class="header-section-number">4.1.2</span> Deciding on the Screening Team and Approach<a class="anchor" aria-label="anchor" href="#deciding-on-the-screening-team-and-approach"><i class="fas fa-link"></i></a>
+</h3>
+<p>If you are working in a team, before screening, you will need to determine:</p>
+<ul>
+<li>Will you be double screening?</li>
+<li>Do you need a pilot screening round?</li>
+<li>Do you need screeners who are experts?</li>
+</ul>
+<p>The answers to all of the above answers <em>should</em> be “yes”. However, in smaller projects (e.g,, for a class project), these criteria may not apply.</p>
+<p>We’ll walk through each of these below.</p>
+<div id="double-screening" class="section level4" number="4.1.2.1">
+<h4>
+<span class="header-section-number">4.1.2.1</span> Double Screening<a class="anchor" aria-label="anchor" href="#double-screening"><i class="fas fa-link"></i></a>
+</h4>
+<p>As we noted above, standard practice is to double-blind screen each citation for inclusion/exclusion.</p>
+<p>This means that you will need at least two screeners, but you can certainly work with more (and this may help this step of the process move faster). Ideally, at least a subset of your screeners will have a deep understanding of the topical area.</p>
+</div>
+<div id="pilot-screening" class="section level4" number="4.1.2.2">
+<h4>
+<span class="header-section-number">4.1.2.2</span> Pilot Screening<a class="anchor" aria-label="anchor" href="#pilot-screening"><i class="fas fa-link"></i></a>
+</h4>
+<p>First, it is good practice to make sure that everyone on the screening team is on the same page when it comes to inclusion and exclusion. Don’t assume everyone (even all your experts) completely understand the inclusion and exclusion criteria. This means you will need to:</p>
+<ul>
+<li>
+<strong>Create detailed instructions</strong> for including and excluding articles: specify all criteria as they related to your PICO (Which population? Which exposures/interventions? Which comparators? Which outcomes? Any language or date restrictions? What study designs? Etc.)</li>
+<li>
+<strong>Pilot screen:</strong> Rather than have people simply begin screening, it is best to have a limited pilot screening. For this, you will have members of the screening team screen the same number of articles (usually, about 30 articles is sufficient).</li>
+</ul>
+<p>After your pilot screening, it is useful to meet with screeners to discuss disagreements and reach consensus. You will be able to see disagreements using the Resolve Conflicts button (see below).</p>
+</div>
+<div id="are-experts-needed" class="section level4" number="4.1.2.3">
+<h4>
+<span class="header-section-number">4.1.2.3</span> Are Experts Needed?<a class="anchor" aria-label="anchor" href="#are-experts-needed"><i class="fas fa-link"></i></a>
+</h4>
+<p>Ideally, you will have experts in the topical area that will be serving as screeners. However, you may also have less experienced people on your team. So, you may want to avoid having any one article screened by two inexperienced individuals. If this is the case, you will need to set up who your “Experts” are.</p>
+<p>You can do this on the Members &amp; Roles page:</p>
+<div style="text-align: center;">
+<div class="inline-figure"><img src="_figs/3-set-experts.png"></div>
+</div>
+<p>To the left of the team members’ names is a toggle button. You can toggle this button to indicate who your experts are.</p>
+<div style="text-align: center;">
+<div class="inline-figure"><img src="_figs/4-expert-toggle.png"></div>
+</div>
+<p><strong>Note:</strong> if this is a smaller project that you are doing by yourself, you can single screen and you will automatically be the expert.</p>
+<p>There are several options for setting up the screening team and tasks, and we’ll walk through those now.</p>
+</div>
+</div>
+<div id="setting-up-your-screening-tool" class="section level3" number="4.1.3">
+<h3>
+<span class="header-section-number">4.1.3</span> Setting Up Your Screening Tool<a class="anchor" aria-label="anchor" href="#setting-up-your-screening-tool"><i class="fas fa-link"></i></a>
+</h3>
+<div class="inline-figure">When you first enter the Abstract Screening tool, it will look like this: <img src="_figs/5-create-new-screening-button.png">
+</div>
+<div class="inline-figure">The first thing you need to do is click on the Create New Screening button to set up the screening team and tasks. There are a lot of options, so we will walk through each of these. <img src="_figs/6-set-up-screening-table.png">
+</div>
+<p><strong>Pilot:</strong> Use this for initial training and calibration of team members. When you select this option, you will be prompted to indicate how many citations team members should assess. N=30 is typically sufficient, though you may want more or less depending on your team.</p>
+<p><strong>Perpetual Single:</strong> Each citation will only require one person to review, and the screening will continue until all citations are screened. As noted above, this is not good practice but may be useful for training or class projects. Perpetual Double: Each citation must be screened by two screeners (any combination of two screeners will do), and screening will continue until all citations are screened.</p>
+<p><strong>Perpetual (Expert Needed):</strong> Each citation must be screened by two screeners, and at least one of them must be an expert. Screening by two experts is allowed, but screening by two novices is not allowed. Screening will continue until all citations are screened.</p>
+<p><strong>Perpetual (Only Mixed With Expert):</strong> Two screeners are needed for each citation and one of them must be an expert, and the other must be a novice. Two Expert or two Novice decisions are not allowed.</p>
+<p><strong>Fixed N Size (Single):</strong> Only one screener is needed, and only the specified number of articles would be screened (honestly, it is a bit difficult to see when this might apply).</p>
+<p><strong>Fixed N Size (Double):</strong> Double screening (any mix of Experts and Novices), but only a specified number of screenings per person. This option can be useful to keep individuals from getting overwhelmed (e.g., being assigned n=200 cites can “feel” different than being assigned “as many as you can do”). One downside is that it relies on all team members to actually carry out the number assigned. When screeners are volunteers and one or more are being slow (or just have other things going on in their lives), then waiting for them to screen can slow down the process. Additionally, in our experience, you will often have people who are really into screening and don’t like to stop. You may consider whether you really want to put limits on these folk.</p>
+<p><strong>Fixed N Size (Expert Needed):</strong> At least one but may be two Experts screen each article until the specified N is reached.</p>
+<p><strong>Fixed N Size (Only Mixed With Expert):</strong> One Expert and One Novice screen each citation until the specified N is reached.</p>
+<p><span style="color: blue; font-weight: bold;">Which option to choose?</span> As noted above, a small Pilot round is ideal. After that any one of the double screen options will meet IOM standards.</p>
+<ul>
+<li>
+<strong>Deciding between perpetual versus fixed:</strong> This will depend on your team and your project. We have found that limiting to a specific number can slow a project down (limits people who want to screen more, requires screening of people who are busy and cannot get to the screening). With a highly motivated and committed panel of screeners, fixed N screening may work fine. Double perpetual generally has worked best in our experience.</li>
+<li>
+<strong>Experts and Novices:</strong> If you have a mix of Experts and Novices, you will likely want to choose one of the options that requires at least one Expert (does not allow two Novices to screen the same citation). Using the Expert Needed option may allow more flexibility in that a cite that already has one Expert review does not need to “wait” on a Novice review. If all members of a team are well trained, then one of the simple double screening options is appropriate.</li>
+</ul>
+<p><strong>With Fixed N, how many to assign?</strong> There is no rule here, but you want to weigh the commitment and motivation of your team. If you are trying to keep people from feeling overwhelmed, initially assigning n=200 is generally good. Note that once everyone finishes their assigned number of screenings, you will need to set up a new screening plan to assign the next batch. You can also achieve much the same result (without having to set up a new screening plan) with Double Perpetual if you simply tell team members to screen a certain number and then stop.</p>
+<div id="setting-up-rejection-reasons" class="section level4" number="4.1.3.1">
+<h4>
+<span class="header-section-number">4.1.3.1</span> Setting Up Rejection Reasons<a class="anchor" aria-label="anchor" href="#setting-up-rejection-reasons"><i class="fas fa-link"></i></a>
+</h4>
+<p>It is crucial for citation rejection decisions to capture the reason for the rejection. Below the table that contains the settings for abstract screening type, you will see a table that allows you to set requirements based on user decisions (to include or reject).</p>
+<div class="inline-figure"><img src="_figs/7-decisions-box.png"></div>
+<div class="inline-figure">When a screener decides to reject a citation, at the very least, you need to require the screener to provide a reason (we will show you how to set those reasons up below). Whether you want the screener to provide a reason for a “maybe” decision is up to you. In our experience, it is often best, when a screener makes a decision to reject, to require a Note since they may not have a clear reason to exclude but may have reasons that they think the citation might be applicable but are not sure. Thus, we recommend selecting Required for Reject option. <img src="_figs/8-required-for-reject.png">
+</div>
+</div>
+<div id="setting-up-tags" class="section level4" number="4.1.3.2">
+<h4>
+<span class="header-section-number">4.1.3.2</span> Setting Up Tags<a class="anchor" aria-label="anchor" href="#setting-up-tags"><i class="fas fa-link"></i></a>
+</h4>
+<p>Tabs are multi-purpose labels that can be used in many ways. They are not required to use but may be useful in certain circumstances.</p>
+<p>For instance:</p>
+<ul>
+<li>
+<strong>Identifying background articles.</strong> Just because a citation has been rejected, it may provide useful background information for the project (e.g., reviews, commentaries, etc.). So, you may want to provide a way for screeners to reject an article but still mark it as “background” or “of interest”.</li>
+<li>
+<strong>Identifying study purpose:</strong> Suppose you are carrying out a systematic review that has multiple questions (e.g., regarding treatment, regarding mechanism, etc.), and you want to presort the included articles into their respective article types. You may want to require a tag to be included if the article is accepted. For instance, in the following example, a tag is required for all decisions (but probably only needed for Yes [include] decisions):</li>
+</ul>
+<div class="inline-figure">So, requiring Tags for a Yes (Include) decision is set up like this: <img src="_figs/9-tags-include.png">
+</div>
+<p>And on the extraction screen, the tags will appear like this:</p>
+<div style="text-align: center;">
+<div class="inline-figure"><img src="_figs/10-tag-appearance.png"></div>
+</div>
+<p>Again, tag use is optional, and for very simple projects, they may not be needed.</p>
+</div>
+<div id="using-notes" class="section level4" number="4.1.3.3">
+<h4>
+<span class="header-section-number">4.1.3.3</span> Using Notes<a class="anchor" aria-label="anchor" href="#using-notes"><i class="fas fa-link"></i></a>
+</h4>
+<p>Notes are also optional but can be very useful for “Maybe” decisions. When a screener indicates maybe, it is often because they simply aren’t sure and may have conflicting reasons why or why not to include. Getting additional thoughts can help the consolidator later make a decision regarding inclusion or not.</p>
+<p>Setting the Notes up to be required for Maybe responses may be useful.</p>
+</div>
+<div id="screening-form" class="section level4" number="4.1.3.4">
+<h4>
+<span class="header-section-number">4.1.3.4</span> Screening Form<a class="anchor" aria-label="anchor" href="#screening-form"><i class="fas fa-link"></i></a>
+</h4>
+<p>VADRR Abstract Screening also has the option to include a screening form (basically a mini “survey” of sorts) that can aid screeners in making their decisions. This may be especially useful if there are a number of screening criteria that your screeners need to take into account (and you want to ensure that they give each criterion full consideration). The screening form can also be used to confirm that the right decision was made.</p>
+<p>For example, in the following project, the screening form is always required, and the screeners are expected to complete it before they can render a decision. Notice that each of the questions has a dropdown to help screeners more easily capture the information.</p>
+<div style="text-align: center;">
+<div class="inline-figure"><img src="_figs/12-screening-form.png"></div>
+</div>
+<p><br></p>
+<p><span style="color: blue; font-weight: bold;">A word of caution regarding the use of the screener form:</span> while using the screener form can ensure a thorough screen of the title/abstract, forcing screeners to answer all the questions can slow down the screening process. So, we recommend that if you do use a screening form, you minimize the number of questions so as not to overly burden the screeners.</p>
+<p>One possible benefit of using the screener form is that all the data from the Abstract Screener is captured in an excel and available for download (see below). If you are carrying out a scoping review, the screener questions can be used as data for the analysis.</p>
+<div id="screening-form-builder" class="section level5" number="4.1.3.4.1">
+<h5>
+<span class="header-section-number">4.1.3.4.1</span> Screening Form Builder<a class="anchor" aria-label="anchor" href="#screening-form-builder"><i class="fas fa-link"></i></a>
+</h5>
+<p>Let’s say that you decide to create a screening form. How do you do that?</p>
+<p><br></p>
+<p>First, navigate to the Screening Form option under the Edit Forms pulldown in the upper navigation bar.</p>
+<div style="text-align: center;">
+<div class="inline-figure"><img src="_figs/13-screening-form-builder.png"></div>
+</div>
+<p>This will open a blank form builder. Click Add Question to get started.</p>
+<div style="text-align: center;">
+<div class="inline-figure"><img src="_figs/14-screener-get-started.png"></div>
+</div>
+<p>You can then begin to build out your questions. Note that you have the option to select multiple response styles (e.g., radio button, checkbox, etc.).</p>
+<div class="inline-figure"><img src="_figs/15-screener-question-options.png"></div>
+<p>Here are the different question structure options and what they may be useful for:</p>
+<p><strong>Text:</strong> free text entry. <span style="color: blue">We recommend against using this</span> as it will seriously slow down the screening process.<br><br><strong>Numeric:</strong> Only a number can be entered. <span style="color: blue">Unlikely to be useful in screening.</span><br><br><strong>Checkbox:</strong> Select multiple options. This can be useful if you have a short list of inclusion criteria, and you want the screeners to include only if each criterion is met. If you use this option, you may be able to get by with a single screening form question.<br><br><strong>Dropdown:</strong> Select one option but use a pulldown menu to select. <span style="color: blue">Except for yes/no questions, less useful than the radio option.</span><br><br><strong>Radio:</strong> Select one option but presents all options where the user can see them.<br><br><strong>Select One:</strong> Select one option but provides the ability for the user to enter another write in another option. <span style="color: blue">It is unlikely to be generally useful for screening,</span> but it could be useful in screening for a scoping review.<br><br><strong>Select Multiple:</strong> Select any number of pre-specified options with the additional ability to write in. <span style="color: blue">It is unlikely to be generally useful for screening.</span> However, it could be useful if you are having the screeners confirm that a set of outcomes have been reported but want to allow them to add any additional outcomes.<br><br></p>
+<p>Again, we caution against using the screener form without thoughtful planning as it can slow down the screening process. If you do use it, keep it simple (e.g., one checkbox question with a list of all inclusion criteria).</p>
+</div>
+</div>
+<div id="additional-options" class="section level4" number="4.1.3.5">
+<h4>
+<span class="header-section-number">4.1.3.5</span> Additional Options<a class="anchor" aria-label="anchor" href="#additional-options"><i class="fas fa-link"></i></a>
+</h4>
+<div class="inline-figure">Below the table to configure the use of Reasons, Tags, Notes and Screening Form you will find one final table. <img src="_figs/16-additional-options-for-screener.png">
+</div>
+<p>This final set of options does the following:</p>
+<ul>
+<li>
+<strong>Exclusive Users:</strong> This will limit the screening tasks to only specified members of the team. If you have a large team (and you are worried that someone not designated as a screener might hop into the tool and begin screening), then you may want to use this option. When you click on this a pulldown opens up that allows you to select which team members are designated to be screeners. Just select the team members.</li>
+</ul>
+<div class="inline-figure"><img src="_figs/17-selecting-screeners.png"></div>
+<ul>
+<li>
+<strong>Hide Author Information:</strong> For some projects, you may want to blind the screeners to the citation authors. This may be the case if knowing the author’s identity could bias screeners either to include or exclude.<br>
+</li>
+<li>
+<strong>Hide Journal Information:</strong> You may want to blind the screeners to the journal in which the article was published if you believe that knowing the journal could bias screeners to include or exclude.</li>
+</ul>
+</div>
+<div id="finalizing-and-editing-your-screening-settings" class="section level4" number="4.1.3.6">
+<h4>
+<span class="header-section-number">4.1.3.6</span> Finalizing and Editing Your Screening Settings<a class="anchor" aria-label="anchor" href="#finalizing-and-editing-your-screening-settings"><i class="fas fa-link"></i></a>
+</h4>
+<div class="inline-figure"><img src="_figs/18-save-screener-settings.png"></div>
+<div class="inline-figure">If you want to change your settings, you can do this by navigating back to the main Abstract Screening page. At the bottom of the screen, you will see a Settings button. Clicking on this will open up the set-up window, and you can make any changes. <img src="_figs/19-screening-update-button.png">
+</div>
+</div>
+<div id="configuring-reasons-and-tags" class="section level4" number="4.1.3.7">
+<h4>
+<span class="header-section-number">4.1.3.7</span> Configuring Reasons and Tags<a class="anchor" aria-label="anchor" href="#configuring-reasons-and-tags"><i class="fas fa-link"></i></a>
+</h4>
+<div class="inline-figure">One last thing to do before you start screening: configure the Reasons and Tags for the screening page. You can set this up by clicking the Configure Reasons and Tags button on the main Abstract Screener page: <img src="_figs/20-configure-reasons-and-tags.png">
+</div>
+<div class="inline-figure">When you first open this popup, you will see a set of three basic settings in the upper left corner: <img src="_figs/21-reasons-and-tags-base-settings.png">
+</div>
+<p>You can use default settings or change them by toggling the button to the left of each setting.</p>
+<ul>
+<li>
+<strong>Allow users to add reasons during screening.</strong> Screeners are allowed to add additional reasons as they see fit. These reasons will only appear on their screening tool but not on other team members’ tools. So, if you want to limit the reasons for exclusion (and maintain consistency between screeners) you will want to toggle this option off.</li>
+<li>
+<strong>Allow users to add tags during screening.</strong> Similarly, this will allow users to add tags. As with the user-defined Reasons, only the screener who defined the new tag will see this option on their screening tool. This may be useful if you want to allow your screeners to provide more information about the title/abstract. However, given that screeners can use the Notes section, you may want to toggle this one off or, if you leave it on, advise screeners only to use it sparingly.</li>
+<li>
+<strong>Limit users to one reason.</strong> Screeners only need to have one reason to exclude (e.g., wrong population). But, there are often many reasons why an article may not be appropriate (wrong population, wrong intervention, wrong outcome, etc.). At this stage (abstract screening) it is less important that screeners indicate all the reasons for exclusion so long as they identify one valid reason for exclusion. You can direct the screeners just to select one reason. However, if you want to allow screeners to select multiple reasons, toggle this option off.</li>
+</ul>
+<div id="setting-up-reasons" class="section level5" number="4.1.3.7.1">
+<h5>
+<span class="header-section-number">4.1.3.7.1</span> Setting Up Reasons<a class="anchor" aria-label="anchor" href="#setting-up-reasons"><i class="fas fa-link"></i></a>
+</h5>
+<p>While you can add your own reasons for exclusion, we recommend that your reasons correspond to aspects of your PICO question(s) or study design. VADRR comes with a set of pre-specified reasons for exclusion based on PICO components and we recommend using these (at least to start with). You can add these default Reasons by clicking on the Add Default Reasons button. When you do this, a standard set of exclusion Reasons will appear:</p>
+<div style="text-align: center;">
+<div class="inline-figure"><img src="_figs/22-default-reasons.png"></div>
+</div>
+<p>You can modify these standard reasons in the following ways:</p>
+<ul>
+<li>
+<strong>Change the position of the Reasons</strong> by changing the numbering in the Position column.<br>
+</li>
+<li>
+<strong>Edit the text of the Reason</strong> by clicking on the edit button in the Edit column<br>
+</li>
+<li>
+<strong>Delete the Reason</strong> by clicking on the red trashcan icon in the Delete column<br>
+</li>
+<li>
+<strong>Add additional reasons</strong> by clicking on the small plus sign button at the bottom right corner of the list.</li>
+</ul>
+<p><strong>When might you want to alter these reasons?</strong> Every project is unique, and there may be unusual reasons for exclusion (e.g., not an animal study) or additional reasons (Wrong Language). Again, we recommend starting with the default reasons and editing to fit your project.</p>
+</div>
+<div id="adding-tags" class="section level5" number="4.1.3.7.2">
+<h5>
+<span class="header-section-number">4.1.3.7.2</span> Adding Tags<a class="anchor" aria-label="anchor" href="#adding-tags"><i class="fas fa-link"></i></a>
+</h5>
+<p>If you choose to use tags for your project, you’ll need to enter them all manually—there is no default set of tags. Simply click on the plus sign button at the right of the tags space to create tags.</p>
+<div class="inline-figure"><img src="_figs/23-add-tags.png"></div>
+<p>When you click on the plus sign button, a new popup will open. Simply enter the text for the new tag and click the Create Tag button.</p>
+<div class="inline-figure"><img src="_figs/24-create-new-tag.png"></div>
+<p>While we have noted that Tags are not needed for all projects (especially simple projects), including a <strong>Background Article</strong> option as a Tag is generally a good idea. This will allow your screeners to alert you to articles that may be useful for providing background information or related research.</p>
+</div>
+</div>
+</div>
+<div id="terms-and-phrases-how-to-use-them-with-a-team" class="section level3" number="4.1.4">
+<h3>
+<span class="header-section-number">4.1.4</span> Terms and Phrases: How to Use Them with a Team<a class="anchor" aria-label="anchor" href="#terms-and-phrases-how-to-use-them-with-a-team"><i class="fas fa-link"></i></a>
+</h3>
+<p>VADRR Abstract Screener allows for terms to be highlighted in different colors to indicate likely acceptance or rejection. For instance, in the following example, the terms “asthma”, “COPD” and “probiotics” are strong indicators of likely acceptance (highlighted in green). The terms “microbiome” and “inflammatory cytokines” are weak indicators of acceptance.</p>
+<div class="inline-figure"><img src="_figs/32-strong-and-weak-accept.png"></div>
+<p>We can also use different highlights to indicate weak and strong “likely reject.”</p>
+<p>Using colors for terms and phrases helps to speed up screening. For instance, even before a screener reads the entire abstract, an abstract with many terms flagged for acceptance will give them a strong initial indication that the article is likely to be accepted. Similarly, highlighted colors for rejection can help quickly flag that an article is unlikely to be included.</p>
+<div id="setting-up-terms-and-phrases-for-groups-for-the-project" class="section level4" number="4.1.4.1">
+<h4>
+<span class="header-section-number">4.1.4.1</span> Setting Up Terms and Phrases for Groups for the Project<a class="anchor" aria-label="anchor" href="#setting-up-terms-and-phrases-for-groups-for-the-project"><i class="fas fa-link"></i></a>
+</h4>
+<p>While individual screeners can highlight their own terms, it is best to have a list of terms and phrases shared across all screeners. <span style="color: blue">This promotes consistency!</span></p>
+<p>Before you begin screening, when meeting with the screening team to discuss inclusion and exclusion criteria, it is a good idea to brainstorm with the team for terms that they believe are likely to indicate inclusion and exclusion. For instance, if you are limiting to studies of adults, then terms like “child,” “children,” “infants,” etc. may be terms you want to highlight for likely exclusion.</p>
+<p>When you first open the screening window, you can scroll down in the right panel to the Terms and Phrases section. You will see the following:</p>
+<div class="inline-figure"><img src="_figs/33-terms-and-phrases-blank.png"></div>
+<p>At this point, you have a few options:<br>
+* <strong>Add Default Groups by clicking the Add Default Groups button.</strong> This will create a list of four groups (Group 1, Group 2, etc.) with colors pre-assigned. You can change the group names by double clicking on the group name, changing the label, then clicking on the check mark to accept the changes.</p>
+<div class="inline-figure"><img src="_figs/34-change-group-name.png"></div>
+<p>You can then <strong>change the color</strong> by clicking on the color bar. This may be important if you have members of your team who are red/green color blind.</p>
+<p>You can click on <strong>Edit Terms</strong> to manually add a list of terms indicative of strongly or weakly accept or reject. If your team has identified terms for each of these categories, you will want to set this up ahead of time. Once you do this, you can use the Download Groups button to create a JSON file that contains all this information. Send this file to all screeners with instructions to use the Import Groups button to pull in all the highlighting codes. This will promote team consistency.</p>
+<p>Finally, you can completely <strong>delete a group</strong> by clicking on the trashcan to the right of the group.</p>
+<ul>
+<li>
+<strong>Manually create your own groups.</strong> If you decide not to alter the default groups, you can create your own using the Add new group field just above the Download Groups button.</li>
+</ul>
+<p>To do this, simply enter the new group name and hit return. The new group will now show up in the list with a default color. Change the color as desired.</p>
+<div class="inline-figure">Continue creating groups until you have all that you need. <img src="_figs/35-entering-manually.png">
+</div>
+<ul>
+<li>
+<strong>Create Groups and assign terms and colors directly from a JSON file.</strong> If you are familiar with JSON files, you can use a JSON editor to create the code to do all of the above at once by uploading the JSON file. Below is an example of the JSON file syntax to define the groups, assign colors, and indicate terms associated with each group. You can also download the JSON file and edit it manually, then re-upload it.</li>
+</ul>
+<div class="inline-figure"><img src="_figs/36-json-file.png"></div>
+</div>
+</div>
+<div id="resolving-conflicts" class="section level3" number="4.1.5">
+<h3>
+<span class="header-section-number">4.1.5</span> Resolving Conflicts<a class="anchor" aria-label="anchor" href="#resolving-conflicts"><i class="fas fa-link"></i></a>
+</h3>
+<p>After screening has proceeded, you will inevitably have screeners disagree on whether to include or exclude an article. Additionally, any article marked with a “maybe” will be marked as “in conflict”. You will need to resolve these conflicts.</p>
+<p>You can find the Resolve Conflicts button on the main Abstract Screening page.</p>
+<div class="inline-figure"><img src="_figs/37-resolve-conflicts-button.png"></div>
+<p>Clicking on this button will open the Screener page. At this point, you have a couple of options:</p>
+<ul>
+<li><p><strong>Resolve the conflict referring to screener decisions and rationales.</strong> Below the abstract, you will now see the labels assigned by screeners, along with whatever reasons or notes the screeners have entered. You can then read the abstract and decide between screener decisions (or make an entirely different decision yourself). Use the green or red decision button to make a final inclusion judgment. <img src="_figs/38-screener-decisions.png"></p></li>
+<li><p><strong>Resolve the conflict blinded.</strong> If you want to make a truly blind decision, then you can click the purple All Labels button with the eye just above the screener decisions. This will make the screener decisions disappear and you can make the assessment yourself. Note that this decision overrides the screener decisions.</p></li>
+</ul>
+</div>
+<div id="understanding-and-using-the-machine-learning-results" class="section level3" number="4.1.6">
+<h3>
+<span class="header-section-number">4.1.6</span> Understanding and Using the Machine Learning Results<a class="anchor" aria-label="anchor" href="#understanding-and-using-the-machine-learning-results"><i class="fas fa-link"></i></a>
+</h3>
+<p>VADRR incorporates a powerful Machine Learning (ML) tool (previously Abstrakr) to facilitate screening tasks. How does it work?</p>
+<ul>
+<li>Pearls (articles pre-identified to meet the inclusion criteria) are marked for inclusion manually via the Project Dashboard. This provides the first bit of information to the ML model.</li>
+<li>Screeners initially screen 100 titles and abstracts. (This is the second bit of information the ML needs). In this first round, articles are presented to the screeners in a random order.</li>
+<li>The ML creates a predictive model (overnight) and rearranges the articles so that the articles with the highest probability of being screened in are moved to the front of the screener queue.</li>
+<li>Depending on the complexity of the project, the ML should be able to get a pretty reliable model of the inclusion/exclusion criteria within a couple of training rounds.</li>
+<li>Screening continues until the stopping criteria are reached (with the assumption being that the ML has “screened” all the rest of the articles.</li>
+</ul>
+<p><strong>Note: the system is set up to err on the side of sensitivity.</strong> For instance, if the ML model predicts that an article only has a 4% chance of inclusion, that number is multiplied by 10 and it appears that the article has a 40% probability of being included. This is by design so that the system runs a very low chance of missing key articles.</p>
+<div id="when-do-you-see-results" class="section level4" number="4.1.6.1">
+<h4>
+<span class="header-section-number">4.1.6.1</span> When Do You See Results?<a class="anchor" aria-label="anchor" href="#when-do-you-see-results"><i class="fas fa-link"></i></a>
+</h4>
+<p>The system is set to run the ML model after 100 completed screenings automatically. This means that there need to be 100 double-screened articles where there is an agreement between screeners. Note, Maybe responses do not count.</p>
+<p>There is a way to force the ML to run on fewer screeners (though we do not typically recommend this since without a sufficient number of accurately identified accept/reject decisions, the model is unlikely to be able to produce a reliable model.</p>
+<p>To force the ML to run on fewer than 100 new screens, toggle the Force Training button on the main Abstract Screening screen.</p>
+<div class="inline-figure"><img src="_figs/39-force-ML.png"></div>
+</div>
+<div id="what-do-the-results-mean" class="section level4" number="4.1.6.2">
+<h4>
+<span class="header-section-number">4.1.6.2</span> What Do the Results Mean?<a class="anchor" aria-label="anchor" href="#what-do-the-results-mean"><i class="fas fa-link"></i></a>
+</h4>
+<p>The ML engine runs behind the scenes, so you do not need to worry about it. But you can get results of the model, which can be useful for understanding how much of the screening you have left to do.</p>
+<p>On the main Abstract Screening page, just above the Force Training button, is the Machine Learning Results. Clicking this button will take you to a page where you can see the ML results. There are a lot of resources on this page, so we will break it down.</p>
+<div class="inline-figure">At the top of the page, you will see the following: <img src="_figs/40-top-ml-results.png">
+</div>
+<p><strong>Total Number of Citations:</strong> This is how many citations your team has successfully screened.</p>
+<p><strong>Latest Model Time:</strong> The last time and date that an ML model was generated</p>
+<p><strong>Rejection Streak Counter:</strong> This is the number of articles that have been rejected by two screeners.</p>
+<p><strong>Estimated Coverage:</strong> This is a graphical presentation of how many studies you have screened (x-axis) by how many articles are left that are estimated to be included. This gives you a rough sense of how many articles your team has left to screen.</p>
+<div class="inline-figure">Below these results, you will see the following: <img src="_figs/41-ml-middle-results.png">
+</div>
+<p><strong>Percentage unscreened:</strong> This is the proportion of articles that are left to be screened (in this example, 46.3% of articles are unscreened).</p>
+<p><strong>Untrained citations:</strong> This is the number of articles that have been double-screened, but the machine has not yet processed them. The ML will generate a new model when this counter gets to 100.</p>
+<p><strong>Highest Score:</strong> This is the probability of the highest-scoring article. Higher probabilities indicate likely inclusion. In this example, the highest-scoring article has a 99.88% probability of being included.</p>
+<p><strong>Score Distribution:</strong> This histogram shows how many articles fall into the different deciles of the probability distribution. In this case, we see that nearly 500 articles have between a 0% and 10% probability of being included (thus, the screeners will likely never see these articles). You see much smaller numbers of articles in the 80%-90% range and 90-100% range.</p>
+<p><strong>Enter threshold:</strong> If you want to see how many articles are above a certain probability of being included, you can change this value. The default is 50%. But let’s say you set your stopping rule at no articles above 40%. You can change the value to .4 and get a sense of how many articles there are left to screen. In this example, you can see that there are n=146 articles that have greater than a 50% chance of inclusion.</p>
+<p>Next, you will see a table of the <strong>Top 20 Unscreened Citations</strong>. This is a valuable table in that it shows you the reference information of the articles that have the highest probability of being included. This is useful for confirming that there are no articles left to screen that are likely to be included. When you hit your stopping criteria (see below), you can check the titles in this table to confirm that none are likely to be included.</p>
+<div class="inline-figure"><img src="_figs/42-ml-top-20-table.png"></div>
+<p>Note that rather than wait for an article to be double-screened, you can click on the Label link to the right of the citation to manually accept or reject. <strong>It is important to remember that doing this can break protocol</strong> (since that article will not be double-screened). So, be judicious when changing the label of an article in this table.</p>
+<p>At the bottom of the Machine Learning Results page is a blue button that looks like this:</p>
+<div style="text-align: center;">
+<div class="inline-figure"><img src="_figs/43-confusion-matrix.png"></div>
+</div>
+<p>This button allows you to open a series of model diagnostic measures. Clicking this button will show the following:</p>
+<div class="inline-figure"><img src="_figs/44-confusion-matrix-stats.png"></div>
+<p>On the right, you will see a confusion matrix that shows how well the model is performing. For instance, the left half of the matrix shows you the status of articles that the ML predicted would be included. Of the n=175 articles the ML predicted would be accepted, n=62 were accepted and n=113 were not. Remember, the ML is set to be very sensitive, so it is more likely to predict an article will be accepted even when it isn’t because we do not want to miss potential articles. Notice that out of the 58 articles the ML predicted would be rejected, only n=2 were rejected. Again, we want this number to be as low as possible.</p>
+<p>The table on the right provides formal metrics of the model’s performance.</p>
+<ul>
+<li>
+<strong>Precision:</strong> this is a measure of how often the model correctly predicts including an article (this will typically be fairly low given that the system is set up to be very sensitive)</li>
+<li>
+<strong>Sensitivity:</strong> this is the True Positive rate (also called “recall”), and it tells you what proportion of actually included articles are correctly identified as included by the model. You want this number to be very high (in this example, 97%).</li>
+<li>
+<strong>F1 Score:</strong> this is the harmonic mean of precision and sensitivity. It is an overall measure of the model’s accuracy. Again, because VADRR is set to be overly sensitive, you shouldn’t anticipate a very high value for this score.</li>
+<li>
+<strong>Accuracy:</strong> this is a measure of the overall correctness of the model. It is the proportion of correctly predicted articles out of the total number of articles.</li>
+</ul>
+<p>You probably have a sense that, because of the way that the model is set up (i.e., to be very sensitive), most of the above numbers are not going to be particularly useful. Of all of the measures, you want to check the <strong>Sensitivity</strong>. This will give you a sense of the likelihood that a potentially useful article will be missed.</p>
+</div>
+<div id="when-should-we-stop-screening" class="section level4" number="4.1.6.3">
+<h4>
+<span class="header-section-number">4.1.6.3</span> When Should We Stop Screening?<a class="anchor" aria-label="anchor" href="#when-should-we-stop-screening"><i class="fas fa-link"></i></a>
+</h4>
+<p>This is an area of some debate in the evidence synthesis community. Do you really need to screen all citations (let’s say that there are thousands) when you have the ML working for you? That is, if all the remaining citations have a very low probability of inclusion, does it really make sense to continue screening these?</p>
+<p>More recently, researchers have been developing stopping rules (i.e., when the humans stop screening, and the rest of the citations are assumed to be screened by the ML model). There is no standard for when screening should stop. Some common approaches include:</p>
+<ul>
+<li>After the ML has been trained, when 100 articles in a row are rejected, stop screening.</li>
+<li>When none of the remaining articles has greater than a 40% chance of inclusion (which really means a 4% chance of inclusion).</li>
+<li>Both above criteria combined.</li>
+</ul>
+<p><br><br></p>
+<p>Whichever you choose (and you can choose different stopping rules than those mentioned above), be sure and document your plan in your protocol and your report.</p>
+</div>
+</div>
+<div id="downloading-screening-results" class="section level3" number="4.1.7">
+<h3>
+<span class="header-section-number">4.1.7</span> Downloading Screening Results<a class="anchor" aria-label="anchor" href="#downloading-screening-results"><i class="fas fa-link"></i></a>
+</h3>
+<p>Results from all screening tasks (both Abstract and Full-text screening), can be downloaded. See VADRR 7. Getting Your Results Out of VADRR</p>
+<p><br></p>
+
+</div>
+</div>
+</div>
+  <div class="chapter-nav">
+<div class="prev"><a href="upload.html"><span class="header-section-number">3</span> Uploading Article Citations</a></div>
+<div class="next"><a href="screening-instructions-for-screeners.html"><span class="header-section-number">5</span> Screening: Instructions for Screeners</a></div>
+</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#vadrr-screener"><span class="header-section-number">4</span> Screening: Insructions for Screening Set Up (Project Leads)</a></li>
+<li><a class="nav-link" href="#vadrr-screener">
+How does it work?
+</a></li>
+<li><a class="nav-link" href="#vadrr-screener">
+Organization of This Section
+</a></li>
+<li>
+<a class="nav-link" href="#leaders"><span class="header-section-number">4.1</span> Screening Tool Resources for Team Leaders</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#first-step-upload-your-citations-and-then-find-the-abstracttitle-screener"><span class="header-section-number">4.1.1</span> First Step: Upload Your Citations and Then Find the Abstract/Title Screener</a></li>
+<li><a class="nav-link" href="#deciding-on-the-screening-team-and-approach"><span class="header-section-number">4.1.2</span> Deciding on the Screening Team and Approach</a></li>
+<li><a class="nav-link" href="#setting-up-your-screening-tool"><span class="header-section-number">4.1.3</span> Setting Up Your Screening Tool</a></li>
+<li><a class="nav-link" href="#terms-and-phrases-how-to-use-them-with-a-team"><span class="header-section-number">4.1.4</span> Terms and Phrases: How to Use Them with a Team</a></li>
+<li><a class="nav-link" href="#resolving-conflicts"><span class="header-section-number">4.1.5</span> Resolving Conflicts</a></li>
+<li><a class="nav-link" href="#understanding-and-using-the-machine-learning-results"><span class="header-section-number">4.1.6</span> Understanding and Using the Machine Learning Results</a></li>
+<li><a class="nav-link" href="#downloading-screening-results"><span class="header-section-number">4.1.7</span> Downloading Screening Results</a></li>
+</ul>
+</li>
+</ul>
+
+      <div class="book-extra">
+        <ul class="list-unstyled">
+          
+        </ul>
+</div>
+    </nav>
+</div>
+
+</div>
+</div> <!-- .container -->
+
+<footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>"<strong>Data Extraction in Systematic Reviews</strong>: Navigating VADRR" was written by James Scott Parrott. </p>
+  </div>
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>This book was built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package.</p>
+  </div>
+
+</div></div>
+</footer>
+</body>
+</html>

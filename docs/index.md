@@ -1,0 +1,25 @@
+--- 
+title: "Data Extraction in Systematic Reviews"
+subtitle: "Navigating VADRR"
+author: 
+- James Scott Parrott
+# github-repo: "MathiasHarrer/Doing-Meta-Analysis-in-R"
+site: bookdown::bookdown_site
+documentclass: book
+bibliography: [book.bib, packages.bib]
+url: https://home-leap.github.io/VADRR-Manual/
+# cover-image: path to the social sharing image like images/cover.jpg
+biblio-style: apalike
+csl: chicago-fullnote-bibliography.csl
+description: "This is a guide on how to extract data for systematic reviews in VADRR."
+favicon: "favicon.ico"
+---
+
+# About {-}
+
+This is a guide on how to extract data for systematic reviews in VADRR.
+
+
+
+
+

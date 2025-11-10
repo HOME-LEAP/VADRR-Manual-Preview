@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Chapter 6 Tips for Creating a Data Extraction Template | Data Extraction in Systematic Reviews</title>
+<meta name="author" content="James Scott Parrott">
+<meta name="description" content="Now it is time to start building out the extraction template. You’ll find this tool under the Extraction Form Builder tab at the top. Each tab has its own form. So, you will need to walk through...">
+<meta name="generator" content="bookdown 0.43 with bs4_book()">
+<meta property="og:title" content="Chapter 6 Tips for Creating a Data Extraction Template | Data Extraction in Systematic Reviews">
+<meta property="og:type" content="book">
+<meta property="og:url" content="https://home-leap.github.io/VADRR-Manual/template.html">
+<meta property="og:description" content="Now it is time to start building out the extraction template. You’ll find this tool under the Extraction Form Builder tab at the top. Each tab has its own form. So, you will need to walk through...">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Chapter 6 Tips for Creating a Data Extraction Template | Data Extraction in Systematic Reviews">
+<meta name="twitter:description" content="Now it is time to start building out the extraction template. You’ll find this tool under the Extraction Form Builder tab at the top. Each tab has its own form. So, you will need to walk through...">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.9.0/transition.js"></script><script src="libs/bs3compat-0.9.0/tabs.js"></script><script src="libs/bs3compat-0.9.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><script src="https://kit.fontawesome.com/757b392c5d.js" crossorigin="anonymous"></script><link rel="stylesheet" href="https://code.cdn.mozilla.net/fonts/fira.css">
+<style>
+
+    :root {
+      --background-color: #FFFEFA;
+      --text-color: #000;
+      --highlight-color: #277DB0;
+      --border-color: #999896;
+      --grey-color: #6C6C6C;
+      --line-color: #eee;
+      --bg-box: #f5f5f5;
+      --box-border-color: #eeeeee;
+      --code-bg: #f8f8f8;
+      --code-chunk-bg: linear-gradient(160deg,#f8f8f8 0, #f1f1f1 100%);
+      --code-text-color: #212529;
+      --hr-border-top: 1px solid rgba(0,0,0,0.1);
+      --table-text-color: #000;
+      --toc-active: #eee;
+      --form-color: #4D4C4B;
+      --form-background-color: #FFFEFA;
+      --form-border: 1px solid #999896;
+      --aa-cursor-background-color: #B2D7FF;
+    }
+
+
+    [data-theme="dark"] {
+      --background-color: #2b2b2b;
+      --text-color: #ffffff;
+      --highlight-color: #34a8ed;
+      --border-color: yellow;
+      --grey-color: #cfcfcf;
+      --line-color: #575757;
+      --bg-box: #474747;
+      --box-border-color: #474747;
+      --code-bg: #474747;
+      --code-chunk-bg: linear-gradient(160deg,#CDCDCD 0,#f1f1f1 100%);
+      --code-text-color: #ffffff;
+      --hr-border-top: 1px solid #575757;
+      --table-text-color: #ffffff;
+      --toc-active: #474747;
+      --form-color: #cfcfcf;
+      --form-background-color: #474747;
+      --form-border: 1px solid #575757;
+      --aa-cursor-background-color: #2b2b2b;
+    }
+
+    .algolia-autocomplete .aa-dropdown-menu .aa-suggestion {
+      color: var(--form-color);
+      border-bottom: 1px var(--form-border) solid;
+      background-color: var(--form-background-color);
+    }
+
+    .algolia-autocomplete .aa-dropdown-menu .aa-suggestion.aa-cursor {
+      background-color: var(--aa-cursor-background-color);
+    }
+
+    strong {
+      font-weight: 500;
+    }
+
+    .form-control {
+      color: var(--form-color);
+      background-color: var(--form-background-color);
+      border: var(--form-border);
+    }
+
+    .form-control:focus {
+      color: var(--text-color);
+      background-color: var(--form-background-color);
+      border: var(--form-border);
+    }
+
+
+    nav[data-toggle="toc"] .nav a.nav-link.active, nav[data-toggle="toc"] .nav .nav-link.active > li > a {
+        background-color: var(--toc-active);
+    }
+
+    .btn-circle.btn-md {
+      width: 50px;
+      height: 50px;
+      padding: 7px 10px;
+      border-radius: 25px;
+      font-size: 10px;
+      text-align: center;
+    }
+
+
+    .lightable-classic td {
+      color: var(--text-color);
+    }
+
+    .popover {
+      max-width: 40% !important;
+    }
+
+    .table {
+      color: var(--table-text-color);
+    }
+
+    hr {
+      border-top: var(--hr-border-top);
+    }
+
+    code {
+      background-color: var(--code-bg);
+      color: var(--code-text-color);
+    }
+
+    pre {
+      background-image: var(--code-chunk-bg);
+    }
+
+    body {
+      background-color: var(--background-color);
+      color: var(--text-color);
+    }
+
+    a {
+      color: var(--highlight-color);
+    }
+
+    .header-section-number {
+      color: var(--grey-color);
+    }
+
+    small.text-muted {
+      color: var(--grey-color) !important;
+    }
+
+
+    .firstcharacter {
+      color: var(--highlight-color);
+    }
+
+    p.caption {
+      color: var(--grey-color);
+    }
+
+    .figure {
+      border-top: 2px solid var(--line-color);
+      border-bottom: 2px solid var(--line-color);
+    }
+
+
+    .inline-figure {
+      border: 0;
+      box-shadow: none;
+    }
+
+    .boxinfo {
+      padding: 1em 1em 1em 3em;
+      margin-bottom: 10px;
+      background: var(--bg-box);
+      position:relative;
+      border-width: 3px;
+      border-style: solid;
+      border-color: var(--box-border-color);
+      border-radius: .25rem;
+    }
+
+    .boxinfo:before {
+        content: '\f0eb';
+        font-family: "Font Awesome 5 Free";
+        left:20px;
+        position:absolute;
+        font-size: 30px;
+        color: var(--highlight-color);
+     }
+
+    .boxempty {
+      padding: 1em 1em 1em 1.1em;
+      margin-bottom: 10px;
+      background: var(--bg-box);
+      position:relative;
+      border-width: 3px;
+      border-style: solid;
+      border-color: var(--box-border-color);
+      border-radius: .25rem;
+    }
+
+    .boxempty:before {
+        content: '\f0eb';
+        font-family: FontAwesome;
+        left:0px;
+        position:absolute;
+        font-size: 30px;
+        color: transparent;
+     }
+
+    .boximportant {
+      padding: 1em 1em 1em 3em;
+      margin-bottom: 10px;
+      background: var(--bg-box);
+      position:relative;
+      border-width: 3px;
+      border-style: solid;
+      border-color: var(--box-border-color);
+      border-radius: .25rem;
+    }
+
+    .boximportant:before {
+        content: '\f06a';
+        font-family: FontAwesome;
+        left:13px;
+        position:absolute;
+        font-size: 30px;
+        color: var(--highlight-color);
+     }
+
+    .boxreport {
+      padding: 1em 1em 1em 3em;
+      margin-bottom: 10px;
+      background: var(--bg-box);
+      position:relative;
+      border-width: 3px;
+      border-style: solid;
+      border-color: var(--box-border-color);
+      border-radius: .25rem;
+    }
+
+    .boxreport:before {
+        content: '\f570';
+        font-family: FontAwesome;
+        left:15px;
+        position:absolute;
+        font-size: 30px;
+        color: var(--highlight-color);
+     }
+
+    .boxdmetar {
+      padding: 1em 1em 1em 3em;
+      margin-bottom: 10px;
+      background: var(--bg-box);
+      position:relative;
+      border-width: 3px;
+      border-style: solid;
+      border-color: var(--box-border-color);
+      border-radius: .25rem;
+    }
+
+    .csl-entry {
+      margin-bottom: 20px;
+      padding-left: 1.5em;
+      text-indent:-1.5em;
+    }
+
+    .boxdmetar:before {
+        content: '\f4f7';
+        font-family: FontAwesome;
+        left:10px;
+        position:absolute;
+        font-size: 30px;
+        color: var(--highlight-color);
+     }
+
+    .boxquestion {
+      padding: 1em 1em 1em 3em;
+      margin-bottom: 10px;
+      background: var(--bg-box);
+      position:relative;
+      border-width: 3px;
+      border-style: solid;
+      border-color: var(--box-border-color);
+      border-radius: .25rem;
+    }
+
+    .boxquestion:before {
+        content: '\f059';
+        font-family: FontAwesome;
+        left:12px;
+        position:absolute;
+        font-size: 30px;
+        color: var(--highlight-color);
+     }
+
+    .mode-switch {
+      font-size: 0.9rem;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: .25rem;
+    }
+
+
+    .firstcharacter {
+      color: var(--highlight-color);
+      float: left;
+      font-size: 40px;
+      line-height: 50px;
+      padding-bottom: 2px;
+      padding-right: 8px;
+      padding-left: 2px;
+    }
+
+
+    .btn-circle.btn-sm {
+        width: 30px;
+        height: 30px;
+        padding: 6px 0px;
+        border-radius: 15px;
+        font-size: 20px;
+        text-align: center;
+    }
+    .btn-circle.btn-md {
+        width: 50px;
+        height: 50px;
+        padding: 7px 10px;
+        border-radius: 25px;
+        font-size: 20px;
+        text-align: center;
+    }
+    .btn-circle.btn-xl {
+        width: 60px;
+        height: 60px;
+        padding: 7px 7px;
+        border-radius: 35px;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    #critical-btn.btn-secondary {
+      background-color: var(--grey-color);
+      border-color: var(--grey-color);
+    }
+
+    .sticky-item {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+    }
+
+
+
+    </style>
+<link rel="shortcut icon" href="favicon.ico">
+<script type="text/x-mathjax-config">
+    const popovers = document.querySelectorAll('a.footnote-ref[data-toggle="popover"]');
+    for (let popover of popovers){
+      const div = document.createElement('div');
+      div.setAttribute('style', 'position: absolute; top: 0, left:0; width:0, height:0, overflow: hidden; visibility: hidden;');
+      div.innerHTML = popover.getAttribute('data-content');
+
+      // Will this work with TeX on its own line?
+      var has_math = div.querySelector("span.math");
+      if (has_math) {
+        document.body.appendChild(div);
+      	MathJax.Hub.Queue(["Typeset", MathJax.Hub, div]);
+      	MathJax.Hub.Queue(function(){
+          popover.setAttribute('data-content', div.innerHTML);
+      	})
+      }
+    }
+    </script><link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script><script type="text/javascript">
+      // Add switch element
+      document.addEventListener('DOMContentLoaded', function(event){
+        let darkSwitch = document.createElement('div');
+        darkSwitch.innerHTML = "<div class='sticky-item'><button type='button' id='critical-btn' class='btn btn-dark btn-circle btn-xl'>🌓</button></div>"
+        document.body.appendChild(darkSwitch);
+      })
+
+    $(document).ready(function() {
+
+        $("#critical-btn").click(function () {
+
+            if ($(this).hasClass('btn-dark')){
+                $('#critical-btn').removeClass('btn-dark').addClass('btn-secondary');
+                $(this).addClass('btn-secondary').removeClass('btn-dark');
+            }
+
+            else if ($(this).hasClass('btn-secondary')){
+                $('#critical-btn').removeClass('btn-secondary').addClass('btn-dark');
+                $(this).addClass('btn-dark').removeClass('btn-secondary');
+            }
+
+        })
+    })
+    </script><script type="text/javascript">
+      // Wait for document to load
+      document.addEventListener("DOMContentLoaded", function(event) {
+        document.documentElement.setAttribute("data-theme", "light");
+
+        // Get our button switcher
+        var themeSwitcher = document.getElementById("critical-btn");
+
+        // When our button gets clicked
+        themeSwitcher.onclick = function() {
+          // Get the current selected theme, on the first run
+          // it should be `light`
+          var currentTheme = document.documentElement.getAttribute("data-theme");
+
+          // Switch between `dark` and `light`
+          var switchToTheme = currentTheme === "dark" ? "light" : "dark"
+
+          // Set our currenet theme to the new one
+          document.documentElement.setAttribute("data-theme", switchToTheme);
+
+          // Save current selection
+          localStorage.setItem('themeMode', switchToTheme);
+
+        }
+      });
+
+      // keep selection across pages
+      document.addEventListener('DOMContentLoaded', function(event){
+        const currentTheme = localStorage.getItem('themeMode')
+        if (currentTheme === 'dark'){
+        document.documentElement.setAttribute("data-theme", 'dark');
+          if ($("#critical-btn").hasClass('btn-dark')) {
+            $('#critical-btn').removeClass('btn-dark').addClass('btn-secondary');
+            $('#critical-btn').addClass('btn-secondary').removeClass('btn-dark');
+          }
+        } else {
+        document.documentElement.setAttribute("data-theme", 'light');
+          if ($("#critical-btn").hasClass('btn-secondary')) {
+            $('#critical-btn').removeClass('btn-secondary').addClass('btn-dark');
+            $('#critical-btn').addClass('btn-dark').removeClass('btn-secondary');
+          }
+      }})
+    </script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
+    
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  </style>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="font-awesome.min.css">
+</head>
+<body data-spy="scroll" data-target="#toc">
+
+<div class="container-fluid">
+<div class="row">
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+
+    <div class="d-flex align-items-start justify-content-between">
+      <h1>
+        <a href="index.html" title="Navigating VADRR">Data Extraction in Systematic Reviews</a>:
+        <small class="text-muted">Navigating VADRR</small>
+      </h1>
+      <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
+    </div>
+
+    <div id="main-nav" class="collapse-lg">
+      <form role="search">
+        <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
+</form>
+
+      <nav aria-label="Table of contents"><h2>Table of contents</h2>
+        <ul class="book-toc list-unstyled">
+<li><a class="" href="index.html">About</a></li>
+<li class="book-part">Navigating VADRR</li>
+<li><a class="" href="start.html"><span class="header-section-number">1</span> Getting Started</a></li>
+<li><a class="" href="setup.html"><span class="header-section-number">2</span> Setting Up Your Project</a></li>
+<li><a class="" href="upload.html"><span class="header-section-number">3</span> Uploading Article Citations</a></li>
+<li><a class="" href="vadrr-screener.html"><span class="header-section-number">4</span> Screening: Insructions for Screening Set Up (Project Leads)</a></li>
+<li><a class="" href="screening-instructions-for-screeners.html"><span class="header-section-number">5</span> Screening: Instructions for Screeners</a></li>
+<li><a class="active" href="template.html"><span class="header-section-number">6</span> Tips for Creating a Data Extraction Template</a></li>
+</ul>
+
+        <div class="book-extra">
+          
+        </div>
+      </nav>
+</div>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="template" class="section level1" number="6">
+<h1>
+<span class="header-section-number">6</span> Tips for Creating a Data Extraction Template<a class="anchor" aria-label="anchor" href="#template"><i class="fas fa-link"></i></a>
+</h1>
+<hr>
+<div class="inline-figure">Now it is time to start building out the extraction template. You’ll find this tool under the Extraction Form Builder tab at the top.
+<img src="_figs/5.1-extraction-form-builder-link.png">
+</div>
+<div class="inline-figure">Each tab has its own form. So, you will need to walk through each tab you have defined for your project. VADRR starts you out with a standard set of tabs, but you can customize these or add additional tabs. In the example below the Indexing Fields tab is a custom tab.
+<img src="_figs/5.2-extraction-form-main.png">
+</div>
+<p>But before we talk about how to build out the different sections let’s talk first about some more general good practices for building an extraction template.</p>
+<div id="structure-your-template-based-on-your-analytic-framework" class="section level3" number="6.0.1">
+<h3>
+<span class="header-section-number">6.0.1</span> Structure Your Template Based on Your Analytic Framework<a class="anchor" aria-label="anchor" href="#structure-your-template-based-on-your-analytic-framework"><i class="fas fa-link"></i></a>
+</h3>
+<p><strong>First</strong>, the types of information (data) that you’ll want to pull from the research articles should be guided by your PICO question and analytic framework. Take a look back at your PICO or your analytic framework and think carefully about the pieces of information you’ll need to answer your question. For instance, looking at this <a href="https://www.ncbi.nlm.nih.gov/books/NBK44075/">example analytic framework</a>, we can already see a number of fields we will need to add to our extraction template:
+<img src="_figs/5.3-analytic-framework.png"></p>
+<p>For additional ideas for field to extract for your project, see <a href="https://training.cochrane.org/handbook/current/chapter-05">Chapter 5 of the Cochrane Handbook</a>.</p>
+</div>
+<div id="organize-questions-within-tabs" class="section level3" number="6.0.2">
+<h3>
+<span class="header-section-number">6.0.2</span> Organize Questions within Tabs<a class="anchor" aria-label="anchor" href="#organize-questions-within-tabs"><i class="fas fa-link"></i></a>
+</h3>
+<p><strong>Second</strong>, know how to organize your questions within your template. Happily, VADRR makes this easier by organizing different types of information you’ll need into a series of tabs. Below is an example of a structured data entry form for the Design Details tab.
+<img src="_figs/5.4-example-design-details.png"></p>
+</div>
+<div id="goldilocks-principle-for-data-collection" class="section level3" number="6.0.3">
+<h3>
+<span class="header-section-number">6.0.3</span> Goldilocks Principle for Data Collection<a class="anchor" aria-label="anchor" href="#goldilocks-principle-for-data-collection"><i class="fas fa-link"></i></a>
+</h3>
+<p><strong>Third</strong>, remember that there is a balance between too little information and too much information. The principle of data extraction for systematic or scoping reviews is that you are extracting only the information you need and in a format that you can use. You don’t want to extract everything (otherwise, you could just work from the full text articles), but you want enough information to allow for your planned analyses.</p>
+<ul>
+<li>
+<em><span style="color: blue;">Too little information</span></em> extracted will mean either a very limited analysis or may mean going back later to update your template to capture information you missed.</li>
+<li>
+<em><span style="color: blue;">Too much information,</span></em> and you will find yoursel wasting time extracting information that you will not need for your analysis.</li>
+</ul>
+<p>For instance, it is very important to plan ahead of time for sub-analyses if you will be carrying out a meta-analysis. So, you’ll need to extract information about differences between the samples, interventions, measurement methods, etc. used in the different research articles. Taking these study characteristics into account can provide strong evidence for why interventions or exposures or tests work differently (i.e., have different outcomes) in different situations. But you have to plan ahead for capturing this information (without trying to extract every piece of information from a study).</p>
+</div>
+<div id="use-dependencies-to-help-your-extractors" class="section level3" number="6.0.4">
+<h3>
+<span class="header-section-number">6.0.4</span> Use Dependencies to Help Your Extractors<a class="anchor" aria-label="anchor" href="#use-dependencies-to-help-your-extractors"><i class="fas fa-link"></i></a>
+</h3>
+<p><strong>Fourth</strong>, you can use the Dependencies functionality to help guide the data extractors (and yourself) in knowing which questions to answer, and which they can safely ignore.</p>
+<div class="inline-figure">Let’s look at a simple example. You will notice below that there are two questions that I’ve set up to capture detail on different types of interventions. The first question lists different types of physical therapy interventions. Subsequent questions capture more detail on these general types of therapy. However, only the relevant later questions will highlight. Questions that are not relevant will be grayed out.
+<img src="_figs/5.5-dependency-example.png">
+</div>
+<div class="inline-figure">How do you set up a dependency between questions? You will find the tool to define dependencies in the Extraction Template builder. The Dependencies button is at the top for each question.
+<img src="_figs/5.6-setting-up-dependencies.png">
+</div>
+<p><br></p>
+<div class="inline-figure">When you click on the Dependencies link, you’ll see:
+<img src="_figs/5.7-create-dependency.png">
+</div>
+<p>Once you have set the appropriate dependencies, click the Save and Exit button at the top right of the dependency tool screen.</p>
+</div>
+<div id="getting-started-with-the-extraction-template-builder" class="section level3" number="6.0.5">
+<h3>
+<span class="header-section-number">6.0.5</span> Getting Started with the Extraction Template Builder<a class="anchor" aria-label="anchor" href="#getting-started-with-the-extraction-template-builder"><i class="fas fa-link"></i></a>
+</h3>
+<div class="inline-figure">When you first open the Extraction Form Builder, you will be taken to the page to structure the Design Details tab first. You will see the following:
+<img src="_figs/5.8-Question-definition.png">
+There are several components:</div>
+<p style="padding-left: 40px">
+<strong>List of Available Tabs</strong>: On the left you will see a list of the default tabs defined by VADRR.
+</p>
+<p style="padding-left: 40px">
+<strong>Add Section Button</strong>: Below this list is a button: Add Section. While most projects will not require any additional tabs, you have the flexibility to add additional tabs.
+</p>
+<p style="padding-left: 40px">
+<strong>Save Instructions</strong>: If you have general instructions for extractors for the particular tab, you can enter those instructions in this text box.
+</p>
+<p style="padding-left: 40px">
+<strong>Tab Dependencies</strong>: There are two key tabs that structure other tabs: Arms and Outcomes. If you make Arm Details dependent on Arms, then each question in Arm Details will repeat for each arm defined in the Arms tab. Similarly, if the Outcome Details tab is dependent on the Outcomes tab, then each question on the Outcome Details tab will repeat for every outcome defined on the Outcomes tab. Finally, if you are going to carry out risk of bias for each outcome (rather than the article as a whole), you will want to make the Risk of Bias tab dependent on Outcomes.
+</p>
+<p style="padding-left: 40px">
+<strong>Preview Section</strong>: You can use this button top preview the look of your questions.
+</p>
+<p style="padding-left: 40px">
+<strong>Add Question</strong>: This button allows you to add a new question.
+</p>
+</div>
+<div id="whats-next" class="section level3 unnumbered">
+<h3>What’s Next?<a class="anchor" aria-label="anchor" href="#whats-next"><i class="fas fa-link"></i></a>
+</h3>
+<p>The next series of pages will show you how to actually set up different types of questions in VADRR.</p>
+<p><br></p>
+</div>
+<div id="struc-ques" class="section level2" number="6.1">
+<h2>
+<span class="header-section-number">6.1</span> General Principles for Structuring Questions<a class="anchor" aria-label="anchor" href="#struc-ques"><i class="fas fa-link"></i></a>
+</h2>
+<hr>
+<p>We cover several topics for structuring and creating questions.</p>
+<div id="how-to-structure-questions" class="section level3" number="6.1.1">
+<h3>
+<span class="header-section-number">6.1.1</span> How to Structure Questions<a class="anchor" aria-label="anchor" href="#how-to-structure-questions"><i class="fas fa-link"></i></a>
+</h3>
+<p>After you have decided which information you need to extract, then you need to think about the best way to organize or format the question to capture the information in the optimal format for analysis. First, a general principle:</p>
+<p style="text-align: center">
+<strong>In general, when possible, it is best to use structured rather than free text questions.</strong>
+</p>
+<div class="inline-figure">There are several options for how to structure questions in VADRR. Let’s talk about each of them and what they are most useful for. When you click the Add Question button, you will see the following:
+<img src="_figs/5.9-select-question-structure.png">
+</div>
+<p style="padding-left: 40px">
+<span style="color: #000000"><strong>Text Field:</strong> </span>This option is useful for free text entry when the type of information in the article is highly variable and unstructured. For instance, you may want to pull in narrative from the article on how blinding was carried out (since there are <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2947122/">many ways to blind a study</a>). So, for instance, a simple text box could be used to capture information presented in the following example.
+</p>
+<div class="inline-figure"><img src="_figs/srdr-5.1-question-building-2.png"></div>
+<p style="padding-left: 40px">
+However, let’s say that we planned a sub-analysis to determine whether the type of blinding had any effect on the outcomes. In this case, we may not want the information in text format, but want to create a more structured question that will allow us to add type of blinding into a subgroup meta-analysis. In this case, we could use the following (which used the Checkbox structure but a text option for “other”):
+</p>
+<div class="inline-figure"><img src="_figs/5.10-question-structure-with-other.png"></div>
+<p style="padding-left: 40px">
+<strong>Numeric Field:</strong> This is a free-text entry field but can only be used to enter numerical values (no alphanumeric entry allowed).
+</p>
+<p style="padding-left: 40px">
+<strong>Checkbox (select multiple):</strong> This option is good when multiple characteristics may be present in the study (as in the different types of blinding in the above example).
+</p>
+<p style="padding-left: 40px">
+<strong>Dropdown:</strong> This option is similar to the Radio Button option (below) and is useful for when there is only one alternative possible and when the list of options is fairly restricted (e.g., Yes/No). This is what it would look like on the data entry screen.
+</p>
+<div class="inline-figure"><img src="_figs/5.11-dropdown.png"></div>
+<p style="padding-left: 40px">
+<strong>Radio button (select one):</strong> Like the Dropdown, this option is useful when there is only one alternative possible, but unlike the Dropdown is more useful when there are several possible options (which would be awkward with a Dropdown). A radio button option would look like this.
+</p>
+<div class="inline-figure"><img src="_figs/5.12-radio.png"></div>
+<p style="padding-left: 40px">
+<strong>Select One (with write-in option):</strong>Select One (with write-in option)**: If you want to offer the extractors the use of a Dropdown with the flexibility of also typing in another option, you can use this question format. However, you do not want to use this format if the write-in information is anything more than a couple of words. If you want the space to allow extractors to enter more detail when a different option is necessary. Use the radio button question with an “other” option and then place a free-text question in a second column (we’ll show you how to set up more than one column or row in a question later).
+</p>
+<div class="inline-figure">To set up a free text field to allow for write-in detail, you will create a new column.
+<img src="_figs/5.13-add-column.png">
+</div>
+<p>When you do this, you will now have a second column that provides the same structure options as the first column. You can leave this as free text and adjust the default number of characters allowed.<br><img src="_figs/5.14-structure-second-column.png"></p>
+<p style="padding-left: 40px">
+<strong>Select Multiple (with write-in option):</strong> This question format allows the data extractor to select more than one option (like the Checkbox type question) as well as write in an option not listed. As with the Select One (with write-in option), do not use this format if you want to allow exactors to enter text more detailed than a word or two.
+</p>
+<div style="text-align: center;">
+<img src="_figs/5.15-multiple-write-in.png">
+</div>
+</div>
+<div id="setting-up-the-questions" class="section level3" number="6.1.2">
+<h3>
+<span class="header-section-number">6.1.2</span> Setting Up the Questions<a class="anchor" aria-label="anchor" href="#setting-up-the-questions"><i class="fas fa-link"></i></a>
+</h3>
+<p>Now that you have a sense of the different types of questions available, how do you actually set up a question? We will use the example of setting up a radio button question.</p>
+<p><strong>First</strong>, click the Add Question button. A new empty question will appear at the bottom of the builder screen.</p>
+<p><strong>Second</strong>, add question text (e.g., Select the appropriate study design).</p>
+<p><strong>Third</strong>, add any instructions to help the extractors.<br><img src="_figs/5.16-question-and-instructions.png"></p>
+<p><strong>Fourth</strong>, select the appropriate question structure. We will select Radio. (Note, when you select the question structure the question will automatically save and the page will refresh. Scroll to the bottom to find the question again.)</p>
+<p><strong>Fifth</strong>, enter the first option in the center field:<br><img src="_figs/5.17-first-and-other-questions.png"></p>
+<p><strong>Sixth</strong>, enter the additional options in the lower entry field. Write in the option and then hit Enter to save the new option (again, the question will save, and the page will refresh). Continue entering until all answer options for this question are complete. At this point, you can reorder, edit or delete any of the options you have entered.<br><img src="_figs/5.18-modify-questions.png"></p>
+</div>
+<div id="using-multiple-rows" class="section level3" number="6.1.3">
+<h3>
+<span class="header-section-number">6.1.3</span> Using Multiple Rows<a class="anchor" aria-label="anchor" href="#using-multiple-rows"><i class="fas fa-link"></i></a>
+</h3>
+We have already demonstrated a way to use multiple columns, but you can also use multiple rows. At the bottom of each question structure tool, you will find a <strong>Click to add row</strong> button. Clicking on this will add an additional row. There will be a space to enter a row header.<br><div style="text-align: center;">
+<img src="_figs/5.23-add-row.png">
+</div>
+<div class="inline-figure">The following is an example of a more complicated question set up. Here we first had extractors identify whether general types of airway problems (e.g., Airway inflammation, Interstitial Lung Disease, etc.) were reported by the authors. The extractors could select “yes” or “no”. If yes, then the extractors were provided with more specific lung diseases or conditions that fell within the general disease category.
+<img src="_figs/5.19-multiple-rows-columns.png">
+</div>
+<p>What is the benefit of this more complicated question structure? Rather than create a whole series of separate questions (which could make the page quite long), you can use more complex question structures to gather the required information in less space.</p>
+</div>
+<div id="reordering-duplicating-and-removing-questions" class="section level3" number="6.1.4">
+<h3>
+<span class="header-section-number">6.1.4</span> Reordering, Duplicating and Removing Questions<a class="anchor" aria-label="anchor" href="#reordering-duplicating-and-removing-questions"><i class="fas fa-link"></i></a>
+</h3>
+There are a few other options for structuring questions to be aware of:
+<ul>
+<li>
+<strong>You can reorder the questions at any point.</strong>
+</li>
+</ul>
+You may have noticed that at the top right of each question builder there is a Position option. You can reorder questions whenever you want. You do not need to worry about data loss if you reorder questions.<br><div style="text-align: center;">
+<img src="_figs/5.20-reorder-questions.png">
+</div>
+<ul>
+<li>
+<strong>You can duplicate questions.</strong>
+</li>
+</ul>
+Why would you do this? Let’s say that you are entering a series of questions where the options are all the same (e.g., yes, no, not reported, not applicable). Rather than enter the same options again and again for multiple questions, you can simply click the duplicate button.
+<div style="text-align: center;">
+<img src="_figs/5.21-duplicate-question.png">
+</div>
+<span style="color: blue;">Note:</span> The new question will have the same question and instructions as the duplicated question. So, you will need to change both of these fields for the new question.
+<ul>
+<li>
+<strong>You can delete a question</strong>
+</li>
+</ul>
+Sometimes you create a question that you decide you do not need. To delete a question, simply click the Remove button at the top of the question builder for that question.<br><div style="text-align: center;">
+<img src="_figs/5.22-delete-question.png">
+</div>
+</div>
+<div id="question-structure-faqs" class="section level3" number="6.1.5">
+<h3>
+<span class="header-section-number">6.1.5</span> Question Structure FAQs<a class="anchor" aria-label="anchor" href="#question-structure-faqs"><i class="fas fa-link"></i></a>
+</h3>
+<span style="color: blue; font-weight: bold; font-size: 17px;">How do I know which options to allow for Radio Button or Checkbox options?</span>
+<p>
+Being able to create good Radio Button or Checkbox options assumes that <em>you already have some knowledge of the most common or most appropriate options before you begin to structure the question</em>. This means that in the full-text review stage of article selection, you should be looking for common patterns in options across the articles. So, for instance, if you are answering a diagnostic accuracy question and there are three (or so) common types of test device manufacturers, take note of those and create a structured question to allows the extractor to choose among them. Allowing for free-text entry in this situation will mean that you will have to go back at the analysis phase and reclassify the device manufacturer entries into discrete categories. Save time at the end by structuring the questions up front when at all possible.
+</p>
+<span style="color: blue; font-weight: bold; font-size: 17px;">When might it be best to use multiple rows or multiple columns in a question?</span>
+<p>
+VADRR allows for great flexibility in structuring how questions appear. Sometimes, you may not want a whole series of separate questions, but for multiple sub-questions to be “fit” within a single question. For instance, the following question seeks to collect detail on different aspects of an intervention, but then requires additional detail for each intervention component used.
+</p>
+<p>A multiple row and multiple column format was used to structure this question.<br><img src="_figs/srdr-5.1-question-building-9.png"></p>
+<p><span style="color: blue; font-weight: bold; font-size: 17px;">I just created a question and went to preview it, but I don’t see the new question. What did I do wrong?</span><br>
+All questions automatically “inherit” the key questions defined at the beginning of the project. If you add key questions later, you will have to select all key questions to which that question will apply. In the example below, the question about sleep apnea was added later in the project. The questions will not automatically appear if the key question the article addresses is only sleep apnea.</p>
+<div class="inline-figure">If a new Key Question is added, then you must return to the Extraction Form Builder to select all questions that should be extracted for that Key Question.
+<img src="_figs/5.24-key-question-to-access-question.png">
+</div>
+<p>The implication for selecting the Key Questions to which a question applies is that you can further customize your extraction template, making some questions appear for some key questions and other questions appear for other key questions.</p>
+<p><strong>Bottom line</strong>: Because data entry questions are linked to Key Questions, if a Key Question is NOT selected for a data entry question, then you will not see that data entry question show up on the data entry screen.</p>
+</div>
+<div id="piloting-your-questions-for-extractions" class="section level3" number="6.1.6">
+<h3>
+<span class="header-section-number">6.1.6</span> Piloting Your Questions for Extractions<a class="anchor" aria-label="anchor" href="#piloting-your-questions-for-extractions"><i class="fas fa-link"></i></a>
+</h3>
+<p>Finally, an important thing to keep in mind is that you will almost certainly <span style="color: blue">NOT</span> create the perfect data extraction template on the first try. Sometimes you’ll realize that there are questions (or options within questions) you should have included but didn’t. Sometimes you’ll find that the data extractors find the structure of a question confusing.</p>
+<p>So, <strong>all data extraction templates should be pilot tested</strong> by different team members. You can do this by assigning a couple of articles for extraction and then obtaining feedback from the team members. If you are extracting alone, plan to extract data from two to three research studies (making alterations in the extraction template), before you have a final extraction form.</p>
+<p><br></p>
+</div>
+</div>
+<div id="arm-suggest" class="section level2" number="6.2">
+<h2>
+<span class="header-section-number">6.2</span> Setting up Arm or Diagnostic Test Suggestions<a class="anchor" aria-label="anchor" href="#arm-suggest"><i class="fas fa-link"></i></a>
+</h2>
+<hr>
+<p>There are two tabs within VADRR that have special ways for setting up questions: Arms (or Diagnostic Tests) and Outcomes (or Diagnoses). These tabs have different names depending on whether you are carrying out a diagnostic accuracy project (in which case we are talking about Diagnostic Tests and Diagnoses) or any other type of project (in which case we are talking about Arms and Outcomes).</p>
+<p>Here, we’ll show you how to set up arms and provide some tips on useful ways to do this.</p>
+<div id="difference-between-arms-and-diagnostic-tests" class="section level3" number="6.2.1">
+<h3>
+<span class="header-section-number">6.2.1</span> Difference Between Arms and Diagnostic Tests<a class="anchor" aria-label="anchor" href="#difference-between-arms-and-diagnostic-tests"><i class="fas fa-link"></i></a>
+</h3>
+<p>First, here is the Arm setup page for projects that are <span style="color:blue">not</span> answering Diagnostic Accuracy questions.
+<img src="_figs/5.2.1-arms-suggestions-page.png"></p>
+<p>Here is the page for projects set up to answer Diagnostic Accuracy questions. You’ll notice that a couple of tabs are different.</p>
+<div class="inline-figure"><img src="_figs/5.2.2-DA-suggestions-tab.png"></div>
+<p>You’ll notice that what you are doing with Arms (or Diagnostic Tests) when you are setting up the template is providing the extractor with <strong>suggestions</strong>. Think of it as building out a menu that extractors can quickly and easily draw from when they are specifying the arms in a research study.</p>
+<p>The only field you need to enter here is the Name field (best not to enter any description as the descriptions are best left to the extractor and the peculiarities of the particular article).</p>
+</div>
+<div id="how-to-name-arms" class="section level3" number="6.2.2">
+<h3>
+<span class="header-section-number">6.2.2</span> How to Name Arms<a class="anchor" aria-label="anchor" href="#how-to-name-arms"><i class="fas fa-link"></i></a>
+</h3>
+<p>One thing to realize up front is that authors of different articles may name what are essentially the same arms differently. For instance, let’s say our PICO question is: Among people with mental illness, what is the effectiveness of a multi-component weight loss program compared to usual care for managing weight status? We have two studies that name what are essentially the same arms different ways:</p>
+<ol style="list-style-type: decimal">
+<li>Smith 2018: Treatment arm name, “Lifestyle Intervention”; Comparison arm name, “Usual care”</li>
+<li>Jones 2019: Treatment arm name, “Active Life Intervention”; Comparison arm name, “Standard care”</li>
+</ol>
+<p>The obvious problem here is that if the extractors name their arms exactly as the authors did, then when you go to carry out the analysis you will have to sort through all the different names to figure out which are your intervention of interest (the “I” in your PICO) and which are your comparator arms (the “C” in your PICO). If extractors are not provided <strong>structure</strong> and <strong>training</strong> up front, this can mean a huge amount of work cleaning up the arm names in the analysis phase of your project.</p>
+<div class="inline-figure">So, in the simplest situation where there is just one treatment (or exposure or test) condition and one comparator condition, then we can (1) use very simple and generic arm suggestions, and (2) train the extractors how to identify which is which.
+<img src="_figs/5.2.2-DA-suggestions-tab.png">
+</div>
+<p>If you are interested in a very specific and commonly labeled surgery, treatment, drug, etc., or, if the comparator condition is always placebo, then you can provide a suggest more descriptive than “innovative treatment” or “comparison treatment”. In this case, setting up arms is simple.</p>
+<div class="inline-figure">But things aren’t always this simple. What if you know that the article you are interested in sometimes have two intervention arms (e.g., nutrition versus nutrition + exercise)? Well, in this case you can plan ahead and provide a suggestion for a third intervention arm (again, either going completely generic or more descriptive depending on your project).
+<img src="_figs/srdr-5.2-arms-3.png">
+</div>
+<p><strong>Now, a word of caution</strong>: if you are using multiple generic labels for the innovative or (as above) “improvement” practice or intervention, and you are double extracting data from articles (i.e., two data extractors working separately on each article), then this can cause confusion at the Consolidation phase of the project (that is, where a third person reconciles differences between extractors). Extractor 1 might label an arm “Innovative Practice 1” while the other extractor labels the same arm “Improvement Practice 2”. In this case, recommend to the extractors that they use a short description to differentiate the two innovation arms (or, less frequently, two comparison arms).</p>
+<p>You may also want to have extractors communicate with each other ahead of time which arm will be labeled Practice 1 or Practice 2. If this is not feasible, then you may want to come up with a more descriptive (rather than generic) label for multi-arm studies. Again, training extractors ahead of time is key!</p>
+<p>But you may be wondering how to capture detail about the arms if you assign only generic labels. We’ll cover that in the next section.</p>
+</div>
+<div id="when-things-get-much-more-complicated-clinical-practice-guidelines" class="section level3" number="6.2.3">
+<h3>
+<span class="header-section-number">6.2.3</span> When Things Get Much More Complicated: Clinical Practice Guidelines<a class="anchor" aria-label="anchor" href="#when-things-get-much-more-complicated-clinical-practice-guidelines"><i class="fas fa-link"></i></a>
+</h3>
+<p>For single question systematic reviews, the above approach is generally fine. But, how about projects that encompass many questions (like creating Clinical Practice Guidelines)? In this case, you may need several arm suggestions. Always try to plan for how to make it easier on your data extractors (less frustration, less time, fewer mistakes). For example:</p>
+<div class="inline-figure"><img src="_figs/5.2.4-cpg-arms.png"></div>
+<p>Why not just have every question for a clinical practice guideline be its own separate project within VADRR? That is certainly an option and may be best for some projects. However, when article may apply to several clinical practice questions, it may be more efficient to keep them within the same project to avoid unnecessary duplicate (or triplicate!) extractions.</p>
+<p>Remember, you can use multiple key questions and can assign different questions (data entry fields) to these key questions. It takes a little planning and organization but may actually help you in the end.</p>
+</div>
+<div id="how-to-set-up-and-name-diagnostic-tests" class="section level3" number="6.2.4">
+<h3>
+<span class="header-section-number">6.2.4</span> How to Set Up and Name Diagnostic Tests<a class="anchor" aria-label="anchor" href="#how-to-set-up-and-name-diagnostic-tests"><i class="fas fa-link"></i></a>
+</h3>
+<p>If you are doing a Diagnostic Accuracy systematic review, there is a little prep work you need before you can set up the Diagnostic Tests (and Diagnoses).</p>
+<p>You first have to tell VADRR that your Results are going to be in the proper format (which is different than other types of systematic reviews). So, when you go to the Results tab for the first time, you will see the following:</p>
+<div class="inline-figure"><img src="_figs/5.2.5-stadard-project-type.png"></div>
+<div class="inline-figure">Simply use the dropdown for the Extraction forms project type field and select Diagnostic Test and click the Update Extraction Form Type. You will then see the following:
+<img src="_figs/5.2.6-select-diagnostic.png">
+</div>
+<p>When naming the Diagnostic Tests, the same basic principles apply that we mentioned when naming Arms: keep it simple.</p>
+<p>For instance, if you are familiar with polymerase chain reaction (PCR) tests, you will know that there are different types. Rather than have extractors enter lots of detail about the tests (or, heaven forbid, give what is essentially the same test different names) in the Diagnostic Tests page, you should keep the test suggestions simple (e.g., tests of a common <strong>type</strong>, like PCR or blood culture) and capture detail on the tests in the Diagnostic Test Details page.</p>
+<p><br></p>
+</div>
+</div>
+<div id="arms-details" class="section level2" number="6.3">
+<h2>
+<span class="header-section-number">6.3</span> The Importance of Arms or Diagnostic Test Details<a class="anchor" aria-label="anchor" href="#arms-details"><i class="fas fa-link"></i></a>
+</h2>
+<hr>
+<p>Treatments, interventions or tests are rarely exactly the same between studies. For example:</p>
+<p style="padding-left: 40px">
+<strong>Drug studies:</strong> dosage, timing, length of treatment may all vary somewhat between studies.
+</p>
+<p style="padding-left: 40px">
+<strong>Interventions:</strong> the same general surgery may differ somewhat in technique between studies. Some interventions may include multiple components and may combine components in different ways across different studies.
+</p>
+<p style="padding-left: 40px">
+<strong>Diagnostic accuracy studies:</strong> test manufacturers, analytic and pre-analytic procedures may vary between studies.
+</p>
+<p>If you were thinking ahead when we were talking about using generic suggestions for arms, you may have wondered, “How can we capture the details of differences between arms?”</p>
+<p>This is where the Arm (or Diagnostic Test) Detail tab comes in. Capturing details about differences between arms is going to be vital in the analysis phase because you are capturing information that may explain a substantial amount of the heterogeneity in a meta-analysis. Essentially, you want to use the Arm Details tab to not merely capture details on the different arms, you want to capture differences among studies in how the treatments, interventions, tests or exposures were carried out or measured.</p>
+<p><span style="color: blue;">These differences can be used later to define the subgroup analyses (or serve as covariates in a meta-regression) for your meta-analyses later in the project!</span></p>
+<p>In your protocol (assuming you have a protocol), you will likely have defined any number of characteristics that might serve as effect modifiers. You will capture detail on most of these characteristics on the Arms Details or Test Details tab.</p>
+<p>It bears repeating: capturing this detail may prove to be a huge benefit in the analysis phase.</p>
+<div id="what-details-should-you-capture-in-the-arms-or-diagnostic-test-details-tab" class="section level3" number="6.3.1">
+<h3>
+<span class="header-section-number">6.3.1</span> What Details Should You Capture in the Arms or Diagnostic Test Details Tab?<a class="anchor" aria-label="anchor" href="#what-details-should-you-capture-in-the-arms-or-diagnostic-test-details-tab"><i class="fas fa-link"></i></a>
+</h3>
+<p>This depends heavily on your purpose and questions (and, as noted above, what you defined in your protocol). It also assumes you have an understanding of what differences might actually make a difference in the results of different studies.</p>
+<p>Below, we offer some suggestions for types of Arm Detail questions based on different types of systematic review questions.</p>
+<h4>
+Treatment
+<a class="anchor" aria-label="anchor" href="#what-details-should-you-capture-in-the-arms-or-diagnostic-test-details-tab"><i class="fas fa-link"></i></a>
+</h4>
+<ul>
+<li>Dosage (how much? how long? how often?)</li>
+<li>Technique</li>
+<li>Provider (e.g., physician, physical therapist, nurse, dietitian, etc.)</li>
+<li>Mode of treatment (e.g., with counseling: face to face? in person?)</li>
+<li>Intervention format (e.g., individual sessions, group sessions, mixed?)</li>
+</ul>
+<h4>
+Interventions
+<a class="anchor" aria-label="anchor" href="#what-details-should-you-capture-in-the-arms-or-diagnostic-test-details-tab"><i class="fas fa-link"></i></a>
+</h4>
+<ul>
+<li>If multi-component interventions, what are the different components (e.g., drug, dietary, physical activity, counseling, etc.)?</li>
+<li>Techniques for providing the intervention (e.g., with physical activity: walking versus aerobic exercise versus strength training, etc.)</li>
+<li>If intervention chains (i.e., sequenced practices), which components in the intervention chain are included (e.g., pre-analytic procedures –&gt; organism identification –&gt; organism susceptibility –&gt; stewardship or communication to treating clinician –&gt; treatment technique)?</li>
+<li>Dosage (how much? how long? how often?)</li>
+<li>Provider (e.g., physician, physical therapist, nurse, dietitian, etc.)</li>
+<li>Mode of treatment (e.g., with counseling: face to face? in person?)</li>
+<li>Intervention format (e.g., individual sessions, group sessions, mixed?)</li>
+</ul>
+<h4>
+Diagnostic Accuracy
+<a class="anchor" aria-label="anchor" href="#what-details-should-you-capture-in-the-arms-or-diagnostic-test-details-tab"><i class="fas fa-link"></i></a>
+</h4>
+<ul>
+<li>Test manufacturer</li>
+<li>Pre-analytic procedures (e.g., for diagnosis of C diff, was there a requirement for unformed stools prior to the test request?)</li>
+<li>Differences in analytic technique</li>
+</ul>
+<h4>
+Exposures
+<a class="anchor" aria-label="anchor" href="#what-details-should-you-capture-in-the-arms-or-diagnostic-test-details-tab"><i class="fas fa-link"></i></a>
+</h4>
+<ul>
+<li>Different methods of measuring the exposure (e.g., different methods of assessing dietary intake or methods of airborne hazard measurement)</li>
+<li>Other potential confounding variables (i.e., other sources of exposure or factors that could mitigate or modify the result)</li>
+</ul>
+<p>This list is not exhaustive, nor need every one of the suggested questions be asked in the different types of projects. The key, however, is to <span style="color: blue; font-weight:bold">plan ahead</span> before you begin building out your data extraction template for which details are likely to be important (which is to say, may perhaps affect the differences in results between subjects and studies).</p>
+<p>A couple of suggestions:</p>
+<p style="padding-left: 40px">
+<strong>If you are working as part of a team and have some knowledge of the topical area:</strong> plan to have a team discussion to identify Arm Details questions that should be extracted.
+</p>
+<p style="padding-left: 40px">
+<strong>If you are working alone and do not have a deep understanding of the topical area:</strong> during the full-text review phase of study selection, keep notes on differences you see among studies on the characteristics listed above. Reading and re-reading the articles may help you find patterns that you’ll want to capture at the data extraction phase.
+</p>
+<p><span style="color: blue;">One last thing</span>: the suggestions mentioned earlier in this resource for creating structured (versus free text) questions is particularly important for Arms Details. Using structured questions in Arm Details will allow you to easily sort and filter studies by their commonalities and differences. This will make it much easier to identify factors or covariates for subgroup meta-analyses.</p>
+<p><br></p>
+</div>
+</div>
+<div id="outcome-suggest" class="section level2" number="6.4">
+<h2>
+<span class="header-section-number">6.4</span> Setting up Outcome or Diagnoses Suggestions<a class="anchor" aria-label="anchor" href="#outcome-suggest"><i class="fas fa-link"></i></a>
+</h2>
+<hr>
+<p>Setting up the suggestions for Outcomes (or Diagnoses, if you are doing a Diagnostic Accuracy project) is very similar to setting up Arms, though there are a few other things to think about.</p>
+<p><strong>A first principle</strong> when setting up the Outcomes or Diagnoses tab is to suggest only the outcomes of interest. Authors generally report many different outcomes, but only some may be of interest for your project. Eager extractors or people new to carrying out systematic reviews may mistakenly think they need to extract every outcome reported in a study. So, if you set the suggestions ahead of time, then you can focus on only those and avoid wasted time.</p>
+<div id="setting-up-outcomes" class="section level3" number="6.4.1">
+<h3>
+<span class="header-section-number">6.4.1</span> Setting Up Outcomes<a class="anchor" aria-label="anchor" href="#setting-up-outcomes"><i class="fas fa-link"></i></a>
+</h3>
+<div class="inline-figure">When you open the Outcomes template tab, you’ll notice that VADRR has additional fields not found on the Arms suggestion template.
+<img src="_figs/5.4.1-outcomes-page.png">
+</div>
+<p><strong>Suggest Domain</strong>: This is your outcome measurement of interest. For instance, if my PICO question were “Among children and adolescents, what is the effectiveness of a multi-component weight management program, compared to single-component interventions, in bringing about improvements in weight status?”, I would not want to enter “weight status” as a suggestion because there are a number of different ways of measuring weight status: BMI (body mass index), percent weight change, weight change, percent body fat, etc. So, use specific types of measurements as Domains rather than more general outcomes (like weight status).</p>
+<strong>Suggest Type of Domain</strong>: This is how the outcome measure is measured: as a <span style="color: blue;">continuous</span> measure, as a <span style="color: blue;">categorical</span> measure. Just by way of reminder:
+<ul>
+<li>
+<strong>Continuous variables</strong> are numeric variables that have an infinite number of values between any two values. For example, BMI can take any numeric value (e.g., 25.2, 25.3, 25.4)
+</li>
+<li>
+<strong>Categorical variables</strong> contain a finite number of categories or distinct groups. For example, the US Centers for Disease Control BMI Categories (underweight, normal weight, overweight, obese).
+</li>
+</ul>
+<p>There are also discrete (or counting) variables (e.g., numeric variables that have a countable number of values between any two values–like the number of hospital visits in a year), but in VADRR you would typically treat discrete variables as if they were continuous.</p>
+<p>When you click on the Suggest Type of Domain dropdown, you’ll see both of these options.</p>
+<div class="inline-figure"><img src="_figs/5.4.2-cat-v-cont.png"></div>
+Setting the Type of Outcome is important since VADRR structures the Results tab based on this setting. For instance,
+<ul>
+<li>
+For the BMI (continuous) outcome, SRDR+ will automatically set up the data input structure on the Results tab to “expect” a <strong>mean, standard deviation and number analyzed</strong>.
+</li>
+<li>
+For the BMI Category (categorical) outcome, SRDR+ will automatically set up the data input structure on the Results tab to “expect” <strong>number of “events” and number analyzed</strong>.
+</li>
+</ul>
+<div class="inline-figure">Below you can see how we’ve set up BMI and BMI Category as different variables (one continuous and one categorical).
+<img src="_figs/5.4.3-two-bmi.png">
+</div>
+<p><strong>What about the Suggest Specific Measurements or Suggest Timepoints fields?</strong> These will be useful if your project is focusing very specifically on <span style="color: blue"><em>only</em></span> certain measurements (e.g., only extracting visual analog scale measures for pain and excluding all other types of pain measurements), or if the project is <span style="color: blue"><em>only</em></span> interested in very specific timepoints (e.g., Baseline and one-year outcomes and ignoring any other timepoints). We have found it best to let the data extractors capture specific measures and timepoints as reported by the authors of the selected studies and then focus on differentiating between specific measures and timepoints at the analysis phase.</p>
+</div>
+<div id="setting-up-diagnoses" class="section level3" number="6.4.2">
+<h3>
+<span class="header-section-number">6.4.2</span> Setting up Diagnoses<a class="anchor" aria-label="anchor" href="#setting-up-diagnoses"><i class="fas fa-link"></i></a>
+</h3>
+<p>In case you missed the section about setting up for a Diagnostic Accuracy template, see section 5.2.2 of this resource. Hint: if you don’t see a Diagnoses tab (but, rather, see an Outcome tab), that means that you have not set up your project right. Pop back to the earlier section to see how to set up your template for a Diagnostic Accuracy project.</p>
+<div class="inline-figure">Setting up Diagnoses (the outcome of interest in a Diagnostic Accuracy study), is very simple. All you need is to name the diagnosis.
+<img src="_figs/5.4.4-diagnosis.png">
+</div>
+<p><br></p>
+<!-- ## What Other Fields Do I Need to Extract? {#other-fields} -->
+<!-- --- -->
+<!-- VADRR 5.5. What Other Fields Do I Need to Extract? -->
+<!-- There are three other tabs you will need to set up to extract data from your articles: Sample Characteristics, Outcome Details, and Risk of Bias Assessment. -->
+<!-- ### Sample Characteristics -->
+<!-- There are a set of questions about the makeup of a study’s sample that will apply to pretty much any systematic review project: -->
+<!-- <ul> -->
+<!-- <li>Age of the participants</li> -->
+<!-- <li>Sex (and/or gender) makeup of the sample</li> -->
+<!-- <li>N recruited (this is likely to be different than the N analyzed that you’ll capture in the Results tab)</li> -->
+<!-- <li>Dropout rate</li> -->
+<!-- </ul> -->
+<!-- Additionally, you will likely want to add a few questions that are specific to your question or study population. What might these be? **Think about what sample characteristics might possibly affect the results of the study**. -->
+<!-- For instance, if you are carrying out a Diagnostic Accuracy systematic review, consider questions like these: -->
+<!-- <img src="_figs/5.5.1-additional-DA-fields.png"> -->
+<!-- So, take some time to think about what other sample characteristics might plausibly affect the results. Best to capture those up front than wish you had later! -->
+<!-- ### Outcome Details -->
+<!-- Use the Outcome Details tab to collect information about (1) any covariates that the authors statistically controlled or adjusted for in the analyses, and (2) different tools that may be used to measure the same outcome. -->
+<!-- <img src="_figs/5.5.2-outcome-details.png"> -->
+<!-- Note that in the example above, the confounding variables question (Question 1) is free text since authors could statistically adjust for a broad range of variables. If in your project there are only one or two key confounders that should be adjusted for, then you may be able to get by with a structured question (e.g., radio button or checkbox). -->
+<!-- In Question 2, I know ahead of time which tools are commonly used to measure body composition in this area of research. Because of this, I can use a structured question. If you are unfamiliar with a field and so don’t know the common measures, pay close attention to these as you do your full text screening. What you learn in the full text review can help you structure your template. As always, plan ahead! -->
+<!-- ### Risk of Bias Assessment -->
+<!-- There are two ways to set up your Risk of Bias Assessment tab: -->
+<!-- <ul> -->
+<!-- <li>manually</li> -->
+<!-- <li>automatically.</li> -->
+<!-- In order to manually set up your risk of bias questions, you would create the list of questions just as you would for other tabs. We recommend that if you are using this approach that you work closely from the instrument guidance document to ensure you have the correct structure as well as provide contextualized instructions for your analysts. -->
+<!-- However, in order to make life a little easier, VADRR provides a structured entry method for some of the most commonly used risk of bias instruments. The available instruments for automatic set up are: -->
+<!-- <p style="padding-left: 40px"><strong>Randomized Studies</strong></p> -->
+<!-- <ul> -->
+<!-- <li>Revised Cochrane risk-of-bias tool for randomized trials (RoB 2)</li> -->
+<!-- <li>The RoB 2.0 Tool (cluster randomize, parallel group trials)</li> -->
+<!-- <li>Cochrane ROB (original)</li> -->
+<!-- <li>Jadad Controlled Clinical Trials 17:1-12 (1996) (<span style="color: #0000ff">not recommended</span>)</li> -->
+<!-- </ul> -->
+<!-- <p style="padding-left: 40px"><strong>Nonrandomized Studies</strong></p> -->
+<!-- <ul> -->
+<!-- <li>The Risk of Bias In Non-randomized Studies–of Interventions (ROBINS-I) assessment tool (Cohort-type studies)</li> -->
+<!-- <li>Modified Newcastle-Ottawa Quality Assessment Scale &#8211; Case Control Studies</li> -->
+<!-- <li>Modified Newcastle-Ottawa Quality Assessment Scale &#8211; Cohort Studies</li> -->
+<!-- <li>EPC (AHRQ Evidence-Based Practice Centers) Common Dimensions</li> -->
+<!-- <li>McMaster Quality Assessment Scale for Harms (McHarm)</li> -->
+<!-- </ul> -->
+<!-- <p style="padding-left: 40px"><strong>Diagnostic Accuracy Studies</strong></p> -->
+<!-- <ul> -->
+<!-- <li>Stard &#8211; quality for diagnostic tests (<span style="color: #0000ff">not recommended</span> as STARD is a writing guide and not a true risk of bias tool)</li> -->
+<!-- <li>QUADAS2</li> -->
+<!-- </ul> -->
+<!-- Setting up any of the above instruments is easy. On the Risk of Bias Assessment page of the Extraction Template builder, you will see a button “Add questions from a pre-defined list”: -->
+<!-- <img src="_figs/5.5.11-preselected-rob.png"> -->
+<!-- Clicking on this button will open a dialogue with the three different types of risk of bias tools: -->
+<!-- <img src="_figs/5.5.12-three-tool-types.png"> -->
+<!-- Click on the plus sign to open the set of tools under the appropriate option. For instance, let’s say that we wanted to add the ROBINS-I tool to our extraction template. We would expand the Nonrandomized Studies section and scroll to the ROBINS-I tool: -->
+<!-- <img src="_figs/5.5.13-robins-i.png"> -->
+<!-- By selecting the box in the gray header row, you will select all questions associated with that tool. Now, click the Submit button to add all the questions to your extraction template. -->
+<!-- <img src="_figs/5.5.14-submit-button-rob.png"> -->
+<!-- Two additional points to note: -->
+<!-- **You can edit the pre-defined questions**. Even if you use the tool to automatically populate your risk of bias tool, you can still edit the questions on the tab. Generally, you would want to not modify the standard tools, but their may be situations in which this is useful: -->
+<!-- <ul> -->
+<!-- <li>When the tool contains an &#8220;other bias&#8221; question (e.g., the original Cochrane RoB) and you want to be more specific about risks relevant to your particular project.</li> -->
+<!-- <li>When you need to repeat questions (e.g., to evaluate different outcomes separately&#8211; see below).</li> -->
+<!-- </ul> -->
+<!-- **You can add more than one tool**. This is relevant when your project contains more than one type of study design. For instance, if your project includes both randomized and non-randomized interventions, you may want to add both Cochrane ROB 2.0 and ROBINS-I. -->
+<!-- Happily, you can add multiple risk of bias tools to your Risk of Bias tab. This could be confusing for data extractors since they may not know exactly which questions apply to which designs. But you can get around this problem by including a screening question at the top of the Risk of Bias tab and then using the Dependencies function to turn on only the questions that apply to that particular design (see VADRR 5. Tips for Creating a Data Extraction Template). It is a little bit of work setting it up, but remember, you didn’t have to build out all the risk of bias questions by hand, so it’s not terrible. -->
+<!-- In the example below, we included both the ROBINS-I (for non-randomized studies) and the Cochrane ROB 2.0 tool (for randomized studies). We added dependencies to all the questions so that only those that apply to the selected tool highlight. By selecting one of the options in the screener questions, the data extractor will then “turn on” only the questions that apply to that design. -->
+<!-- <img src="_figs/5.5.15-grayed-out.png"> -->
+<!-- However, when one of the options is selected: -->
+<!-- <img src="_figs/5.5.16-robins-selected.png"> -->
+<!-- ### Repeating the Question by Arm or Outcome -->
+<!-- **Imagine a scenario**: You are needing to capture the different demographic characteristics for the different arms (e.g., the sex distribution could be different for each arm). Additionally, you are needing to capture the particular mix of intervention components for the different arms. This means you will need to repeat questions on the Sample Characteristics tab and the Arm Details tab for each arm. -->
+<!-- While you can simply repeat the question once for each arm (so duplicate the questions for intervention and control arms), this will be a problem if some of your studies have more than two arms (e.g., two intervention arms plus a control arm). -->
+<!-- A better way to do this is to capitalize on a functionality within VADRR that allows you to link some tabs (dependent tabs) to other tabs (independent tabs: Arms and Outcomes) so that questions will repeat as often as needed. This means that you will only have to set up the question once, but it will repeat within the dependent tab as often as necessary. -->
+<!-- Here is where that functionality comes into play. -->
+<!-- Let’s say you want to: -->
+<!-- <ul> -->
+<!-- <li>repeat every question on the Arms Details tab for each arm (e.g., if different interventions are carried out on different arms),</li> -->
+<!-- <li>repeat every question on the Sample Characteristics tab for each arm,</li> -->
+<!-- <li>repeat every question on the Outcome Details tab for each outcome (e.g., if you want to capture covariates separately for each outcome),</li> -->
+<!-- <li>carry out a separate risk of bias <em>by outcome</em> rather than for the whole article.</li> -->
+<!-- </ul> -->
+<!-- We will now show you how to setup your extraction template to do this. -->
+<!-- #### Repeating Arm Details and Sample Characteristics Questions for Each Arm -->
+<!-- On the Arms Details tab or the Sample Characteristics tab of the Extraction Template builder, you will see a section that asks, “Which independent section would you like to link to?” -->
+<!-- <img src="_figs/5.5.3-arm-dependencies.png"> -->
+<!-- This is the default setting in VADRR for both Arm Details and Sample Characteristics tabs. -->
+<!-- What does this look like on the front end? See the following example where the study compared soldiers deployed to the Southwest Asia Theater of Operations to healthy controls: -->
+<!-- <img src="_figs/5.5.4-repeating-questions.png"> -->
+<!-- So, rather than create the question twice in the extraction template, the question only needs to be entered into the template once but will repeat for each arm. This is particularly handy when the number of arms might vary (e.g., 2 arms versus 3 arms). -->
+<!-- Depending on your project, you may not need or want questions to repeat. In this case, you can simply change the setting to prevent repeating questions. To change this, we can alter the settings so that Arm Details are not linked to Arms and questions do not repeat. -->
+<!-- <img src="_figs/5.5.5-unlink-pages.png"> -->
+<!-- Additionally, you will want to uncheck the Display questions for each Arm defined in the extraction. -->
+<!-- <img src="_figs/5.5.6-uncheck-repeat.png"> -->
+<!-- With these settings in place, the questions on the Arm Details tab will not repeat. -->
+<!-- <span style=color: blue; font-weight: bold;">Note:</span> for most projects where you will be comparing arms, you will likely want to keep the VADRR default settings in place. -->
+<!-- #### Repeating Outcome Details Questions for Each Outcome -->
+<!-- The default setting for Outcome Details is a bit different than Arms Details. When you first open the Outcome Details tab in the Extraction Builder, you will see the following: -->
+<!-- <img src="_figs/5.5.7-outcome-details-default.png"> -->
+<!-- To ensure that the Outcome Details question will repeat for every outcome, we will use the pulldown to link to the Outcomes tab. -->
+<!-- <span style=color: blue; font-weight: bold;">Note:</span> if, as in the earlier example, you want to have separate structured questions that capture the measurement options for different outcomes, you will NOT want to repeat each question (e.g., the measurement tools to capture body composition are different than the measurement instruments used to capture pain level). -->
+<!-- #### Separate Risk of Bias Assessment for Each Outcome -->
+<!-- If you are following the US Agency for Healthcare Research and Quality standards for evaluating risk of bias, you will need to evaluate risk with respect to each outcome separately: -->
+<!-- <blockquote> -->
+<!-- <p style="text-align: left;padding-left: 40px">&#8220;<em>Allow for separate risk of bias ratings by outcome to account for outcome-specific variations in detection bias and selective outcome reporting bias. Categories of outcomes, such as harms and benefits, may have different sources of bias.</em>&#8221; (See <a href="https://effectivehealthcare.ahrq.gov/products/methods-guidance-bias-individual-studies/methods#toc-1">Assessing the Risk of Bias of Individual Studies in Systematic Reviews of Health Care Interventions</a>)</p> -->
+<!-- Similarly, [Cochrane](https://training.cochrane.org/handbook/current/chapter-07) requires separate risk of bias evaluation for each outcome. -->
+<!-- But, how to do this within VADRR? -->
+<!-- Unlike Arm Details or Outcome Details tabs, the default setting in VADRR for Risk of Bias Assessment is to not repeat questions by outcome. Here are the current default settings in VADRR: -->
+<!-- <img src="_figs/5.5.8-risk-of-bias-outcomelink-1.png"> -->
+<!-- Linking to Outcomes is done the same way as described above: simply use the pulldown to link to the Outcomes tab. -->
+<!-- <span style="color: blue;">**Note**: At the time of writing, even with the ROB section linked to the Outcomes tab, the questions will not automatically repeat. Thus, we have to use a workaround.</span> -->
+<!-- Not every question needs to be repeated for every outcome. For example, when using the Cochrane ROB 2.0 risk of bias tool, while it is possible that questions regarding blinding of participants to differ by outcome (e.g., a trial that combines a drug treatment [easily blinded] for cancer along with a behavioral intervention [not blinded] for a quality of life outcome), it is difficult to imagine randomization or allocation concealment questions differing by study outcome. However, questions pertaining specifically to outcome assessment (e.g., Domain 6 in the ROBINS-E instrument) will almost certainly differ depending on the outcome in question. -->
+<!-- Thus, while some questions will need to be repeated for each key outcome, other questions will not. -->
+<!-- **Work around solution**: Once you have set up the questions (for example, using the Add questions from a pre-defined list button, or by hand), you can manually add additional questions relevant for the different outcomes. In the following example, we added the Cochrane ROB 2.0 questions using the “Add questions from a pre-defined list” button. But we want to ask the question “What is the predicted direction of bias in measurement of the outcome?” question separately for two separate outcomes, “chemical failure” (i.e., return of cancer biomarkers after treatment) and “quality of life”. -->
+<!-- <!-- ADD INDENT BELOW -->
+<p>–&gt;
+<!-- **First**, we scroll down to the question to be repeated. --></p>
+<!-- **Second**, we alter the text of the question to specify which outcome the question refers to. -->
+<!-- **Third**, we click the Duplicate link to create a duplicate of this question (the new question will appear at the end of the ROB questions. -->
+<!-- <img src="_figs/5.5.9-duplicating-rob.png"> -->
+<!-- **Fourth**, I now scroll down to the new question and change “Chemical failure” to “Quality of Life”: -->
+<!-- <img src="_figs/5.5.10-new-duplicate.png"> -->
+<!-- <!-- ADD INDENT BELOW -->
+<p>–&gt;
+<!-- **Optional:** If you want the new question to follow the duplicated question, you can use the Position pulldown to change the question order. In this example, since the “Chemical failure” question is #34, I can change the “Quality of Life” question to #35. --></p>
+<!-- <span style="color: blue; font-weight: bold;">**Note:**</span> the use of all caps in the above examples is not necessary. It is a convention that we use to more clearly signal to the extractors/evaluators the different outcomes. -->
+<!-- Important Considerations for Evaluating ROB by Outcome -->
+<!-- **Which questions should be repeated?** There is no clear direction for this, but, in general, consider the specific questions (and Domains) within the risk of bias tool you are using and determine which are likely or possibly going to have different assessments for different outcomes. It is important to discuss and plan with the team and especially the team methodologist ahead of time to determine which risk of bias questions should be repeated for your project. -->
+<!-- **What is the optimal placement for repeated questions?** Again, there is no direction for this. It may be easier for your analysts to consider each of the questions sequentially, in which case you would likely want to keep the repeated questions next to each other in the risk of bias instrument. Alternatively, you could have repeated questions at the end of your risk of bias tool. A good strategy is to get input from your team regarding the structure they would find the most beneficial. -->
+<!-- **Can I assume analysts understand how to evaluate different outcomes?** In a word: <span style="color: blue;">No</span> Training and team discussion of the differences between the different outcomes (how they are measured, possible directions of bias, etc.) is critical. It is best to do the training ahead of time with a few example articles. Review analyst responses and discuss differences. -->
+
+</div>
+</div>
+</div>
+  <div class="chapter-nav">
+<div class="prev"><a href="screening-instructions-for-screeners.html"><span class="header-section-number">5</span> Screening: Instructions for Screeners</a></div>
+<div class="empty"></div>
+</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
+      <ul class="nav navbar-nav">
+<li>
+<a class="nav-link" href="#template"><span class="header-section-number">6</span> Tips for Creating a Data Extraction Template</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#structure-your-template-based-on-your-analytic-framework"><span class="header-section-number">6.0.1</span> Structure Your Template Based on Your Analytic Framework</a></li>
+<li><a class="nav-link" href="#organize-questions-within-tabs"><span class="header-section-number">6.0.2</span> Organize Questions within Tabs</a></li>
+<li><a class="nav-link" href="#goldilocks-principle-for-data-collection"><span class="header-section-number">6.0.3</span> Goldilocks Principle for Data Collection</a></li>
+<li><a class="nav-link" href="#use-dependencies-to-help-your-extractors"><span class="header-section-number">6.0.4</span> Use Dependencies to Help Your Extractors</a></li>
+<li><a class="nav-link" href="#getting-started-with-the-extraction-template-builder"><span class="header-section-number">6.0.5</span> Getting Started with the Extraction Template Builder</a></li>
+<li><a class="nav-link" href="#whats-next">What’s Next?</a></li>
+</ul>
+</li>
+<li>
+<a class="nav-link" href="#struc-ques"><span class="header-section-number">6.1</span> General Principles for Structuring Questions</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#how-to-structure-questions"><span class="header-section-number">6.1.1</span> How to Structure Questions</a></li>
+<li><a class="nav-link" href="#setting-up-the-questions"><span class="header-section-number">6.1.2</span> Setting Up the Questions</a></li>
+<li><a class="nav-link" href="#using-multiple-rows"><span class="header-section-number">6.1.3</span> Using Multiple Rows</a></li>
+<li><a class="nav-link" href="#reordering-duplicating-and-removing-questions"><span class="header-section-number">6.1.4</span> Reordering, Duplicating and Removing Questions</a></li>
+<li><a class="nav-link" href="#question-structure-faqs"><span class="header-section-number">6.1.5</span> Question Structure FAQs</a></li>
+<li><a class="nav-link" href="#piloting-your-questions-for-extractions"><span class="header-section-number">6.1.6</span> Piloting Your Questions for Extractions</a></li>
+</ul>
+</li>
+<li>
+<a class="nav-link" href="#arm-suggest"><span class="header-section-number">6.2</span> Setting up Arm or Diagnostic Test Suggestions</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#difference-between-arms-and-diagnostic-tests"><span class="header-section-number">6.2.1</span> Difference Between Arms and Diagnostic Tests</a></li>
+<li><a class="nav-link" href="#how-to-name-arms"><span class="header-section-number">6.2.2</span> How to Name Arms</a></li>
+<li><a class="nav-link" href="#when-things-get-much-more-complicated-clinical-practice-guidelines"><span class="header-section-number">6.2.3</span> When Things Get Much More Complicated: Clinical Practice Guidelines</a></li>
+<li><a class="nav-link" href="#how-to-set-up-and-name-diagnostic-tests"><span class="header-section-number">6.2.4</span> How to Set Up and Name Diagnostic Tests</a></li>
+</ul>
+</li>
+<li>
+<a class="nav-link" href="#arms-details"><span class="header-section-number">6.3</span> The Importance of Arms or Diagnostic Test Details</a><ul class="nav navbar-nav"><li><a class="nav-link" href="#what-details-should-you-capture-in-the-arms-or-diagnostic-test-details-tab"><span class="header-section-number">6.3.1</span> What Details Should You Capture in the Arms or Diagnostic Test Details Tab?</a></li></ul>
+</li>
+<li>
+<a class="nav-link" href="#outcome-suggest"><span class="header-section-number">6.4</span> Setting up Outcome or Diagnoses Suggestions</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#setting-up-outcomes"><span class="header-section-number">6.4.1</span> Setting Up Outcomes</a></li>
+<li><a class="nav-link" href="#setting-up-diagnoses"><span class="header-section-number">6.4.2</span> Setting up Diagnoses</a></li>
+</ul>
+</li>
+</ul>
+
+      <div class="book-extra">
+        <ul class="list-unstyled">
+          
+        </ul>
+</div>
+    </nav>
+</div>
+
+</div>
+</div> <!-- .container -->
+
+<footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>"<strong>Data Extraction in Systematic Reviews</strong>: Navigating VADRR" was written by James Scott Parrott. </p>
+  </div>
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>This book was built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package.</p>
+  </div>
+
+</div></div>
+</footer>
+</body>
+</html>

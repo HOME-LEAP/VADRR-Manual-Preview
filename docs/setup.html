@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Chapter 2 Setting Up Your Project | Data Extraction in Systematic Reviews</title>
+<meta name="author" content="James Scott Parrott">
+<meta name="description" content="There are three things you need to do to set up your project in SRDR. Create the project and enter basic project information Create your key questions Enter the project members  2.1 Creating Your...">
+<meta name="generator" content="bookdown 0.43 with bs4_book()">
+<meta property="og:title" content="Chapter 2 Setting Up Your Project | Data Extraction in Systematic Reviews">
+<meta property="og:type" content="book">
+<meta property="og:url" content="https://home-leap.github.io/VADRR-Manual/setup.html">
+<meta property="og:description" content="There are three things you need to do to set up your project in SRDR. Create the project and enter basic project information Create your key questions Enter the project members  2.1 Creating Your...">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Chapter 2 Setting Up Your Project | Data Extraction in Systematic Reviews">
+<meta name="twitter:description" content="There are three things you need to do to set up your project in SRDR. Create the project and enter basic project information Create your key questions Enter the project members  2.1 Creating Your...">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.9.0/transition.js"></script><script src="libs/bs3compat-0.9.0/tabs.js"></script><script src="libs/bs3compat-0.9.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><script src="https://kit.fontawesome.com/757b392c5d.js" crossorigin="anonymous"></script><link rel="stylesheet" href="https://code.cdn.mozilla.net/fonts/fira.css">
+<style>
+
+    :root {
+      --background-color: #FFFEFA;
+      --text-color: #000;
+      --highlight-color: #277DB0;
+      --border-color: #999896;
+      --grey-color: #6C6C6C;
+      --line-color: #eee;
+      --bg-box: #f5f5f5;
+      --box-border-color: #eeeeee;
+      --code-bg: #f8f8f8;
+      --code-chunk-bg: linear-gradient(160deg,#f8f8f8 0, #f1f1f1 100%);
+      --code-text-color: #212529;
+      --hr-border-top: 1px solid rgba(0,0,0,0.1);
+      --table-text-color: #000;
+      --toc-active: #eee;
+      --form-color: #4D4C4B;
+      --form-background-color: #FFFEFA;
+      --form-border: 1px solid #999896;
+      --aa-cursor-background-color: #B2D7FF;
+    }
+
+
+    [data-theme="dark"] {
+      --background-color: #2b2b2b;
+      --text-color: #ffffff;
+      --highlight-color: #34a8ed;
+      --border-color: yellow;
+      --grey-color: #cfcfcf;
+      --line-color: #575757;
+      --bg-box: #474747;
+      --box-border-color: #474747;
+      --code-bg: #474747;
+      --code-chunk-bg: linear-gradient(160deg,#CDCDCD 0,#f1f1f1 100%);
+      --code-text-color: #ffffff;
+      --hr-border-top: 1px solid #575757;
+      --table-text-color: #ffffff;
+      --toc-active: #474747;
+      --form-color: #cfcfcf;
+      --form-background-color: #474747;
+      --form-border: 1px solid #575757;
+      --aa-cursor-background-color: #2b2b2b;
+    }
+
+    .algolia-autocomplete .aa-dropdown-menu .aa-suggestion {
+      color: var(--form-color);
+      border-bottom: 1px var(--form-border) solid;
+      background-color: var(--form-background-color);
+    }
+
+    .algolia-autocomplete .aa-dropdown-menu .aa-suggestion.aa-cursor {
+      background-color: var(--aa-cursor-background-color);
+    }
+
+    strong {
+      font-weight: 500;
+    }
+
+    .form-control {
+      color: var(--form-color);
+      background-color: var(--form-background-color);
+      border: var(--form-border);
+    }
+
+    .form-control:focus {
+      color: var(--text-color);
+      background-color: var(--form-background-color);
+      border: var(--form-border);
+    }
+
+
+    nav[data-toggle="toc"] .nav a.nav-link.active, nav[data-toggle="toc"] .nav .nav-link.active > li > a {
+        background-color: var(--toc-active);
+    }
+
+    .btn-circle.btn-md {
+      width: 50px;
+      height: 50px;
+      padding: 7px 10px;
+      border-radius: 25px;
+      font-size: 10px;
+      text-align: center;
+    }
+
+
+    .lightable-classic td {
+      color: var(--text-color);
+    }
+
+    .popover {
+      max-width: 40% !important;
+    }
+
+    .table {
+      color: var(--table-text-color);
+    }
+
+    hr {
+      border-top: var(--hr-border-top);
+    }
+
+    code {
+      background-color: var(--code-bg);
+      color: var(--code-text-color);
+    }
+
+    pre {
+      background-image: var(--code-chunk-bg);
+    }
+
+    body {
+      background-color: var(--background-color);
+      color: var(--text-color);
+    }
+
+    a {
+      color: var(--highlight-color);
+    }
+
+    .header-section-number {
+      color: var(--grey-color);
+    }
+
+    small.text-muted {
+      color: var(--grey-color) !important;
+    }
+
+
+    .firstcharacter {
+      color: var(--highlight-color);
+    }
+
+    p.caption {
+      color: var(--grey-color);
+    }
+
+    .figure {
+      border-top: 2px solid var(--line-color);
+      border-bottom: 2px solid var(--line-color);
+    }
+
+
+    .inline-figure {
+      border: 0;
+      box-shadow: none;
+    }
+
+    .boxinfo {
+      padding: 1em 1em 1em 3em;
+      margin-bottom: 10px;
+      background: var(--bg-box);
+      position:relative;
+      border-width: 3px;
+      border-style: solid;
+      border-color: var(--box-border-color);
+      border-radius: .25rem;
+    }
+
+    .boxinfo:before {
+        content: '\f0eb';
+        font-family: "Font Awesome 5 Free";
+        left:20px;
+        position:absolute;
+        font-size: 30px;
+        color: var(--highlight-color);
+     }
+
+    .boxempty {
+      padding: 1em 1em 1em 1.1em;
+      margin-bottom: 10px;
+      background: var(--bg-box);
+      position:relative;
+      border-width: 3px;
+      border-style: solid;
+      border-color: var(--box-border-color);
+      border-radius: .25rem;
+    }
+
+    .boxempty:before {
+        content: '\f0eb';
+        font-family: FontAwesome;
+        left:0px;
+        position:absolute;
+        font-size: 30px;
+        color: transparent;
+     }
+
+    .boximportant {
+      padding: 1em 1em 1em 3em;
+      margin-bottom: 10px;
+      background: var(--bg-box);
+      position:relative;
+      border-width: 3px;
+      border-style: solid;
+      border-color: var(--box-border-color);
+      border-radius: .25rem;
+    }
+
+    .boximportant:before {
+        content: '\f06a';
+        font-family: FontAwesome;
+        left:13px;
+        position:absolute;
+        font-size: 30px;
+        color: var(--highlight-color);
+     }
+
+    .boxreport {
+      padding: 1em 1em 1em 3em;
+      margin-bottom: 10px;
+      background: var(--bg-box);
+      position:relative;
+      border-width: 3px;
+      border-style: solid;
+      border-color: var(--box-border-color);
+      border-radius: .25rem;
+    }
+
+    .boxreport:before {
+        content: '\f570';
+        font-family: FontAwesome;
+        left:15px;
+        position:absolute;
+        font-size: 30px;
+        color: var(--highlight-color);
+     }
+
+    .boxdmetar {
+      padding: 1em 1em 1em 3em;
+      margin-bottom: 10px;
+      background: var(--bg-box);
+      position:relative;
+      border-width: 3px;
+      border-style: solid;
+      border-color: var(--box-border-color);
+      border-radius: .25rem;
+    }
+
+    .csl-entry {
+      margin-bottom: 20px;
+      padding-left: 1.5em;
+      text-indent:-1.5em;
+    }
+
+    .boxdmetar:before {
+        content: '\f4f7';
+        font-family: FontAwesome;
+        left:10px;
+        position:absolute;
+        font-size: 30px;
+        color: var(--highlight-color);
+     }
+
+    .boxquestion {
+      padding: 1em 1em 1em 3em;
+      margin-bottom: 10px;
+      background: var(--bg-box);
+      position:relative;
+      border-width: 3px;
+      border-style: solid;
+      border-color: var(--box-border-color);
+      border-radius: .25rem;
+    }
+
+    .boxquestion:before {
+        content: '\f059';
+        font-family: FontAwesome;
+        left:12px;
+        position:absolute;
+        font-size: 30px;
+        color: var(--highlight-color);
+     }
+
+    .mode-switch {
+      font-size: 0.9rem;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: .25rem;
+    }
+
+
+    .firstcharacter {
+      color: var(--highlight-color);
+      float: left;
+      font-size: 40px;
+      line-height: 50px;
+      padding-bottom: 2px;
+      padding-right: 8px;
+      padding-left: 2px;
+    }
+
+
+    .btn-circle.btn-sm {
+        width: 30px;
+        height: 30px;
+        padding: 6px 0px;
+        border-radius: 15px;
+        font-size: 20px;
+        text-align: center;
+    }
+    .btn-circle.btn-md {
+        width: 50px;
+        height: 50px;
+        padding: 7px 10px;
+        border-radius: 25px;
+        font-size: 20px;
+        text-align: center;
+    }
+    .btn-circle.btn-xl {
+        width: 60px;
+        height: 60px;
+        padding: 7px 7px;
+        border-radius: 35px;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    #critical-btn.btn-secondary {
+      background-color: var(--grey-color);
+      border-color: var(--grey-color);
+    }
+
+    .sticky-item {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+    }
+
+
+
+    </style>
+<link rel="shortcut icon" href="favicon.ico">
+<script type="text/x-mathjax-config">
+    const popovers = document.querySelectorAll('a.footnote-ref[data-toggle="popover"]');
+    for (let popover of popovers){
+      const div = document.createElement('div');
+      div.setAttribute('style', 'position: absolute; top: 0, left:0; width:0, height:0, overflow: hidden; visibility: hidden;');
+      div.innerHTML = popover.getAttribute('data-content');
+
+      // Will this work with TeX on its own line?
+      var has_math = div.querySelector("span.math");
+      if (has_math) {
+        document.body.appendChild(div);
+      	MathJax.Hub.Queue(["Typeset", MathJax.Hub, div]);
+      	MathJax.Hub.Queue(function(){
+          popover.setAttribute('data-content', div.innerHTML);
+      	})
+      }
+    }
+    </script><link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script><script type="text/javascript">
+      // Add switch element
+      document.addEventListener('DOMContentLoaded', function(event){
+        let darkSwitch = document.createElement('div');
+        darkSwitch.innerHTML = "<div class='sticky-item'><button type='button' id='critical-btn' class='btn btn-dark btn-circle btn-xl'>🌓</button></div>"
+        document.body.appendChild(darkSwitch);
+      })
+
+    $(document).ready(function() {
+
+        $("#critical-btn").click(function () {
+
+            if ($(this).hasClass('btn-dark')){
+                $('#critical-btn').removeClass('btn-dark').addClass('btn-secondary');
+                $(this).addClass('btn-secondary').removeClass('btn-dark');
+            }
+
+            else if ($(this).hasClass('btn-secondary')){
+                $('#critical-btn').removeClass('btn-secondary').addClass('btn-dark');
+                $(this).addClass('btn-dark').removeClass('btn-secondary');
+            }
+
+        })
+    })
+    </script><script type="text/javascript">
+      // Wait for document to load
+      document.addEventListener("DOMContentLoaded", function(event) {
+        document.documentElement.setAttribute("data-theme", "light");
+
+        // Get our button switcher
+        var themeSwitcher = document.getElementById("critical-btn");
+
+        // When our button gets clicked
+        themeSwitcher.onclick = function() {
+          // Get the current selected theme, on the first run
+          // it should be `light`
+          var currentTheme = document.documentElement.getAttribute("data-theme");
+
+          // Switch between `dark` and `light`
+          var switchToTheme = currentTheme === "dark" ? "light" : "dark"
+
+          // Set our currenet theme to the new one
+          document.documentElement.setAttribute("data-theme", switchToTheme);
+
+          // Save current selection
+          localStorage.setItem('themeMode', switchToTheme);
+
+        }
+      });
+
+      // keep selection across pages
+      document.addEventListener('DOMContentLoaded', function(event){
+        const currentTheme = localStorage.getItem('themeMode')
+        if (currentTheme === 'dark'){
+        document.documentElement.setAttribute("data-theme", 'dark');
+          if ($("#critical-btn").hasClass('btn-dark')) {
+            $('#critical-btn').removeClass('btn-dark').addClass('btn-secondary');
+            $('#critical-btn').addClass('btn-secondary').removeClass('btn-dark');
+          }
+        } else {
+        document.documentElement.setAttribute("data-theme", 'light');
+          if ($("#critical-btn").hasClass('btn-secondary')) {
+            $('#critical-btn').removeClass('btn-secondary').addClass('btn-dark');
+            $('#critical-btn').addClass('btn-dark').removeClass('btn-secondary');
+          }
+      }})
+    </script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
+    
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  </style>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="font-awesome.min.css">
+</head>
+<body data-spy="scroll" data-target="#toc">
+
+<div class="container-fluid">
+<div class="row">
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+
+    <div class="d-flex align-items-start justify-content-between">
+      <h1>
+        <a href="index.html" title="Navigating VADRR">Data Extraction in Systematic Reviews</a>:
+        <small class="text-muted">Navigating VADRR</small>
+      </h1>
+      <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
+    </div>
+
+    <div id="main-nav" class="collapse-lg">
+      <form role="search">
+        <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
+</form>
+
+      <nav aria-label="Table of contents"><h2>Table of contents</h2>
+        <ul class="book-toc list-unstyled">
+<li><a class="" href="index.html">About</a></li>
+<li class="book-part">Navigating VADRR</li>
+<li><a class="" href="start.html"><span class="header-section-number">1</span> Getting Started</a></li>
+<li><a class="active" href="setup.html"><span class="header-section-number">2</span> Setting Up Your Project</a></li>
+<li><a class="" href="upload.html"><span class="header-section-number">3</span> Uploading Article Citations</a></li>
+<li><a class="" href="vadrr-screener.html"><span class="header-section-number">4</span> Screening: Insructions for Screening Set Up (Project Leads)</a></li>
+<li><a class="" href="screening-instructions-for-screeners.html"><span class="header-section-number">5</span> Screening: Instructions for Screeners</a></li>
+<li><a class="" href="template.html"><span class="header-section-number">6</span> Tips for Creating a Data Extraction Template</a></li>
+</ul>
+
+        <div class="book-extra">
+          
+        </div>
+      </nav>
+</div>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="setup" class="section level1" number="2">
+<h1>
+<span class="header-section-number">2</span> Setting Up Your Project<a class="anchor" aria-label="anchor" href="#setup"><i class="fas fa-link"></i></a>
+</h1>
+<hr>
+<p>There are three things you need to do to set up your project in SRDR.</p>
+<ul>
+<li><a href="https://home-leap.github.io/VADRR-Manual/setup.html#creating-your-project">Create the project and enter basic project information</a></li>
+<li><a href="https://home-leap.github.io/VADRR-Manual/setup.html#enter-your-key-questions">Create your key questions</a></li>
+<li><a href="https://home-leap.github.io/VADRR-Manual/setup.html#enter-project-members-and-set-their-roles">Enter the project members</a></li>
+</ul>
+<div id="creating-your-project" class="section level2" number="2.1">
+<h2>
+<span class="header-section-number">2.1</span> Creating Your Project<a class="anchor" aria-label="anchor" href="#creating-your-project"><i class="fas fa-link"></i></a>
+</h2>
+<p>After registering for an VADRR account, you’ll be sent an email confirmation. Once you’ve confirmed your registration and logged in, you’ll be taken to your Projects page. You won’t see any projects listed just yet. So, you’ll need to create your first project. To do this, just click on the Create Project button.</p>
+<p><br></p>
+<div class="inline-figure"><img src="_figs/2.1-create-project.png"></div>
+<p><br></p>
+<p>Next, you’ll be prompted to give your new project a name and (if you want) a brief description. Then, just click the <strong>Submit</strong> button to create the project.</p>
+<div class="inline-figure"><img src="_figs/2.2-start-a-new-project.png"></div>
+<p>Note that the pulldown at just above the Submit button is populated with the default “Create an empty project.” However, evidence extractions created from other platforms (e.g., Distiller SR) can be archived in VADRR. The pulldown allows users to archive these projects.</p>
+<div class="inline-figure"><img src="_figs/2.3-archive-distiller.png"></div>
+<p>If you are creating a new project, you will not need to worry about using this.</p>
+<p>Once you click the Submit button, you will then be taken to a page where you can add details for your project.</p>
+<div class="inline-figure"><img src="_figs/2.4-project-details.png"></div>
+</div>
+<div id="enter-your-key-questions" class="section level2" number="2.2">
+<h2>
+<span class="header-section-number">2.2</span> Enter Your Key Questions<a class="anchor" aria-label="anchor" href="#enter-your-key-questions"><i class="fas fa-link"></i></a>
+</h2>
+<p>Next, you will want to set up the key questions for the project. Click on the Key Questions option under the Project Info tab.</p>
+<div class="inline-figure"><img src="_figs/2.5-key-question-pulldown.png"></div>
+<p>This will take you to the page to set up the Key Questions (e.g., PICO questions) for your project.</p>
+<div class="inline-figure"><img src="_figs/2.6-write-key-question.png"></div>
+<p>Once you have entered your Key Questions, you’ll have the option to begin building out your data extraction form. You’ll find this button at the bottom right of the Key Questions page.</p>
+<div class="inline-figure"><img src="_figs/2.7-build-extraction-button.png"></div>
+<p>But, before you begin creating your data extraction template, you may want to add additional members to your team. You can always add team members later, but while we are on the setup, let’s go ahead and see how to add members and set their project roles.</p>
+</div>
+<div id="enter-project-members-and-set-their-roles" class="section level2" number="2.3">
+<h2>
+<span class="header-section-number">2.3</span> Enter Project Members and Set Their Roles<a class="anchor" aria-label="anchor" href="#enter-project-members-and-set-their-roles"><i class="fas fa-link"></i></a>
+</h2>
+<p>Just as with the Project Information and the Key Questions, you’ll find the Members and Roles link at the top of the page under Project Info tab.</p>
+<p><img src="_figs/2.8-members-and-roles.png"><br></p>
+<p>When you open the Members &amp; Roles page, you will see the following.</p>
+<p><img src="_figs/2.9-member-set-up.png"><br></p>
+<p>We will walk through these options now.</p>
+<p><strong>First</strong>, you will need to enter the new team member’s ID (which will be the email they used to registered for VADRR) to the project. Once someone registers for VADRR, their email becomes their ID.</p>
+<div class="inline-figure"><img src="_figs/2.10-adding-new-member-pulldown.png"></div>
+<p><strong>Second</strong>, you’ll define the new team member’s role. Each role has the ability to do different things in the project.</p>
+<div class="line-block">    <strong>Leaders:</strong> Since you set up the project, you will be the default Leader and will have access to all functionalities within VADRR. You can have more than one Leader per project. However, you will want to be careful designating leaders. Because they can change anything in the project (and even delete the project!), this can cause confusion and problems. This is especially true for leaders who do not have experience with systematic review projects or VADRR. So, be judicious with designating someone a Leader.<br><br>
+   <strong>Consolidators:</strong> These are members whose primary job is to serve as a referee between duplicate (or triplicate, etc.) extractions. For instance, if articles for your project will be double extracted (i.e., have two people extracting the same article for quality assurance purposes), then the Consolidator is the person who will adjudicate between extractions when there is disagreement between extractors. Often, you want a third person not involved in the initial data extractions to serve as a quality check.<br><br>
+   <strong>Contributors:</strong> These members are the data extractors for the project. They can also serve as screeners for the project.<br><br>
+   <strong>Auditors:</strong> These are individuals who cannot make changes to the project, but who can view the project (e.g., as an additional quality assurance step).<br><br>
+   <strong>Experts:</strong> In the screening tool (see <a href="https://sites.rutgers.edu/shp-msst/srdr-4-screening/srdr-4-1-screening-tool-resources-for-team-leaders/">VADRR 4.0.1 Screening Tool Resources for Team Leaders</a>), you have the ability to differentiate topical experts from novices. Identifying topical experts can ensure that no article is screened without at least one expert viewing the article.<br>
+</div>
+<p>Here is a full description of the different things the different roles can do.</p>
+<div class="inline-figure"><img src="_figs/srdr-p2-set-up-11.png"></div>
+<p>Finally, once you’ve set the member’s role, just click <strong>Save Changes</strong>.</p>
+<p><strong>Note</strong>, if you ever need to add a new member to the project, you can always add them by clicking on the Project Details tab again and selecting the Members &amp; Roles link. You can also add/modify Keywords and Project Information at any time as well.</p>
+
+</div>
+</div>
+  <div class="chapter-nav">
+<div class="prev"><a href="start.html"><span class="header-section-number">1</span> Getting Started</a></div>
+<div class="next"><a href="upload.html"><span class="header-section-number">3</span> Uploading Article Citations</a></div>
+</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#setup"><span class="header-section-number">2</span> Setting Up Your Project</a></li>
+<li><a class="nav-link" href="#creating-your-project"><span class="header-section-number">2.1</span> Creating Your Project</a></li>
+<li><a class="nav-link" href="#enter-your-key-questions"><span class="header-section-number">2.2</span> Enter Your Key Questions</a></li>
+<li><a class="nav-link" href="#enter-project-members-and-set-their-roles"><span class="header-section-number">2.3</span> Enter Project Members and Set Their Roles</a></li>
+</ul>
+
+      <div class="book-extra">
+        <ul class="list-unstyled">
+          
+        </ul>
+</div>
+    </nav>
+</div>
+
+</div>
+</div> <!-- .container -->
+
+<footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>"<strong>Data Extraction in Systematic Reviews</strong>: Navigating VADRR" was written by James Scott Parrott. </p>
+  </div>
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>This book was built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package.</p>
+  </div>
+
+</div></div>
+</footer>
+</body>
+</html>
