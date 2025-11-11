@@ -473,8 +473,12 @@
 <li><a class="" href="setup.html"><span class="header-section-number">2</span> Setting Up Your Project</a></li>
 <li><a class="" href="upload.html"><span class="header-section-number">3</span> Uploading Article Citations</a></li>
 <li><a class="" href="vadrr-screener.html"><span class="header-section-number">4</span> Screening: Insructions for Screening Set Up (Project Leads)</a></li>
-<li><a class="" href="screening-instructions-for-screeners.html"><span class="header-section-number">5</span> Screening: Instructions for Screeners</a></li>
+<li><a class="" href="screener-instruc.html"><span class="header-section-number">5</span> Screening: Instructions for Screeners</a></li>
 <li><a class="active" href="template.html"><span class="header-section-number">6</span> Tips for Creating a Data Extraction Template</a></li>
+<li><a class="" href="enter-data.html"><span class="header-section-number">7</span> Entering Data</a></li>
+<li><a class="" href="results-out.html"><span class="header-section-number">8</span> Getting Your Results Out of VADRR</a></li>
+<li><a class="" href="dashboard.html"><span class="header-section-number">9</span> Using the Project Dashboard</a></li>
+<li><a class="" href="alt-method.html"><span class="header-section-number">10</span> Alternative Method for Assigning Articles for Extraction</a></li>
 </ul>
 
         <div class="book-extra">
@@ -902,141 +906,242 @@ For the BMI Category (categorical) outcome, SRDR+ will automatically set up the 
 <img src="_figs/5.4.4-diagnosis.png">
 </div>
 <p><br></p>
-<!-- ## What Other Fields Do I Need to Extract? {#other-fields} -->
-<!-- --- -->
-<!-- VADRR 5.5. What Other Fields Do I Need to Extract? -->
-<!-- There are three other tabs you will need to set up to extract data from your articles: Sample Characteristics, Outcome Details, and Risk of Bias Assessment. -->
-<!-- ### Sample Characteristics -->
-<!-- There are a set of questions about the makeup of a study’s sample that will apply to pretty much any systematic review project: -->
-<!-- <ul> -->
-<!-- <li>Age of the participants</li> -->
-<!-- <li>Sex (and/or gender) makeup of the sample</li> -->
-<!-- <li>N recruited (this is likely to be different than the N analyzed that you’ll capture in the Results tab)</li> -->
-<!-- <li>Dropout rate</li> -->
-<!-- </ul> -->
-<!-- Additionally, you will likely want to add a few questions that are specific to your question or study population. What might these be? **Think about what sample characteristics might possibly affect the results of the study**. -->
-<!-- For instance, if you are carrying out a Diagnostic Accuracy systematic review, consider questions like these: -->
-<!-- <img src="_figs/5.5.1-additional-DA-fields.png"> -->
-<!-- So, take some time to think about what other sample characteristics might plausibly affect the results. Best to capture those up front than wish you had later! -->
-<!-- ### Outcome Details -->
-<!-- Use the Outcome Details tab to collect information about (1) any covariates that the authors statistically controlled or adjusted for in the analyses, and (2) different tools that may be used to measure the same outcome. -->
-<!-- <img src="_figs/5.5.2-outcome-details.png"> -->
-<!-- Note that in the example above, the confounding variables question (Question 1) is free text since authors could statistically adjust for a broad range of variables. If in your project there are only one or two key confounders that should be adjusted for, then you may be able to get by with a structured question (e.g., radio button or checkbox). -->
-<!-- In Question 2, I know ahead of time which tools are commonly used to measure body composition in this area of research. Because of this, I can use a structured question. If you are unfamiliar with a field and so don’t know the common measures, pay close attention to these as you do your full text screening. What you learn in the full text review can help you structure your template. As always, plan ahead! -->
-<!-- ### Risk of Bias Assessment -->
-<!-- There are two ways to set up your Risk of Bias Assessment tab: -->
-<!-- <ul> -->
-<!-- <li>manually</li> -->
-<!-- <li>automatically.</li> -->
-<!-- In order to manually set up your risk of bias questions, you would create the list of questions just as you would for other tabs. We recommend that if you are using this approach that you work closely from the instrument guidance document to ensure you have the correct structure as well as provide contextualized instructions for your analysts. -->
-<!-- However, in order to make life a little easier, VADRR provides a structured entry method for some of the most commonly used risk of bias instruments. The available instruments for automatic set up are: -->
-<!-- <p style="padding-left: 40px"><strong>Randomized Studies</strong></p> -->
-<!-- <ul> -->
-<!-- <li>Revised Cochrane risk-of-bias tool for randomized trials (RoB 2)</li> -->
-<!-- <li>The RoB 2.0 Tool (cluster randomize, parallel group trials)</li> -->
-<!-- <li>Cochrane ROB (original)</li> -->
-<!-- <li>Jadad Controlled Clinical Trials 17:1-12 (1996) (<span style="color: #0000ff">not recommended</span>)</li> -->
-<!-- </ul> -->
-<!-- <p style="padding-left: 40px"><strong>Nonrandomized Studies</strong></p> -->
-<!-- <ul> -->
-<!-- <li>The Risk of Bias In Non-randomized Studies–of Interventions (ROBINS-I) assessment tool (Cohort-type studies)</li> -->
-<!-- <li>Modified Newcastle-Ottawa Quality Assessment Scale &#8211; Case Control Studies</li> -->
-<!-- <li>Modified Newcastle-Ottawa Quality Assessment Scale &#8211; Cohort Studies</li> -->
-<!-- <li>EPC (AHRQ Evidence-Based Practice Centers) Common Dimensions</li> -->
-<!-- <li>McMaster Quality Assessment Scale for Harms (McHarm)</li> -->
-<!-- </ul> -->
-<!-- <p style="padding-left: 40px"><strong>Diagnostic Accuracy Studies</strong></p> -->
-<!-- <ul> -->
-<!-- <li>Stard &#8211; quality for diagnostic tests (<span style="color: #0000ff">not recommended</span> as STARD is a writing guide and not a true risk of bias tool)</li> -->
-<!-- <li>QUADAS2</li> -->
-<!-- </ul> -->
-<!-- Setting up any of the above instruments is easy. On the Risk of Bias Assessment page of the Extraction Template builder, you will see a button “Add questions from a pre-defined list”: -->
-<!-- <img src="_figs/5.5.11-preselected-rob.png"> -->
-<!-- Clicking on this button will open a dialogue with the three different types of risk of bias tools: -->
-<!-- <img src="_figs/5.5.12-three-tool-types.png"> -->
-<!-- Click on the plus sign to open the set of tools under the appropriate option. For instance, let’s say that we wanted to add the ROBINS-I tool to our extraction template. We would expand the Nonrandomized Studies section and scroll to the ROBINS-I tool: -->
-<!-- <img src="_figs/5.5.13-robins-i.png"> -->
-<!-- By selecting the box in the gray header row, you will select all questions associated with that tool. Now, click the Submit button to add all the questions to your extraction template. -->
-<!-- <img src="_figs/5.5.14-submit-button-rob.png"> -->
-<!-- Two additional points to note: -->
-<!-- **You can edit the pre-defined questions**. Even if you use the tool to automatically populate your risk of bias tool, you can still edit the questions on the tab. Generally, you would want to not modify the standard tools, but their may be situations in which this is useful: -->
-<!-- <ul> -->
-<!-- <li>When the tool contains an &#8220;other bias&#8221; question (e.g., the original Cochrane RoB) and you want to be more specific about risks relevant to your particular project.</li> -->
-<!-- <li>When you need to repeat questions (e.g., to evaluate different outcomes separately&#8211; see below).</li> -->
-<!-- </ul> -->
-<!-- **You can add more than one tool**. This is relevant when your project contains more than one type of study design. For instance, if your project includes both randomized and non-randomized interventions, you may want to add both Cochrane ROB 2.0 and ROBINS-I. -->
-<!-- Happily, you can add multiple risk of bias tools to your Risk of Bias tab. This could be confusing for data extractors since they may not know exactly which questions apply to which designs. But you can get around this problem by including a screening question at the top of the Risk of Bias tab and then using the Dependencies function to turn on only the questions that apply to that particular design (see VADRR 5. Tips for Creating a Data Extraction Template). It is a little bit of work setting it up, but remember, you didn’t have to build out all the risk of bias questions by hand, so it’s not terrible. -->
-<!-- In the example below, we included both the ROBINS-I (for non-randomized studies) and the Cochrane ROB 2.0 tool (for randomized studies). We added dependencies to all the questions so that only those that apply to the selected tool highlight. By selecting one of the options in the screener questions, the data extractor will then “turn on” only the questions that apply to that design. -->
-<!-- <img src="_figs/5.5.15-grayed-out.png"> -->
-<!-- However, when one of the options is selected: -->
-<!-- <img src="_figs/5.5.16-robins-selected.png"> -->
-<!-- ### Repeating the Question by Arm or Outcome -->
-<!-- **Imagine a scenario**: You are needing to capture the different demographic characteristics for the different arms (e.g., the sex distribution could be different for each arm). Additionally, you are needing to capture the particular mix of intervention components for the different arms. This means you will need to repeat questions on the Sample Characteristics tab and the Arm Details tab for each arm. -->
-<!-- While you can simply repeat the question once for each arm (so duplicate the questions for intervention and control arms), this will be a problem if some of your studies have more than two arms (e.g., two intervention arms plus a control arm). -->
-<!-- A better way to do this is to capitalize on a functionality within VADRR that allows you to link some tabs (dependent tabs) to other tabs (independent tabs: Arms and Outcomes) so that questions will repeat as often as needed. This means that you will only have to set up the question once, but it will repeat within the dependent tab as often as necessary. -->
-<!-- Here is where that functionality comes into play. -->
-<!-- Let’s say you want to: -->
-<!-- <ul> -->
-<!-- <li>repeat every question on the Arms Details tab for each arm (e.g., if different interventions are carried out on different arms),</li> -->
-<!-- <li>repeat every question on the Sample Characteristics tab for each arm,</li> -->
-<!-- <li>repeat every question on the Outcome Details tab for each outcome (e.g., if you want to capture covariates separately for each outcome),</li> -->
-<!-- <li>carry out a separate risk of bias <em>by outcome</em> rather than for the whole article.</li> -->
-<!-- </ul> -->
-<!-- We will now show you how to setup your extraction template to do this. -->
-<!-- #### Repeating Arm Details and Sample Characteristics Questions for Each Arm -->
-<!-- On the Arms Details tab or the Sample Characteristics tab of the Extraction Template builder, you will see a section that asks, “Which independent section would you like to link to?” -->
-<!-- <img src="_figs/5.5.3-arm-dependencies.png"> -->
-<!-- This is the default setting in VADRR for both Arm Details and Sample Characteristics tabs. -->
-<!-- What does this look like on the front end? See the following example where the study compared soldiers deployed to the Southwest Asia Theater of Operations to healthy controls: -->
-<!-- <img src="_figs/5.5.4-repeating-questions.png"> -->
-<!-- So, rather than create the question twice in the extraction template, the question only needs to be entered into the template once but will repeat for each arm. This is particularly handy when the number of arms might vary (e.g., 2 arms versus 3 arms). -->
-<!-- Depending on your project, you may not need or want questions to repeat. In this case, you can simply change the setting to prevent repeating questions. To change this, we can alter the settings so that Arm Details are not linked to Arms and questions do not repeat. -->
-<!-- <img src="_figs/5.5.5-unlink-pages.png"> -->
-<!-- Additionally, you will want to uncheck the Display questions for each Arm defined in the extraction. -->
-<!-- <img src="_figs/5.5.6-uncheck-repeat.png"> -->
-<!-- With these settings in place, the questions on the Arm Details tab will not repeat. -->
-<!-- <span style=color: blue; font-weight: bold;">Note:</span> for most projects where you will be comparing arms, you will likely want to keep the VADRR default settings in place. -->
-<!-- #### Repeating Outcome Details Questions for Each Outcome -->
-<!-- The default setting for Outcome Details is a bit different than Arms Details. When you first open the Outcome Details tab in the Extraction Builder, you will see the following: -->
-<!-- <img src="_figs/5.5.7-outcome-details-default.png"> -->
-<!-- To ensure that the Outcome Details question will repeat for every outcome, we will use the pulldown to link to the Outcomes tab. -->
-<!-- <span style=color: blue; font-weight: bold;">Note:</span> if, as in the earlier example, you want to have separate structured questions that capture the measurement options for different outcomes, you will NOT want to repeat each question (e.g., the measurement tools to capture body composition are different than the measurement instruments used to capture pain level). -->
-<!-- #### Separate Risk of Bias Assessment for Each Outcome -->
-<!-- If you are following the US Agency for Healthcare Research and Quality standards for evaluating risk of bias, you will need to evaluate risk with respect to each outcome separately: -->
-<!-- <blockquote> -->
-<!-- <p style="text-align: left;padding-left: 40px">&#8220;<em>Allow for separate risk of bias ratings by outcome to account for outcome-specific variations in detection bias and selective outcome reporting bias. Categories of outcomes, such as harms and benefits, may have different sources of bias.</em>&#8221; (See <a href="https://effectivehealthcare.ahrq.gov/products/methods-guidance-bias-individual-studies/methods#toc-1">Assessing the Risk of Bias of Individual Studies in Systematic Reviews of Health Care Interventions</a>)</p> -->
-<!-- Similarly, [Cochrane](https://training.cochrane.org/handbook/current/chapter-07) requires separate risk of bias evaluation for each outcome. -->
-<!-- But, how to do this within VADRR? -->
-<!-- Unlike Arm Details or Outcome Details tabs, the default setting in VADRR for Risk of Bias Assessment is to not repeat questions by outcome. Here are the current default settings in VADRR: -->
-<!-- <img src="_figs/5.5.8-risk-of-bias-outcomelink-1.png"> -->
-<!-- Linking to Outcomes is done the same way as described above: simply use the pulldown to link to the Outcomes tab. -->
-<!-- <span style="color: blue;">**Note**: At the time of writing, even with the ROB section linked to the Outcomes tab, the questions will not automatically repeat. Thus, we have to use a workaround.</span> -->
-<!-- Not every question needs to be repeated for every outcome. For example, when using the Cochrane ROB 2.0 risk of bias tool, while it is possible that questions regarding blinding of participants to differ by outcome (e.g., a trial that combines a drug treatment [easily blinded] for cancer along with a behavioral intervention [not blinded] for a quality of life outcome), it is difficult to imagine randomization or allocation concealment questions differing by study outcome. However, questions pertaining specifically to outcome assessment (e.g., Domain 6 in the ROBINS-E instrument) will almost certainly differ depending on the outcome in question. -->
-<!-- Thus, while some questions will need to be repeated for each key outcome, other questions will not. -->
-<!-- **Work around solution**: Once you have set up the questions (for example, using the Add questions from a pre-defined list button, or by hand), you can manually add additional questions relevant for the different outcomes. In the following example, we added the Cochrane ROB 2.0 questions using the “Add questions from a pre-defined list” button. But we want to ask the question “What is the predicted direction of bias in measurement of the outcome?” question separately for two separate outcomes, “chemical failure” (i.e., return of cancer biomarkers after treatment) and “quality of life”. -->
-<!-- <!-- ADD INDENT BELOW -->
-<p>–&gt;
-<!-- **First**, we scroll down to the question to be repeated. --></p>
-<!-- **Second**, we alter the text of the question to specify which outcome the question refers to. -->
-<!-- **Third**, we click the Duplicate link to create a duplicate of this question (the new question will appear at the end of the ROB questions. -->
-<!-- <img src="_figs/5.5.9-duplicating-rob.png"> -->
-<!-- **Fourth**, I now scroll down to the new question and change “Chemical failure” to “Quality of Life”: -->
-<!-- <img src="_figs/5.5.10-new-duplicate.png"> -->
-<!-- <!-- ADD INDENT BELOW -->
-<p>–&gt;
-<!-- **Optional:** If you want the new question to follow the duplicated question, you can use the Position pulldown to change the question order. In this example, since the “Chemical failure” question is #34, I can change the “Quality of Life” question to #35. --></p>
-<!-- <span style="color: blue; font-weight: bold;">**Note:**</span> the use of all caps in the above examples is not necessary. It is a convention that we use to more clearly signal to the extractors/evaluators the different outcomes. -->
-<!-- Important Considerations for Evaluating ROB by Outcome -->
-<!-- **Which questions should be repeated?** There is no clear direction for this, but, in general, consider the specific questions (and Domains) within the risk of bias tool you are using and determine which are likely or possibly going to have different assessments for different outcomes. It is important to discuss and plan with the team and especially the team methodologist ahead of time to determine which risk of bias questions should be repeated for your project. -->
-<!-- **What is the optimal placement for repeated questions?** Again, there is no direction for this. It may be easier for your analysts to consider each of the questions sequentially, in which case you would likely want to keep the repeated questions next to each other in the risk of bias instrument. Alternatively, you could have repeated questions at the end of your risk of bias tool. A good strategy is to get input from your team regarding the structure they would find the most beneficial. -->
-<!-- **Can I assume analysts understand how to evaluate different outcomes?** In a word: <span style="color: blue;">No</span> Training and team discussion of the differences between the different outcomes (how they are measured, possible directions of bias, etc.) is critical. It is best to do the training ahead of time with a few example articles. Review analyst responses and discuss differences. -->
+</div>
+</div>
+<div id="other-fields" class="section level2" number="6.5">
+<h2>
+<span class="header-section-number">6.5</span> What Other Fields Do I Need to Extract?<a class="anchor" aria-label="anchor" href="#other-fields"><i class="fas fa-link"></i></a>
+</h2>
+<hr>
+<p>There are three other tabs you will need to set up to extract data from your articles: Sample Characteristics, Outcome Details, and Risk of Bias Assessment.</p>
+<div id="sample-characteristics" class="section level3" number="6.5.1">
+<h3>
+<span class="header-section-number">6.5.1</span> Sample Characteristics<a class="anchor" aria-label="anchor" href="#sample-characteristics"><i class="fas fa-link"></i></a>
+</h3>
+There are a set of questions about the makeup of a study’s sample that will apply to pretty much any systematic review project:
+<ul>
+<li>
+Age of the participants
+</li>
+<li>
+Sex (and/or gender) makeup of the sample
+</li>
+<li>
+N recruited (this is likely to be different than the N analyzed that you’ll capture in the Results tab)
+</li>
+<li>
+Dropout rate
+</li>
+</ul>
+<p>Additionally, you will likely want to add a few questions that are specific to your question or study population. What might these be? <strong>Think about what sample characteristics might possibly affect the results of the study</strong>.</p>
+<div class="inline-figure">For instance, if you are carrying out a Diagnostic Accuracy systematic review, consider questions like these:
+<img src="_figs/5.5.1-additional-DA-fields.png">
+</div>
+<p>So, take some time to think about what other sample characteristics might plausibly affect the results. Best to capture those up front than wish you had later!</p>
+</div>
+<div id="outcome-details" class="section level3" number="6.5.2">
+<h3>
+<span class="header-section-number">6.5.2</span> Outcome Details<a class="anchor" aria-label="anchor" href="#outcome-details"><i class="fas fa-link"></i></a>
+</h3>
+<div class="inline-figure">Use the Outcome Details tab to collect information about (1) any covariates that the authors statistically controlled or adjusted for in the analyses, and (2) different tools that may be used to measure the same outcome.
+<img src="_figs/5.5.2-outcome-details.png">
+</div>
+<p>Note that in the example above, the confounding variables question (Question 1) is free text since authors could statistically adjust for a broad range of variables. If in your project there are only one or two key confounders that should be adjusted for, then you may be able to get by with a structured question (e.g., radio button or checkbox).</p>
+<p>In Question 2, I know ahead of time which tools are commonly used to measure body composition in this area of research. Because of this, I can use a structured question. If you are unfamiliar with a field and so don’t know the common measures, pay close attention to these as you do your full text screening. What you learn in the full text review can help you structure your template. As always, plan ahead!</p>
+</div>
+<div id="risk-of-bias-assessment" class="section level3" number="6.5.3">
+<h3>
+<span class="header-section-number">6.5.3</span> Risk of Bias Assessment<a class="anchor" aria-label="anchor" href="#risk-of-bias-assessment"><i class="fas fa-link"></i></a>
+</h3>
+There are two ways to set up your Risk of Bias Assessment tab:
+<ul>
+<li>
+manually
+</li>
+<li>
+automatically
+</li>
+</ul>
+<p>In order to manually set up your risk of bias questions, you would create the list of questions just as you would for other tabs. We recommend that if you are using this approach that you work closely from the instrument guidance document to ensure you have the correct structure as well as provide contextualized instructions for your analysts.</p>
+<p>However, in order to make life a little easier, VADRR provides a structured entry method for some of the most commonly used risk of bias instruments. The available instruments for automatic set up are:</p>
+<strong>Randomized Studies</strong>
+<ul>
+<li>
+Revised Cochrane risk-of-bias tool for randomized trials (RoB 2)
+</li>
+<li>
+The RoB 2.0 Tool (cluster randomize, parallel group trials)
+</li>
+<li>
+Cochrane ROB (original)
+</li>
+<li>
+Jadad Controlled Clinical Trials 17:1-12 (1996) (<span style="color: #0000ff">not recommended</span>)
+</li>
+</ul>
+<strong>Nonrandomized Studies</strong>
+<ul>
+<li>
+The Risk of Bias In Non-randomized Studies–of Interventions (ROBINS-I) assessment tool (Cohort-type studies)
+</li>
+<li>
+Modified Newcastle-Ottawa Quality Assessment Scale – Case Control Studies
+</li>
+<li>
+Modified Newcastle-Ottawa Quality Assessment Scale – Cohort Studies
+</li>
+<li>
+EPC (AHRQ Evidence-Based Practice Centers) Common Dimensions
+</li>
+<li>
+McMaster Quality Assessment Scale for Harms (McHarm)
+</li>
+</ul>
+<strong>Diagnostic Accuracy Studies</strong>
+<ul>
+<li>
+Stard – quality for diagnostic tests (<span style="color: #0000ff">not recommended</span> as STARD is a writing guide and not a true risk of bias tool)
+</li>
+<li>
+QUADAS2
+</li>
+</ul>
+<div class="inline-figure">Setting up any of the above instruments is easy. On the Risk of Bias Assessment page of the Extraction Template builder, you will see a button “Add questions from a pre-defined list”:
+<img src="_figs/5.5.11-preselected-rob.png">
+</div>
+<div class="inline-figure">Clicking on this button will open a dialogue with the three different types of risk of bias tools:
+<img src="_figs/5.5.12-three-tool-types.png">
+</div>
+<div class="inline-figure">Click on the plus sign to open the set of tools under the appropriate option. For instance, let’s say that we wanted to add the ROBINS-I tool to our extraction template. We would expand the Nonrandomized Studies section and scroll to the ROBINS-I tool:
+<img src="_figs/5.5.13-robins-i.png">
+</div>
+<div class="inline-figure">By selecting the box in the gray header row, you will select all questions associated with that tool. Now, click the Submit button to add all the questions to your extraction template.
+<img src="_figs/5.5.14-submit-button-rob.png">
+</div>
+<p>Two additional points to note:</p>
+<strong>You can edit the pre-defined questions</strong>. Even if you use the tool to automatically populate your risk of bias tool, you can still edit the questions on the tab. Generally, you would want to not modify the standard tools, but their may be situations in which this is useful:
+<ul>
+<li>
+When the tool contains an “other bias” question (e.g., the original Cochrane RoB) and you want to be more specific about risks relevant to your particular project.
+</li>
+<li>
+When you need to repeat questions (e.g., to evaluate different outcomes separately– see below).
+</li>
+</ul>
+<p><strong>You can add more than one tool</strong>. This is relevant when your project contains more than one type of study design. For instance, if your project includes both randomized and non-randomized interventions, you may want to add both Cochrane ROB 2.0 and ROBINS-I.</p>
+<p>Happily, you can add multiple risk of bias tools to your Risk of Bias tab. This could be confusing for data extractors since they may not know exactly which questions apply to which designs. But you can get around this problem by including a screening question at the top of the Risk of Bias tab and then using the Dependencies function to turn on only the questions that apply to that particular design (see VADRR 5. Tips for Creating a Data Extraction Template). It is a little bit of work setting it up, but remember, you didn’t have to build out all the risk of bias questions by hand, so it’s not terrible.</p>
+<div class="inline-figure">In the example below, we included both the ROBINS-I (for non-randomized studies) and the Cochrane ROB 2.0 tool (for randomized studies). We added dependencies to all the questions so that only those that apply to the selected tool highlight. By selecting one of the options in the screener questions, the data extractor will then “turn on” only the questions that apply to that design.
+<img src="_figs/5.5.15-grayed-out.png">
+</div>
+<div class="inline-figure">However, when one of the options is selected:
+<img src="_figs/5.5.16-robins-selected.png">
+</div>
+</div>
+<div id="repeating-the-question-by-arm-or-outcome" class="section level3" number="6.5.4">
+<h3>
+<span class="header-section-number">6.5.4</span> Repeating the Question by Arm or Outcome<a class="anchor" aria-label="anchor" href="#repeating-the-question-by-arm-or-outcome"><i class="fas fa-link"></i></a>
+</h3>
+<p><strong>Imagine a scenario</strong>: You are needing to capture the different demographic characteristics for the different arms (e.g., the sex distribution could be different for each arm). Additionally, you are needing to capture the particular mix of intervention components for the different arms. This means you will need to repeat questions on the Sample Characteristics tab and the Arm Details tab for each arm.</p>
+<p>While you can simply repeat the question once for each arm (so duplicate the questions for intervention and control arms), this will be a problem if some of your studies have more than two arms (e.g., two intervention arms plus a control arm).</p>
+<p>A better way to do this is to capitalize on a functionality within VADRR that allows you to link some tabs (dependent tabs) to other tabs (independent tabs: Arms and Outcomes) so that questions will repeat as often as needed. This means that you will only have to set up the question once, but it will repeat within the dependent tab as often as necessary.</p>
+<p>Here is where that functionality comes into play.</p>
+Let’s say you want to:
+<ul>
+<li>
+repeat every question on the Arms Details tab for each arm (e.g., if different interventions are carried out on different arms),
+</li>
+<li>
+repeat every question on the Sample Characteristics tab for each arm,
+</li>
+<li>
+repeat every question on the Outcome Details tab for each outcome (e.g., if you want to capture covariates separately for each outcome),
+</li>
+<li>
+carry out a separate risk of bias <em>by outcome</em> rather than for the whole article.
+</li>
+</ul>
+<p>We will now show you how to setup your extraction template to do this.</p>
+<div id="repeating-arm-details-and-sample-characteristics-questions-for-each-arm" class="section level4" number="6.5.4.1">
+<h4>
+<span class="header-section-number">6.5.4.1</span> Repeating Arm Details and Sample Characteristics Questions for Each Arm<a class="anchor" aria-label="anchor" href="#repeating-arm-details-and-sample-characteristics-questions-for-each-arm"><i class="fas fa-link"></i></a>
+</h4>
+<div class="inline-figure">On the Arms Details tab or the Sample Characteristics tab of the Extraction Template builder, you will see a section that asks, “Which independent section would you like to link to?”
+<img src="_figs/5.5.3-arm-dependencies.png">
+</div>
+<p>This is the default setting in VADRR for both Arm Details and Sample Characteristics tabs.</p>
+<div class="inline-figure">What does this look like on the front end? See the following example where the study compared soldiers deployed to the Southwest Asia Theater of Operations to healthy controls:
+<img src="_figs/5.5.4-repeating-questions.png">
+</div>
+<p>So, rather than create the question twice in the extraction template, the question only needs to be entered into the template once but will repeat for each arm. This is particularly handy when the number of arms might vary (e.g., 2 arms versus 3 arms).</p>
+<div class="inline-figure">Depending on your project, you may not need or want questions to repeat. In this case, you can simply change the setting to prevent repeating questions. To change this, we can alter the settings so that Arm Details are not linked to Arms and questions do not repeat.
+<img src="_figs/5.5.5-unlink-pages.png">
+</div>
+<div class="inline-figure">Additionally, you will want to uncheck the Display questions for each Arm defined in the extraction.
+<img src="_figs/5.5.6-uncheck-repeat.png">
+</div>
+<p>With these settings in place, the questions on the Arm Details tab will not repeat.</p>
+<p><span style="color: blue; font-weight: bold;">Note:</span> for most projects where you will be comparing arms, you will likely want to keep the VADRR default settings in place.</p>
+</div>
+<div id="repeating-outcome-details-questions-for-each-outcome" class="section level4" number="6.5.4.2">
+<h4>
+<span class="header-section-number">6.5.4.2</span> Repeating Outcome Details Questions for Each Outcome<a class="anchor" aria-label="anchor" href="#repeating-outcome-details-questions-for-each-outcome"><i class="fas fa-link"></i></a>
+</h4>
+<div class="inline-figure">The default setting for Outcome Details is a bit different than Arms Details. When you first open the Outcome Details tab in the Extraction Builder, you will see the following:
+<img src="_figs/5.5.7-outcome-details-default.png">
+</div>
+<p>To ensure that the Outcome Details question will repeat for every outcome, we will use the pulldown to link to the Outcomes tab.</p>
+<p><span style="color: blue; font-weight: bold;">Note:</span> If, as in the earlier example, you want to have separate structured questions that capture the measurement options for different outcomes, you will NOT want to repeat each question (e.g., the measurement tools to capture body composition are different than the measurement instruments used to capture pain level).</p>
+</div>
+<div id="separate-risk-of-bias-assessment-for-each-outcome" class="section level4" number="6.5.4.3">
+<h4>
+<span class="header-section-number">6.5.4.3</span> Separate Risk of Bias Assessment for Each Outcome<a class="anchor" aria-label="anchor" href="#separate-risk-of-bias-assessment-for-each-outcome"><i class="fas fa-link"></i></a>
+</h4>
+If you are following the US Agency for Healthcare Research and Quality standards for evaluating risk of bias, you will need to evaluate risk with respect to each outcome separately:
+<blockquote>
+<p style="text-align: left;padding-left: 40px">
+“<em>Allow for separate risk of bias ratings by outcome to account for outcome-specific variations in detection bias and selective outcome reporting bias. Categories of outcomes, such as harms and benefits, may have different sources of bias.</em>” (See <a href="https://effectivehealthcare.ahrq.gov/products/methods-guidance-bias-individual-studies/methods#toc-1">Assessing the Risk of Bias of Individual Studies in Systematic Reviews of Health Care Interventions</a>)
+</p>
+<p>Similarly, <a href="https://training.cochrane.org/handbook/current/chapter-07">Cochrane</a> requires separate risk of bias evaluation for each outcome.</p>
+<p>But, how to do this within VADRR?</p>
+<div class="inline-figure">Unlike Arm Details or Outcome Details tabs, the default setting in VADRR for Risk of Bias Assessment is to not repeat questions by outcome. Here are the current default settings in VADRR:
+<img src="_figs/5.5.8-risk-of-bias-outcomelink-1.png">
+</div>
+<p>Linking to Outcomes is done the same way as described above: simply use the pulldown to link to the Outcomes tab.</p>
+<p><span style="color: blue;"><strong>Note</strong>: At the time of writing, even with the ROB section linked to the Outcomes tab, the questions will not automatically repeat. Thus, we have to use a workaround.</span></p>
+<p>Not every question needs to be repeated for every outcome. For example, when using the Cochrane ROB 2.0 risk of bias tool, while it is possible that questions regarding blinding of participants to differ by outcome (e.g., a trial that combines a drug treatment [easily blinded] for cancer along with a behavioral intervention [not blinded] for a quality of life outcome), it is difficult to imagine randomization or allocation concealment questions differing by study outcome. However, questions pertaining specifically to outcome assessment (e.g., Domain 6 in the ROBINS-E instrument) will almost certainly differ depending on the outcome in question.</p>
+<p>Thus, while some questions will need to be repeated for each key outcome, other questions will not.</p>
+<p><strong>Work around solution</strong>: Once you have set up the questions (for example, using the Add questions from a pre-defined list button, or by hand), you can manually add additional questions relevant for the different outcomes. In the following example, we added the Cochrane ROB 2.0 questions using the “Add questions from a pre-defined list” button. But we want to ask the question “What is the predicted direction of bias in measurement of the outcome?” question separately for two separate outcomes, “chemical failure” (i.e., return of cancer biomarkers after treatment) and “quality of life”.</p>
+<p style="padding-left: 40px">
+<strong>First</strong>, we scroll down to the question to be repeated.
+</p>
+<p style="padding-left: 40px">
+<strong>Second</strong>, we alter the text of the question to specify which outcome the question refers to.
+</p>
+<p style="padding-left: 40px">
+<strong>Third</strong>, we click the Duplicate link to create a duplicate of this question (the new question will appear at the end of the ROB questions.
+</p>
+<div class="inline-figure"><img src="_figs/5.5.9-duplicating-rob.png"></div>
+<p style="padding-left: 40px">
+<strong>Fourth</strong>, I now scroll down to the new question and change “Chemical failure” to “Quality of Life”:
+</p>
+<div class="inline-figure"><img src="_figs/5.5.10-new-duplicate.png"></div>
+<p style="padding-left: 40px">
+<strong>Optional:</strong> If you want the new question to follow the duplicated question, you can use the Position pulldown to change the question order. In this example, since the “Chemical failure” question is #34, I can change the “Quality of Life” question to #35.
+</p>
+<p><span style="color: blue; font-weight: bold;"><strong>Note:</strong></span> the use of all caps in the above examples is not necessary. It is a convention that we use to more clearly signal to the extractors/evaluators the different outcomes.</p>
+<p>Important Considerations for Evaluating ROB by Outcome</p>
+<p><strong>Which questions should be repeated?</strong> There is no clear direction for this, but, in general, consider the specific questions (and Domains) within the risk of bias tool you are using and determine which are likely or possibly going to have different assessments for different outcomes. It is important to discuss and plan with the team and especially the team methodologist ahead of time to determine which risk of bias questions should be repeated for your project.</p>
+<p><strong>What is the optimal placement for repeated questions?</strong> Again, there is no direction for this. It may be easier for your analysts to consider each of the questions sequentially, in which case you would likely want to keep the repeated questions next to each other in the risk of bias instrument. Alternatively, you could have repeated questions at the end of your risk of bias tool. A good strategy is to get input from your team regarding the structure they would find the most beneficial.</p>
+<p><strong>Can I assume analysts understand how to evaluate different outcomes?</strong> In a word: <span style="color: blue;">No</span> Training and team discussion of the differences between the different outcomes (how they are measured, possible directions of bias, etc.) is critical. It is best to do the training ahead of time with a few example articles. Review analyst responses and discuss differences.</p>
 
+</blockquote>
+</div>
 </div>
 </div>
 </div>
   <div class="chapter-nav">
-<div class="prev"><a href="screening-instructions-for-screeners.html"><span class="header-section-number">5</span> Screening: Instructions for Screeners</a></div>
-<div class="empty"></div>
+<div class="prev"><a href="screener-instruc.html"><span class="header-section-number">5</span> Screening: Instructions for Screeners</a></div>
+<div class="next"><a href="enter-data.html"><span class="header-section-number">7</span> Entering Data</a></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
       <ul class="nav navbar-nav">
@@ -1075,6 +1180,14 @@ For the BMI Category (categorical) outcome, SRDR+ will automatically set up the 
 <a class="nav-link" href="#outcome-suggest"><span class="header-section-number">6.4</span> Setting up Outcome or Diagnoses Suggestions</a><ul class="nav navbar-nav">
 <li><a class="nav-link" href="#setting-up-outcomes"><span class="header-section-number">6.4.1</span> Setting Up Outcomes</a></li>
 <li><a class="nav-link" href="#setting-up-diagnoses"><span class="header-section-number">6.4.2</span> Setting up Diagnoses</a></li>
+</ul>
+</li>
+<li>
+<a class="nav-link" href="#other-fields"><span class="header-section-number">6.5</span> What Other Fields Do I Need to Extract?</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#sample-characteristics"><span class="header-section-number">6.5.1</span> Sample Characteristics</a></li>
+<li><a class="nav-link" href="#outcome-details"><span class="header-section-number">6.5.2</span> Outcome Details</a></li>
+<li><a class="nav-link" href="#risk-of-bias-assessment"><span class="header-section-number">6.5.3</span> Risk of Bias Assessment</a></li>
+<li><a class="nav-link" href="#repeating-the-question-by-arm-or-outcome"><span class="header-section-number">6.5.4</span> Repeating the Question by Arm or Outcome</a></li>
 </ul>
 </li>
 </ul>
