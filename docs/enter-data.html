@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Chapter 7 Entering Data | Data Extraction in Systematic Reviews</title>
+<meta name="author" content="James Scott Parrott">
+<meta name="description" content="When you log into VADRR, you will be taken to your My Projects page. This has a list of all projects you are a member of. You have a number of options for interacting with the project:  Clicking...">
+<meta name="generator" content="bookdown 0.43 with bs4_book()">
+<meta property="og:title" content="Chapter 7 Entering Data | Data Extraction in Systematic Reviews">
+<meta property="og:type" content="book">
+<meta property="og:url" content="https://home-leap.github.io/VADRR-Manual/enter-data.html">
+<meta property="og:description" content="When you log into VADRR, you will be taken to your My Projects page. This has a list of all projects you are a member of. You have a number of options for interacting with the project:  Clicking...">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Chapter 7 Entering Data | Data Extraction in Systematic Reviews">
+<meta name="twitter:description" content="When you log into VADRR, you will be taken to your My Projects page. This has a list of all projects you are a member of. You have a number of options for interacting with the project:  Clicking...">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.9.0/transition.js"></script><script src="libs/bs3compat-0.9.0/tabs.js"></script><script src="libs/bs3compat-0.9.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><script src="https://kit.fontawesome.com/757b392c5d.js" crossorigin="anonymous"></script><link rel="stylesheet" href="https://code.cdn.mozilla.net/fonts/fira.css">
+<style>
+
+    :root {
+      --background-color: #FFFEFA;
+      --text-color: #000;
+      --highlight-color: #277DB0;
+      --border-color: #999896;
+      --grey-color: #6C6C6C;
+      --line-color: #eee;
+      --bg-box: #f5f5f5;
+      --box-border-color: #eeeeee;
+      --code-bg: #f8f8f8;
+      --code-chunk-bg: linear-gradient(160deg,#f8f8f8 0, #f1f1f1 100%);
+      --code-text-color: #212529;
+      --hr-border-top: 1px solid rgba(0,0,0,0.1);
+      --table-text-color: #000;
+      --toc-active: #eee;
+      --form-color: #4D4C4B;
+      --form-background-color: #FFFEFA;
+      --form-border: 1px solid #999896;
+      --aa-cursor-background-color: #B2D7FF;
+    }
+
+
+    [data-theme="dark"] {
+      --background-color: #2b2b2b;
+      --text-color: #ffffff;
+      --highlight-color: #34a8ed;
+      --border-color: yellow;
+      --grey-color: #cfcfcf;
+      --line-color: #575757;
+      --bg-box: #474747;
+      --box-border-color: #474747;
+      --code-bg: #474747;
+      --code-chunk-bg: linear-gradient(160deg,#CDCDCD 0,#f1f1f1 100%);
+      --code-text-color: #ffffff;
+      --hr-border-top: 1px solid #575757;
+      --table-text-color: #ffffff;
+      --toc-active: #474747;
+      --form-color: #cfcfcf;
+      --form-background-color: #474747;
+      --form-border: 1px solid #575757;
+      --aa-cursor-background-color: #2b2b2b;
+    }
+
+    .algolia-autocomplete .aa-dropdown-menu .aa-suggestion {
+      color: var(--form-color);
+      border-bottom: 1px var(--form-border) solid;
+      background-color: var(--form-background-color);
+    }
+
+    .algolia-autocomplete .aa-dropdown-menu .aa-suggestion.aa-cursor {
+      background-color: var(--aa-cursor-background-color);
+    }
+
+    strong {
+      font-weight: 500;
+    }
+
+    .form-control {
+      color: var(--form-color);
+      background-color: var(--form-background-color);
+      border: var(--form-border);
+    }
+
+    .form-control:focus {
+      color: var(--text-color);
+      background-color: var(--form-background-color);
+      border: var(--form-border);
+    }
+
+
+    nav[data-toggle="toc"] .nav a.nav-link.active, nav[data-toggle="toc"] .nav .nav-link.active > li > a {
+        background-color: var(--toc-active);
+    }
+
+    .btn-circle.btn-md {
+      width: 50px;
+      height: 50px;
+      padding: 7px 10px;
+      border-radius: 25px;
+      font-size: 10px;
+      text-align: center;
+    }
+
+
+    .lightable-classic td {
+      color: var(--text-color);
+    }
+
+    .popover {
+      max-width: 40% !important;
+    }
+
+    .table {
+      color: var(--table-text-color);
+    }
+
+    hr {
+      border-top: var(--hr-border-top);
+    }
+
+    code {
+      background-color: var(--code-bg);
+      color: var(--code-text-color);
+    }
+
+    pre {
+      background-image: var(--code-chunk-bg);
+    }
+
+    body {
+      background-color: var(--background-color);
+      color: var(--text-color);
+    }
+
+    a {
+      color: var(--highlight-color);
+    }
+
+    .header-section-number {
+      color: var(--grey-color);
+    }
+
+    small.text-muted {
+      color: var(--grey-color) !important;
+    }
+
+
+    .firstcharacter {
+      color: var(--highlight-color);
+    }
+
+    p.caption {
+      color: var(--grey-color);
+    }
+
+    .figure {
+      border-top: 2px solid var(--line-color);
+      border-bottom: 2px solid var(--line-color);
+    }
+
+
+    .inline-figure {
+      border: 0;
+      box-shadow: none;
+    }
+
+    .boxinfo {
+      padding: 1em 1em 1em 3em;
+      margin-bottom: 10px;
+      background: var(--bg-box);
+      position:relative;
+      border-width: 3px;
+      border-style: solid;
+      border-color: var(--box-border-color);
+      border-radius: .25rem;
+    }
+
+    .boxinfo:before {
+        content: '\f0eb';
+        font-family: "Font Awesome 5 Free";
+        left:20px;
+        position:absolute;
+        font-size: 30px;
+        color: var(--highlight-color);
+     }
+
+    .boxempty {
+      padding: 1em 1em 1em 1.1em;
+      margin-bottom: 10px;
+      background: var(--bg-box);
+      position:relative;
+      border-width: 3px;
+      border-style: solid;
+      border-color: var(--box-border-color);
+      border-radius: .25rem;
+    }
+
+    .boxempty:before {
+        content: '\f0eb';
+        font-family: FontAwesome;
+        left:0px;
+        position:absolute;
+        font-size: 30px;
+        color: transparent;
+     }
+
+    .boximportant {
+      padding: 1em 1em 1em 3em;
+      margin-bottom: 10px;
+      background: var(--bg-box);
+      position:relative;
+      border-width: 3px;
+      border-style: solid;
+      border-color: var(--box-border-color);
+      border-radius: .25rem;
+    }
+
+    .boximportant:before {
+        content: '\f06a';
+        font-family: FontAwesome;
+        left:13px;
+        position:absolute;
+        font-size: 30px;
+        color: var(--highlight-color);
+     }
+
+    .boxreport {
+      padding: 1em 1em 1em 3em;
+      margin-bottom: 10px;
+      background: var(--bg-box);
+      position:relative;
+      border-width: 3px;
+      border-style: solid;
+      border-color: var(--box-border-color);
+      border-radius: .25rem;
+    }
+
+    .boxreport:before {
+        content: '\f570';
+        font-family: FontAwesome;
+        left:15px;
+        position:absolute;
+        font-size: 30px;
+        color: var(--highlight-color);
+     }
+
+    .boxdmetar {
+      padding: 1em 1em 1em 3em;
+      margin-bottom: 10px;
+      background: var(--bg-box);
+      position:relative;
+      border-width: 3px;
+      border-style: solid;
+      border-color: var(--box-border-color);
+      border-radius: .25rem;
+    }
+
+    .csl-entry {
+      margin-bottom: 20px;
+      padding-left: 1.5em;
+      text-indent:-1.5em;
+    }
+
+    .boxdmetar:before {
+        content: '\f4f7';
+        font-family: FontAwesome;
+        left:10px;
+        position:absolute;
+        font-size: 30px;
+        color: var(--highlight-color);
+     }
+
+    .boxquestion {
+      padding: 1em 1em 1em 3em;
+      margin-bottom: 10px;
+      background: var(--bg-box);
+      position:relative;
+      border-width: 3px;
+      border-style: solid;
+      border-color: var(--box-border-color);
+      border-radius: .25rem;
+    }
+
+    .boxquestion:before {
+        content: '\f059';
+        font-family: FontAwesome;
+        left:12px;
+        position:absolute;
+        font-size: 30px;
+        color: var(--highlight-color);
+     }
+
+    .mode-switch {
+      font-size: 0.9rem;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: .25rem;
+    }
+
+
+    .firstcharacter {
+      color: var(--highlight-color);
+      float: left;
+      font-size: 40px;
+      line-height: 50px;
+      padding-bottom: 2px;
+      padding-right: 8px;
+      padding-left: 2px;
+    }
+
+
+    .btn-circle.btn-sm {
+        width: 30px;
+        height: 30px;
+        padding: 6px 0px;
+        border-radius: 15px;
+        font-size: 20px;
+        text-align: center;
+    }
+    .btn-circle.btn-md {
+        width: 50px;
+        height: 50px;
+        padding: 7px 10px;
+        border-radius: 25px;
+        font-size: 20px;
+        text-align: center;
+    }
+    .btn-circle.btn-xl {
+        width: 60px;
+        height: 60px;
+        padding: 7px 7px;
+        border-radius: 35px;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    #critical-btn.btn-secondary {
+      background-color: var(--grey-color);
+      border-color: var(--grey-color);
+    }
+
+    .sticky-item {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+    }
+
+
+
+    </style>
+<link rel="shortcut icon" href="favicon.ico">
+<script type="text/x-mathjax-config">
+    const popovers = document.querySelectorAll('a.footnote-ref[data-toggle="popover"]');
+    for (let popover of popovers){
+      const div = document.createElement('div');
+      div.setAttribute('style', 'position: absolute; top: 0, left:0; width:0, height:0, overflow: hidden; visibility: hidden;');
+      div.innerHTML = popover.getAttribute('data-content');
+
+      // Will this work with TeX on its own line?
+      var has_math = div.querySelector("span.math");
+      if (has_math) {
+        document.body.appendChild(div);
+      	MathJax.Hub.Queue(["Typeset", MathJax.Hub, div]);
+      	MathJax.Hub.Queue(function(){
+          popover.setAttribute('data-content', div.innerHTML);
+      	})
+      }
+    }
+    </script><link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script><script type="text/javascript">
+      // Add switch element
+      document.addEventListener('DOMContentLoaded', function(event){
+        let darkSwitch = document.createElement('div');
+        darkSwitch.innerHTML = "<div class='sticky-item'><button type='button' id='critical-btn' class='btn btn-dark btn-circle btn-xl'>🌓</button></div>"
+        document.body.appendChild(darkSwitch);
+      })
+
+    $(document).ready(function() {
+
+        $("#critical-btn").click(function () {
+
+            if ($(this).hasClass('btn-dark')){
+                $('#critical-btn').removeClass('btn-dark').addClass('btn-secondary');
+                $(this).addClass('btn-secondary').removeClass('btn-dark');
+            }
+
+            else if ($(this).hasClass('btn-secondary')){
+                $('#critical-btn').removeClass('btn-secondary').addClass('btn-dark');
+                $(this).addClass('btn-dark').removeClass('btn-secondary');
+            }
+
+        })
+    })
+    </script><script type="text/javascript">
+      // Wait for document to load
+      document.addEventListener("DOMContentLoaded", function(event) {
+        document.documentElement.setAttribute("data-theme", "light");
+
+        // Get our button switcher
+        var themeSwitcher = document.getElementById("critical-btn");
+
+        // When our button gets clicked
+        themeSwitcher.onclick = function() {
+          // Get the current selected theme, on the first run
+          // it should be `light`
+          var currentTheme = document.documentElement.getAttribute("data-theme");
+
+          // Switch between `dark` and `light`
+          var switchToTheme = currentTheme === "dark" ? "light" : "dark"
+
+          // Set our currenet theme to the new one
+          document.documentElement.setAttribute("data-theme", switchToTheme);
+
+          // Save current selection
+          localStorage.setItem('themeMode', switchToTheme);
+
+        }
+      });
+
+      // keep selection across pages
+      document.addEventListener('DOMContentLoaded', function(event){
+        const currentTheme = localStorage.getItem('themeMode')
+        if (currentTheme === 'dark'){
+        document.documentElement.setAttribute("data-theme", 'dark');
+          if ($("#critical-btn").hasClass('btn-dark')) {
+            $('#critical-btn').removeClass('btn-dark').addClass('btn-secondary');
+            $('#critical-btn').addClass('btn-secondary').removeClass('btn-dark');
+          }
+        } else {
+        document.documentElement.setAttribute("data-theme", 'light');
+          if ($("#critical-btn").hasClass('btn-secondary')) {
+            $('#critical-btn').removeClass('btn-secondary').addClass('btn-dark');
+            $('#critical-btn').addClass('btn-dark').removeClass('btn-secondary');
+          }
+      }})
+    </script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
+    
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  </style>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="font-awesome.min.css">
+</head>
+<body data-spy="scroll" data-target="#toc">
+
+<div class="container-fluid">
+<div class="row">
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+
+    <div class="d-flex align-items-start justify-content-between">
+      <h1>
+        <a href="index.html" title="Navigating VADRR">Data Extraction in Systematic Reviews</a>:
+        <small class="text-muted">Navigating VADRR</small>
+      </h1>
+      <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
+    </div>
+
+    <div id="main-nav" class="collapse-lg">
+      <form role="search">
+        <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
+</form>
+
+      <nav aria-label="Table of contents"><h2>Table of contents</h2>
+        <ul class="book-toc list-unstyled">
+<li><a class="" href="index.html">About</a></li>
+<li class="book-part">Navigating VADRR</li>
+<li><a class="" href="start.html"><span class="header-section-number">1</span> Getting Started</a></li>
+<li><a class="" href="setup.html"><span class="header-section-number">2</span> Setting Up Your Project</a></li>
+<li><a class="" href="upload.html"><span class="header-section-number">3</span> Uploading Article Citations</a></li>
+<li><a class="" href="vadrr-screener.html"><span class="header-section-number">4</span> Screening: Insructions for Screening Set Up (Project Leads)</a></li>
+<li><a class="" href="screener-instruc.html"><span class="header-section-number">5</span> Screening: Instructions for Screeners</a></li>
+<li><a class="" href="template.html"><span class="header-section-number">6</span> Tips for Creating a Data Extraction Template</a></li>
+<li><a class="active" href="enter-data.html"><span class="header-section-number">7</span> Entering Data</a></li>
+<li><a class="" href="results-out.html"><span class="header-section-number">8</span> Getting Your Results Out of VADRR</a></li>
+<li><a class="" href="dashboard.html"><span class="header-section-number">9</span> Using the Project Dashboard</a></li>
+<li><a class="" href="alt-method.html"><span class="header-section-number">10</span> Alternative Method for Assigning Articles for Extraction</a></li>
+</ul>
+
+        <div class="book-extra">
+          
+        </div>
+      </nav>
+</div>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="enter-data" class="section level1" number="7">
+<h1>
+<span class="header-section-number">7</span> Entering Data<a class="anchor" aria-label="anchor" href="#enter-data"><i class="fas fa-link"></i></a>
+</h1>
+<hr>
+<p>When you log into VADRR, you will be taken to your My Projects page. This has a list of all projects you are a member of. You have a number of options for interacting with the project:</p>
+<div class="inline-figure"><img src="_figs/6.1-main-screen-options.png"></div>
+<ul>
+<li>
+Clicking the <strong>project title</strong> will open the Project Dashboard (see )
+</li>
+<li>
+<strong>Edit Forms</strong> opens options to go to either the Screening Form Builder or the Extraction Form Builder
+</li>
+<li>
+<strong>Screening</strong> opens options to go to either the Abstract Screening or Full-text Screening tool (the number in parentheses indicates the number of citations currently in screening status)
+</li>
+<li>
+<strong>Extractions</strong> opens options to go to either Data Extractions (where analysts enter data from the articles) or the Comparison Tool (which allows consolidators to harmonize extractions and create the extraction of record). The number in parenthesis indicates the number of citations currently assigned to data analysts.
+</li>
+<li>
+<strong>Export &amp; Import</strong> opens options to a Quick Export menu or a more customizable version of the Export and Import tools
+</li>
+<li>
+<strong>Publication</strong> opens options to Request Publication of the project or SR-360 (a platform for sharing the review summary digitally and interactively)
+</li>
+</ul>
+<p>Typically, an analyst working on extracting articles will use the Extractions / Data Extractions to be taken to the page where they will do most of their work.</p>
+<div class="inline-figure"><img src="_figs/6.1-main-screen-options-1.png"></div>
+<div id="entering-data-and-registering-progress" class="section level2" number="7.1">
+<h2>
+<span class="header-section-number">7.1</span> Entering Data and Registering Progress<a class="anchor" aria-label="anchor" href="#entering-data-and-registering-progress"><i class="fas fa-link"></i></a>
+</h2>
+<p>Entering data is simple in VADRR.</p>
+<div class="inline-figure">First, select the key questions that the article applies to (if you have several questions, a particular article may not apply to them all).
+<img src="_figs/6.2-key-questions.png">
+</div>
+<p>Just click on whichever tab you want to work on and the data form will open. Simply begin to enter the data!</p>
+<p style="padding-left: 40px">
+<strong>Tip 1:</strong> It is best to have the PDF of the article open when you are doing the extraction. Copying and pasting into unstructured fields will help to prevent typos!
+</p>
+<p style="padding-left: 40px">
+<strong>Tip 2:</strong> You will need to enter information into the <strong>Arms</strong> and <strong>Outcomes</strong> tabs <span style="color: #0000ff"><em>before </em></span>you can enter any data into the Results tab (or any other dependent tab).
+</p>
+<p style="padding-left: 40px">
+<strong>Tip 3:</strong> Save the Risk of Bias tab for last. You will be in a much better position to critically appraise the study once you have a detailed understanding of the study (which you will get from extracting information for the other tabs).
+</p>
+<div class="inline-figure">In order to keep track of your progress, once you have completed the extraction for a tab, toggle the Draft/Completed button at the top. When you do this, your progress will show up on the Extractions page.
+<img src="_figs/6.3-toggle-draft.png">
+</div>
+<div class="inline-figure">The tab will now be marked as completed.
+<img src="_figs/6.4-completed.png">
+</div>
+</div>
+<div id="entering-arm-information" class="section level2" number="7.2">
+<h2>
+<span class="header-section-number">7.2</span> Entering Arm Information<a class="anchor" aria-label="anchor" href="#entering-arm-information"><i class="fas fa-link"></i></a>
+</h2>
+<div class="inline-figure">You can now simply enter a Name (required) and description of the arms, one at a time.
+<img src="_figs/6.5-arm-setup.png">
+</div>
+<p>However, rather than begin typing the names of the arms, first click on the Suggested Arms button. If the project has been set up with standard arm names (which is a good idea: see <a href="https://home-leap.github.io/VADRR-Manual/setup.html#outcome-suggest">VADRR 5.2. Setting up Arm or Diagnostic Test Suggestions</a>), then you should have a set of pre-set arm options to choose from. Simply clicking on one of the suggested arms will populate the arm Name and Description.
+<img src="_figs/6.6-suggested-arms.png"></p>
+<p>Continue until all arms have been added.</p>
+<p>As we pointed out in Section <a href="https://home-leap.github.io/VADRR-Manual/setup.html#outcome-suggest">VADRR 5.2. Setting up Arm or Diagnostic Test Suggestions</a>, you may want to leave the Description field blank and enter the descriptive detail about the arms in the Arm Details tab.</p>
+</div>
+<div id="setting-up-outcomes-1" class="section level2" number="7.3">
+<h2>
+<span class="header-section-number">7.3</span> Setting Up Outcomes<a class="anchor" aria-label="anchor" href="#setting-up-outcomes-1"><i class="fas fa-link"></i></a>
+</h2>
+<p>In the same way you selected from a list of Suggested Arms, you will similarly want to select from a list of Suggested Outcomes.</p>
+<p><span style="color: blue; font-weight: bold;">Note</span>: for team projects, having data extractors select from a list is VERY important. This will prevent multiple extractors naming the same outcome differently within the same article and will facilitate Consolidation and analysis later.
+<img src="_figs/6.7-outcome-setup.png"></p>
+<p>Now, notice that there are several fields that need to be specified for the Outcome:</p>
+<p style="padding-left: 40px">
+<strong>Type of Outcome:</strong> This field should be pre-populated with the type of measure (continuous or categorical). If you do not see anything in the Type of Outcome field, this means you did not set up the Type of Outcome when constructing the template. You may want to return to your template and fix that before proceeding. If, for some reason, you are entering an Outcome not previously defined in the template, use the pulldown to select either continuous or categorical.
+</p>
+<p style="padding-left: 40px">
+<strong>Domain:</strong> If you are selecting from the Suggested Outcome popup, this field should also be pre-populated. If, for some reason, you are entering an Outcome not previously defined in the template, simply type in the name of the outcome. Again, we recommend against directly typing into the Domain field. This could cause problems later at the Consolidation and analysis phases of the project.
+</p>
+<p style="padding-left: 40px">
+<strong>Specific Measurement:</strong> You may (but need not) enter a specific measurement here. For instance, there are several different tools for measuring pain and sometimes authors report more than one in the same article. If “pain” is an outcome, then you may want to enter the name of the tool (e.g., Visual Analogue Scale, Faces Scale, etc.). Note, you cannot select the same outcome from the Suggested Outcomes popup twice. So, if you did not set up your template with both pain scales in Specific Measurement, you will need to manually enter Pain and a different Specific Measurement from the one previously entered.
+</p>
+<p style="padding-left: 40px">
+<strong>Populations:</strong> Sometimes authors will present the results broken out by sub-populations. For instance, a childhood obesity study may report the results for girls and boys separately. Simply rename the existing Population (“All Participants” in the image above) and then click the<span style="color: #800080"> +Add Population</span> link just under the existing population name and add another population. This can be particularly handy for some diagnostic test outcomes where results are reported separately for different organisms. Note: if results are reported for the entire sample, you can leave the Population field just as it is.
+</p>
+<p style="padding-left: 40px">
+<strong>Timepoints:</strong> This field is <span style="color: #0000ff"><em>very</em> </span>important. SRDR+ uses the Timepoints to help structure the data entry structure of the Results tab. If you set this up wrong, you will not be able to enter data correctly into the Results tab. The first Timepoint (“Baseline”) is pre-populated but can be changed. You will want to add a separate timepoint (using the <span style="color: #800080">+Add Timepoint </span>link) for each measurement timepoint reported in the article (e.g., Baseline, 1 month, 3 months). The best way to enter Timepoints is to use a number as the name and the unit in the Unit field. For example:
+</p>
+<div class="inline-figure"><img src="_figs/6.8-timepoints.png"></div>
+<p>Once you have entered all the appropriate information into the fields, click Save. Note, continuous outcomes will show up as green and categorical outcomes will show up as blue in the upper box once they have been entered.</p>
+</div>
+<div id="entering-results" class="section level2" number="7.4">
+<h2>
+<span class="header-section-number">7.4</span> Entering Results<a class="anchor" aria-label="anchor" href="#entering-results"><i class="fas fa-link"></i></a>
+</h2>
+<p>VADRR is designed to take the information you entered in the Arms tab and the information you entered in the Outcomes tab and create a data entry matrix for you. VADRR will typically default to the most common categorical or continuous measures reported in research studies. So, for the BMI Category outcome in the example below, you can see that VADRR created a matrix that:</p>
+<ul>
+<li>Has a separate column for each Arm</li>
+<li>Has separate entry spaces for each timepoint</li>
+<li>Has “guessed” at what statistics were likely to have been reported for each timepoint</li>
+</ul>
+<div class="inline-figure">Based, then on the information we had entered in the Arms and Outcomes tabs, VADRR would create a data entry table like the one below for the BMI outcome.
+<img src="_figs/6.9-results-datagrid-1.png">
+</div>
+<div id="entering-descriptive-statistics" class="section level3" number="7.4.1">
+<h3>
+<span class="header-section-number">7.4.1</span> Entering Descriptive Statistics<a class="anchor" aria-label="anchor" href="#entering-descriptive-statistics"><i class="fas fa-link"></i></a>
+</h3>
+<p>Descriptive statistics are the statistics for each arm at each timepoint. To enter the values for each arm at each time point, simply type (or copy and paste) the values from the article into the appropriate cell in the data table. <span style="color: blue; font-weight: bold;">Note:</span> while VADRR will immediately automatically save data you type into the cells, you should see the cell background turn pale yellow as you enter and then a small “saved” message will appear. While rare, at times of very heavy server traffic, the save may take a moment.</p>
+<p><span style="color: blue; font-weight: bold;">Important Tip:</span> It is best to enter only numbers into the Results data fields. This will make data cleaning a bit easier. For instance, if “n=54” is entered into the Total (N analyzed) field, then when the data is downloaded, you will need to strip out “n=” in order to do the analysis. Save yourself a little time and enter only numbers.</p>
+<p>Now, authors will often report results using descriptive statistics that are not the VADRR “best guess”. For instance, if you defined the outcome as continuous, VADRR will typically create data entry cells for n analyzed, mean, and standard deviation (as above). However, very often data is not normally distributed so authors may report median and minimum/maximum or 25th/75th percentile (also called the Interquartile range or IQR). When this happens, <span style="color: blue;"><em>before</em> you enter any data</span>, you’ll need to edit the measures.</p>
+<div class="inline-figure"><img src="_figs/6.10-edit-measures.png"></div>
+<p>When you click <span style="color: purple;">(edit measures)</span>, a window will open and you will be able to either select from the most commonly reported statistics (simply select the boxes) or add a different measure.</p>
+<div class="inline-figure"><img src="_figs/6.11-edit-measures.png"></div>
+<p>Once you have entered the new measures, click update and you should see that your outcome statistics have changed in the main data entry table.</p>
+<div class="inline-figure"><img src="_figs/6.12-changed-timepoints.png"></div>
+</div>
+<div id="entering-within-arm-comparisons" class="section level3" number="7.4.2">
+<h3>
+<span class="header-section-number">7.4.2</span> Entering Within Arm Comparisons<a class="anchor" aria-label="anchor" href="#entering-within-arm-comparisons"><i class="fas fa-link"></i></a>
+</h3>
+<p>Before we show you how to enter within-arm comparisons, between-arm comparisons or Net (i.e., within-and-between) arm comparisons, it might be good to review what we mean by these terms by presenting some concrete examples.</p>
+<p>A Gentle Review of Different Types of Statistical Comparison
+First, let’s look at a table (taken from <a href="https://pubmed.ncbi.nlm.nih.gov/20102858/">Díaz et al 2010</a>).</p>
+<div class="inline-figure"><img src="_figs/6.13-types-of-statistics.png"></div>
+<p style="padding-left: 40px">
+The measures in the columns indicated by the<span style="color: #000000"> yellow box </span>are the <strong>descriptives</strong>. These are simply the statistics from each timepoint for each arm. These are what we talked about in the above section.
+</p>
+<p style="padding-left: 40px">
+The measures in the columns indicated by the <span style="color: #000000">purple box </span>are the <strong>within-arm measures</strong>. In other words, these are the change scores of the individuals in each arm (a) from baseline to 6-months and (b) from baseline to 12-months. For instance, the mean weight of the individuals in the “Lifestyle” arm decreased by -3.7±3.3 kg from baseline to 6-months.
+</p>
+<p style="padding-left: 40px">
+The measures in the columns indicated by the<span style="color: #000000"> black box </span>are the <strong>Net measures</strong> (sometimes called the within-and-between measures). These are the differences in the change scores between arms at a given time point. So, for instance, we saw that the “Lifestyle” arm decreased it’s average weight by -3.7±3.3 kg at 6-months and the “Control” arm increased their mean weight by 2.7±3.0 kg. The difference between these changes at 6-months is -6.4 (95% CI: -8.4, -4.5) — the left column in the black box.
+</p>
+<p><span style="color: blue; font-weight: bold;">Tip for meta-analyses:</span> Often, when you are carrying out a meta-analysis, you are generating the Net differences from the within-arm changes. In other words, what you’ll generally enter into a data matrix for a meta-analysis is <span style="color: blue;">not</span> the descriptives, but the within-arm change scores (and standard deviation of the change scores). For instance, in the data matrix for meta-analysis in R below, the values in the purple columns are not descriptives, but the mean change scores for the experimental (abbreviated as “Me”) and the control (abbreviated as “Mc”) arms.</p>
+<div class="inline-figure"><img src="_figs/6.14-measures-example.png"></div>
+<p>What this means is that any time you can (that is, when the authors report it), it is best to enter the change scores into VADRR.</p>
+<p>So, let’s look at how to do this.</p>
+<div class="inline-figure"><img src="_figs/6.15-add-comparisons.png"></div>
+<p>When I click on the Add Comparison button I see two dropdowns:</p>
+<div class="inline-figure"><img src="_figs/6.16-timepoint-dropdown.png"></div>
+<p>Here I will select the timepoint comparisons that the authors report. Using the Table 2 from the Diaz et al article (above), I’m going to focus on the 6-month changes (the green column).</p>
+<div class="inline-figure"><img src="_figs/6.17-select-6mo.png"></div>
+<p>Then, click Save Comparison and you will see a new data entry matrix for the change scores from baseline to 6 months.</p>
+<div class="inline-figure"><img src="_figs/6.18-withinarm-changes.png"></div>
+<p>Notice that we can also edit the measures if we need to (the “edit measures” link above the data entry cells). Now, I would do the same thing again to set up the Baseline to 12 mo outcome comparison.</p>
+<p><strong>Remember:</strong> If you will be carrying out a meta-analysis, you can capture the within-arm results and not bother with capturing the timepoint descriptives.</p>
+</div>
+<div id="entering-between-arm-comparisons" class="section level3" number="7.4.3">
+<h3>
+<span class="header-section-number">7.4.3</span> Entering Between Arm Comparisons<a class="anchor" aria-label="anchor" href="#entering-between-arm-comparisons"><i class="fas fa-link"></i></a>
+</h3>
+<p>The between-arm comparisons are typically just the differences between the arm measures at a single timepoint.</p>
+<p>Typically, you wouldn’t bother with entering between-arm comparisons as they would not be used directly in the meta-analysis. However, there are a couple of situations where you will want to set up the between-arm comparisons:</p>
+<ol>
+<li>
+<strong>Occasionally authors may only report these values.</strong> Thankfully, this is rare and are only meaningful under very special circumstances
+</li>
+<li>
+<strong>You may want or need to set up Net arm comparisons</strong> (see section 8.4.4)
+</li>
+<li>
+<strong>You may be capturing relative effect measures</strong> (e.g., odds ratios or hazard ratios), which are special types of between-arm comparisons that can be used in meta-analyses.
+</li>
+</ol>
+<p>To set up the between-arm comparisons, click on the Add Comparison button.</p>
+<div class="inline-figure"><img src="_figs/6.19-between-arm-button.png"></div>
+<p>When you do, a dropdown will appear above where the Add Comparison button was.</p>
+<div class="inline-figure"><img src="_figs/6.20-between-pulldown.png"></div>
+<p>Since I have only two arms in the Diaz et al article, I’m going to select my treatment (response) arm from the dropdown. When I do, another box will appear below where I can then select the comparison arm.</p>
+<div class="inline-figure"><img src="_figs/6.21-comparison-arm.png"></div>
+<p>Then, I’ll click the “Save comparison” button and will see data entry cells for the comparison:</p>
+<div class="inline-figure"><img src="_figs/6.22-between-arm-measures.png"></div>
+<div id="special-circumstance-setting-up-relative-measures" class="section level4" number="7.4.3.1">
+<h4>
+<span class="header-section-number">7.4.3.1</span> Special Circumstance: Setting Up Relative Measures<a class="anchor" aria-label="anchor" href="#special-circumstance-setting-up-relative-measures"><i class="fas fa-link"></i></a>
+</h4>
+<p>Depending on the question you are answering in your systematic review, you may want to extract relative measures (like an odds ratio, risk ratio, hazard ratio, etc.) These are between arm comparisons.</p>
+<p><span style="color: blue; font-weight: bold;">Important note:</span> to capture relative effect measures, your outcome will need to be defined as a <span style="color: blue"><em>categorical variable</em></span>. This may seem odd for something like a hazard ratio, but these relative measures are derived from categorical comparisons and so are treated as categorical variables in VADRR for data extraction.</p>
+<p>I’ll set up the comparisons just as I did above. Since this we are treating the relative measures as categorical variables, we’ll see different measures.</p>
+<div class="inline-figure"><img src="_figs/6.23-ors.png"></div>
+<p>By clicking on the “edit measures” link, a window will open up with the different relative measures.</p>
+<div class="inline-figure"><img src="_figs/6.24-adjusted-comparisons.png"></div>
+</div>
+</div>
+<div id="entering-within-and-between-net-arm-comparisons" class="section level3" number="7.4.4">
+<h3>
+<span class="header-section-number">7.4.4</span> Entering Within-and-Between (Net) Arm Comparisons<a class="anchor" aria-label="anchor" href="#entering-within-and-between-net-arm-comparisons"><i class="fas fa-link"></i></a>
+</h3>
+<p>Sometimes you may want to capture the within-and-between arm comparisons (also called Net Comparisons). As we noted above, these are the differences between the within-arm changes of our two comparison arms. You can think of it as the difference between the change trajectories of the two arms.</p>
+<p><span style="font-weight: bold;">Why might you need to enter this?</span> We just said that you can carry out a meta-analysis using the within-arm change values, so why would you want to bother with the Net comparisons?</p>
+<ul>
+<li>
+Sometimes, that is all that an author will report.
+</li>
+<li>
+Also, you can carry out a meta-analysis using the Net comparisons (indeed, the Net comparison is also known as the “treatment effect” and this is the value you would see in the forest plot of a meta-analysis).
+</li>
+<li>
+If some authors only report the net comparisons, then you will need to carry out your meta-analyses on the pre-calculated effect. This means you will need to use your statistical software to calculate these values for other articles that do not report the net comparison statistics for the meta-analysis.
+</li>
+</ul>
+<p>For an excellent overview of the difference between using the “Pre-calculated effect size data” (what we are calling Net comparisons) versus the “Raw effect size data” (the within-arm change data), see Chapter 4 of Harrer et al’s free online book <a href="https://bookdown.org/MathiasHarrer/Doing_Meta_Analysis_in_R/"><em>Doing Meta-Analysis in R: A Hands-on Guide</em></a>. See chapter 17 for very helpful resources for calculating values you will need for the meta-analysis.</p>
+<p><strong>How do we enter the Net comparisons?</strong></p>
+<p>If you have already set up both the within-arm and between-arm comparisons, then the Net comparison data entry cells will already be set up. As with our other comparisons, we can click on “edit measures” to change the measures to what the authors report.</p>
+<div class="inline-figure"><img src="_figs/6.25-net-comparisons.png"></div>
+
+</div>
+</div>
+</div>
+  <div class="chapter-nav">
+<div class="prev"><a href="template.html"><span class="header-section-number">6</span> Tips for Creating a Data Extraction Template</a></div>
+<div class="next"><a href="results-out.html"><span class="header-section-number">8</span> Getting Your Results Out of VADRR</a></div>
+</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#enter-data"><span class="header-section-number">7</span> Entering Data</a></li>
+<li><a class="nav-link" href="#entering-data-and-registering-progress"><span class="header-section-number">7.1</span> Entering Data and Registering Progress</a></li>
+<li><a class="nav-link" href="#entering-arm-information"><span class="header-section-number">7.2</span> Entering Arm Information</a></li>
+<li><a class="nav-link" href="#setting-up-outcomes-1"><span class="header-section-number">7.3</span> Setting Up Outcomes</a></li>
+<li>
+<a class="nav-link" href="#entering-results"><span class="header-section-number">7.4</span> Entering Results</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#entering-descriptive-statistics"><span class="header-section-number">7.4.1</span> Entering Descriptive Statistics</a></li>
+<li><a class="nav-link" href="#entering-within-arm-comparisons"><span class="header-section-number">7.4.2</span> Entering Within Arm Comparisons</a></li>
+<li><a class="nav-link" href="#entering-between-arm-comparisons"><span class="header-section-number">7.4.3</span> Entering Between Arm Comparisons</a></li>
+<li><a class="nav-link" href="#entering-within-and-between-net-arm-comparisons"><span class="header-section-number">7.4.4</span> Entering Within-and-Between (Net) Arm Comparisons</a></li>
+</ul>
+</li>
+</ul>
+
+      <div class="book-extra">
+        <ul class="list-unstyled">
+          
+        </ul>
+</div>
+    </nav>
+</div>
+
+</div>
+</div> <!-- .container -->
+
+<footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>"<strong>Data Extraction in Systematic Reviews</strong>: Navigating VADRR" was written by James Scott Parrott. </p>
+  </div>
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>This book was built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package.</p>
+  </div>
+
+</div></div>
+</footer>
+</body>
+</html>

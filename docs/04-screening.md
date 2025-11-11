@@ -2,7 +2,7 @@
 
 ------------------------------------------------------------------------
 
-This chapter is meant for team members setting up the screening tasks. For instructions for screeners, see XXX
+This chapter is meant for team members setting up the screening tasks. For instructions for screeners, see [VADRR 5. Screening: Instructions for Screeners](https://home-leap.github.io/VADRR-Manual/screening-instructions-for-screeners.html##screener-instruc).
 
 For many systematic reviews, a thorough search will result in hundreds or thousands of potential articles. The Institutes of Medicine guidelines indicate that title/abstract screening should be carried out by two or more members of the review team working independently (see Standards for Finding and Assessing Individual Studies [Standards for Finding and Assessing Individual Studies – Finding What Works in Health Care – NCBI Bookshelf](https://www.ncbi.nlm.nih.gov/books/NBK209517/#ddd00096).
 

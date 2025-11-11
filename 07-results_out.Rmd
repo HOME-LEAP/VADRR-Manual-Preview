@@ -6,10 +6,13 @@ Getting your data out of VADRR is simple.
 
 In the top navigation bar, look for the Export & Import pulldown. When you click on this, you will see two options:
 
+<div style="text-align: center">
 <img src="_figs/7.1-export-pulldown.png">
+</div>
 
 For most purposes, the quick menu will be sufficient, but we will go through both options.
-Quick Menu
+
+<h4 style="font-size:25px; ">Quick Menu</h4>
 Clicking the Quick Menu (top) option will open the following box:
 <img src="_figs/7.2-export-options.png">
 
@@ -26,7 +29,7 @@ Here you have two options:
 An example of a simple download of the screening data will look like the following:
 <img src="_figs/7.4-screening-dump.png">
 
-##Export & Import{-}
+## Export & Import{-}
 The full Export & Import option provides the ability to download your data (as above), but also provides the ability to import data (for example, if the data extraction template was created on a different platform like Distiller SR or Covidence) as well as an option to be able to share your data in VADRR directly with another provider or website via an API token.
 
 For this tutorial, we will assume that you are only interested in downloading your data. When you open this page, you will see:
