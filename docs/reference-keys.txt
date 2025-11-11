@@ -100,3 +100,14 @@ reviewing-screening-decisions
 changing-citation-status
 extract-tasks
 alt-method
+consolidate
+old-versus-new-comparison-tool
+beginning-a-consolidation-using-the-comparison-tool-table-structure
+consolidating-extractions
+comparing-and-harmonizing-arms
+comparing-and-harmonizing-outcomes
+consolidating-results
+consolidating-descriptive-statistics
+consolidating-between-arm-comparisons-bac
+consolidating-within-arm-comparisons-wac
+consolidation-challenges

@@ -1,0 +1,296 @@
+# Consolidating Extractions {#consolidate}
+
+---
+
+**Why Use the VADRR Consolidation Tool?**
+
+If you are using double extraction (i.e., two independent analysts extracting data and evaluating risk of bias), then you are going to need to create a new record that both harmonizes and does an accuracy check on the existing extractions. The Comparison Tool in VADRR is built to streamline this process.
+
+Even if your project is not using dual extractions (but, rather, single extraction with a QA pass to assure accuracy), the Comparison tool is very useful for creating an “extraction of record” from the existing extraction that has all edits and corrections made.
+
+**A key point to understand:** the purpose of the Comparison Tool is **NOT** to harmonize the existing extractions. This would be a waste of time. Rather, the purpose of the Comparison Tool is to create a (new) final extraction record that is built off of the work of the previous extractions. Think of it as creating the “extraction of record”.
+
+
+## Old Versus New Comparison Tool
+At the time of writing, VADRR has two versions of the Comparison Tool. There is an older version and a newer version. We STRONGLY recommend against using the older tool as it has a number of limitations that have been addressed in the newer version.
+
+<p>You can find the Comparison Tool under the Extractions pulldown in the main navigation bar.</p>
+<div style="text-align:center;">
+<img src="_figs/10.1-comparison-tool-link.png">
+</div>
+
+When you first enter the tool, you may see this:
+<img src="_figs/10.2-old-tool.png">
+
+If you see this, you will want to click on the link to the new tool. You should now see a screen that looks something like the following:
+<img src="_figs/10.3-new-consolidation-tool.png">
+
+Since there are plans for AHRQ to decommission the old tool, we will not provide instructions for using that tool. All instructions below are for using the new Comparison Tool.
+
+## Beginning a Consolidation Using the Comparison Tool: Table Structure
+When you first begin consolidating extractions, the top table will be empty. This is because no consolidated records have been created yet in the system. In order to create this record, you will use the lower table (Citations).
+
+The structure of the Citations table (where you will compare the existing extractions and create the consolidation record) is as follows:
+<img src="_figs/10.4-citations-table-header.png">
+
+The first two columns are citation year and author/title.
+
+**No. of Extractions:** this column indicates the number of existing extractions. Notice that most have two extractions. If you see a record that has only one extraction, that means that you are still waiting on the second analyst to finish their extraction, and the record is not ready for consolidation yet.
+
+**Consolidated Extraction Exists:** This column has three statuses: **No** (meaning that a consolidated record has not yet been created and so will not appear in the upper table on the page); **Draft** (meaning that the consolidation is still in progress), and **Complete** (indicating that the consolidation record has been finalized). You will see either a Yes or a No in this column.
+
+**Consolidated Extraction:** This column contains two buttons: **Create** (green) or **Continue** (purple). When beginning a consolidation, you will click on the Create button and the system creates a new consolidation record. The system is built to detect agreements and will begin to automatically populate the consolidated record when there is analyst agreement. When the system generates the new consolidation record (this may take a moment as it is parsing every field of all extractions for that citation), the button will switch to Continue. As there will almost certainly be disagreements (if only in free text fields), you will then click on the purple Continue button to enter the Comparison Tool.
+
+## Finding the Citation You Are Looking For{-}
+If you have a project with many extractions, the bottom table may be quite large. There are several ways to easily find the citation you are looking for:
+
+<ul>
+<li><strong>Sorting</strong>: All columns are sortable by clicking on the header. Find a particular author by sorting on the citation column.</li>
+<li><strong>Search using the Search Field:</strong> At the top of the table you will find a search field. Simply type whatever information is needed to identify the citation you are looking for and the table contents will pull up all records matching the terms.</li>
+</ul>
+<img src="_figs/10.39-searching-the-consolidation-table.png">
+
+<ul>
+<li><strong>Search using control+F:</strong> You can also search for terms by pressing the control+F button and using the search field on your browser to find the citation.</li>
+</ul>
+
+Compare the status of these three citations:
+<img src="_figs/10.5-comparison-cites.png">
+
+<ul>
+<li>For the top citation (Zell-Baran 2022), there were two extractions, differences were detected, but the consolidated record has been completed.</li>
+<li>For the middle citation (Zell-Baran 2024), there were two extractions, differences were detected, a consolidated record has been created but, it is still in the process of being finalized.</li>
+<li>The last column shows that for Zaccari (2023) no extractions have yet been completed, there are no differences and a consolidation record does not exist (so you will not see this citation in the upper table.</li>
+</ul>
+
+<span style="color: blue; font-weight: bold;">Important Note:</span> Even if the system does not detect any differences, it will NOT create a consolidated record until you have clicked the Create button.
+
+Also, even if a consolidated record has been marked as complete, you can still re-enter the Comparison Tool by clicking Continue to make any additional modifications.
+
+## Consolidating Extractions
+You will consolidate the extractions one tab at a time. The first tab you will see is the Design Details tab (assuming you used the default tab structure in VADRR).  
+
+What you will notice when you first enter this tab is that when extractions agree, the consolidation field should already be populated. In the following example, analysts agreed on the first two questions, so the consolidation record is already populated. The third question (a free text field) is not populated since there are differences between the analyst entries.
+<img src="_figs/10.6-agree-v-disagree.png">
+
+Even when the consolidation record is pre-populated, we recommend that the consolidator confirm accuracy. While we have found it relatively rare for analysts to make the same error (e.g., both selecting the same incorrect study design), this sometimes happens. <span style="color: blue;">So, the consolidator should always be deeply familiar with the article and be aware that a pre-populated field may not always be correct.</span>
+
+<span style="color: blue;"><strong>Important Note:</strong></span> Because Arms Details, Outcome Details, Sample Characteristics, etc. are dependent tabs, they are structured based on how the analysts set up the Arms and Outcome tabs. If Arms and Outcome tabs are not harmonized (identical) between the extractions, you will not be able to compare and consolidate the dependent tabs. Thus, it is best to first consolidate Arm and Outcome tabs.
+
+To consolidate the free text field, we recommend reading through each of the analysts’ extractions and determining which has the most thorough but parsimonious response. Text in the analyst response fields can be copied and pasted into the consolidation record field and then edited as needed.
+<img src="_figs/10.7-copy-past-freetext.png">
+
+When a tab has been fully compared and consolidated, then the tab can be marked as complete by toggling the Section Complete button at the top right of the page.
+<img src="_figs/10.8-section-complete.png">
+
+Once a tab is complete, you can navigate to the other tabs by clicking on the name of the current tab.
+<div style="text-align: center;">
+<img src="_figs/10.9-tab-name.png">
+</div>
+
+When you do this, a menu will open on the right listing all other tabs.
+<img src="_figs/10.10-popout-menu.png">
+
+As noted above, we recommend beginning with comparing and consolidating Arms and Outcomes tabs first.
+
+### Comparing and Harmonizing Arms
+We mentioned at the beginning of this tutorial that the goal was not to harmonize the existing extractions (that is, change the existing extractions so that they are identical). However, this is only partially true. In fact, in order to carry out the comparisons, the two extraction Arm and Outcome structures must be identical.
+
+This is one of the most challenging parts of the comparison and consolidation. Even well-trained analysts may use slightly different Arm or Outcome structures. And, even if they are in agreement, even the smallest difference in naming can cause problems.
+
+Because of this, VADRR has built-in harmonization tools for harmonizing Arm and Outcome responses among the extractions. We will begin with Arms.
+
+The top of the Arm Comparison page will likely be empty when this tab is first opened. These are where the arms for the consolidated record will be once they are created. In the bottom table on the page, you will see arms as they are defined by the different analysts side-by-side.
+
+In the example below, the same number of arms is defined by both analysts. However, while the names of some of these match, other names are slightly different.
+<img src="_figs/10.11-match-and-no-match.png">
+
+To make the arms match, we do NOT need to open the original extractions. Rather, we can change these from this page. We can either change both to something different, or change one to match the other. We will change the second to match the first.
+
+Here is how:
+
+First, we will click on the Change button of the extraction that we wish to change. The following window will open.
+<img src="_figs/10.12-arm-match-window.png">
+
+We will use the top field (Pre-fill from existing) to find the name of the arm we want to change the name to (in this case, the first analyst’s response). This may be easier if you copy the text of the first analyst’s response and paste it into the “Pre-fill from existing” field. Identify the name you want to change the arm to and click on it in the pulldown.
+<img src="_figs/10.13-matching-arm-names.png">
+
+The arm name will now be populated in the Name field. The next step is to decide which record you want the changes to apply to. There are three options:
+<ul>
+<li>Change only the targeted extraction record</li>
+<li>Change all extractions associated with this citation (this will generally only be relevant when there are more than two extractions for a citation, or you are changing the names of <em>both</em> extractions to a different name)</li>
+<li>Change all extractions across the entire project with the previous arm name to the new arm name. <strong>Caution</strong>: We recommend not using this button except under very limited circumstances. While it will harmonize all arm names across the entire project, it can make changes that you do not intend.</li>
+</ul>
+<img src="_figs/10.14-applying-change.png">
+
+Once you decide which records you want to change (if in doubt, choose “include this extraction only”), click Update. We can see that the arm names now match.
+<img src="_figs/10.15-matching-arms.png">
+
+Continue this process until all arm names match. Note, sometimes the arm names will be an exact match but the description will be different. In the following example, both analysts named the arm “DDLD/DRA”, however only the first analyst provided a description.
+<img src="_figs/10.16-description-mismatch.png">
+
+We will use the same procedure to harmonize the description. Once all arm names and descriptions are harmonized, the consolidation record will populate with all arms. If they do not automatically populate, you can hit the Create button to create the arm in the consolidated record.  
+
+Now, you can confirm that all arms are present in the top table on this page. If everything looks as you expect, mark the section complete.
+<img src="_figs/10.17-all-arms-present.png">
+
+### Comparing and Harmonizing Outcomes
+Harmonizing outcomes follows a similar logic, though is more complicated because of the number of fields associated with any single outcome. Remember, for outcomes to match exactly, all the following need to be identical between extractions:
+<ul>
+<li>Outcome type (categorical v continuous)</li>
+<li>Outcome Domain (name or measurement) and description</li>
+<li>Populations</li>
+<li>Timepoints</li>
+</ul>
+Something as small as a trailing space in a description is enough for the system to detect a difference. However, VADRR has tools to help harmonize these.
+
+**Note:** Occasionally, especially with newer analysts, you may encounter two extractions with very different structures. At that point, it will be more difficult to harmonize them than to create a new extraction from scratch. In this situation we recommend either: (1) send the problematic extraction back to the original analyst with instructions for how to set up the extraction structure, or (2) work from only one extraction to create the consolidated extraction.
+
+Let’s walk though an example of how to harmonize outcomes.
+
+When we navigate to the Outcomes tab, we see the following:
+<img src="_figs/10.18-outcome-sim-and-diff.png">
+
+Because the first outcome (FEV (L)) matched exactly, the system created that outcome in the consolidated record. However, for the other outcomes, there was some difference. We need to find the differences and correct.
+
+Here is how that is done.
+
+For the first analyst we see:
+<img src="_figs/10.19-analyst-1fvc.png">
+
+While for the second analyst we see:
+<img src="_figs/10.20-analyst2-fvc.png">
+
+We notice that while Populations and Timepoints appear identical, there is a difference in Domain name: FVC (L) versus FVC(mL). Note, there are really two small differences: a space before the parenthesis and the unit (L v mL). We check the article to determine the appropriate unit.
+<img src="_figs/10.20b-article-table.png">
+
+Now, we know we need to change the second analyst record. To make sure we get an exact match, I’ll copy the domain name of the first analyst. Since there is no description (which would appear in the second pair of parentheses), I don’t need to worry with that.
+<div style="text-align: center;">
+<img src="_figs/10.21-copy-domain.png">
+</div>
+
+Now, I scroll down to the second extractor’s FVC outcome and click on the Change button.
+<img src="_figs/10.22-change-button-for-outcome.png">
+
+When I do this, the domain naming window will open (it will look much like the one we used for arms). As we did before, I will click on Choose existing and paste in the domain name I copied from the first analyst. The system will search for that name and present it in the options below the Choose existing box.
+<img src="_figs/10.23-choose-fevL.png">
+
+Next, I ensure that I am only changing this extraction and click Update.  
+
+When I look at the main outcome comparison screen, I see that the system has now pulled the two outcomes into the same row, which indicates that it detects a match. If a new consolidated outcome is not automatically created, then I simply click on the Create button in the consolidated record column (the rightmost column) and the outcome is created.
+<img src="_figs/10.24-new-fvc-outcome.png">
+
+Now, sometimes, Populations, Timepoints, or Outcome Type (continuous versus categorical) will not match. In this case, do NOT use the Change button, but the Change Populations & Timepoints link.
+<div style="text-align: center;">
+<img src="_figs/10.25-change-pop-and-time.png">
+</div>
+
+When you click on this link, it opens the analysts record in another window and you can change any of the fields in this window to match the other analyst’s record.
+<img src="_figs/10.26-pop-and-time-window.png">
+
+**Note:** it is important to note that changing the Populations and Timepoints function is only going to be useful if the only difference between the two analysts is in the naming of the Populations (and description) or the naming of the timepoints. If the structure is very different (e.g., one analyst identified populations that the other analyst missed, or they defined completely different timepoints [rare but possible]), then you will not be able to harmonize the extractions without radically changing the structure of one of the extractions (which is likely to lead to data loss).
+
+If analysts have defined very different Population or Timepoint structures, then the best approach is to select the analyst’s record that you believe best fits the article and purpose of the project and copy that extraction’s structure over to the consolidated record. You can do this by clicking on the green Copy to Consolidated Extraction button.
+<img src="_figs/10.27-copy-pop-and-time.png">
+
+Continue until all outcomes have been created in the consolidated record. Check the table at the top of the window to make sure that everything looks correct (you can use the edit buttons to change the consolidated record fields from this table if needed) mark the section as complete.
+
+If, for any reason, you want to edit the consolidated record from this window, click on the edit button next to the field.
+<div style="text-align: center">
+<img src="_figs/10.28-edit-button.png">
+</div>
+
+Note, however, that in order for analyst Results to show up properly on the Results tab (below), it is not recommended to change the consolidated record from this screen. You can do that later directly in the consolidated record.
+
+### Consolidating Results
+When you open the Results tab of the Comparison Tool, you will first notice that there are actually four Results tabs:
+<img src="_figs/10.29-four-results-tabs.png">
+
+You will consolidate these one at a time. We will start with the Descriptives.
+
+#### Consolidating Descriptive Statistics
+First, we will look at what we should expect by looking at the appropriate table in the article:
+<img src="_figs/10.30-Dursa-table-2.png">
+
+From this table, there are two outcomes that we are interested in: asthma and COPD. Notice that we have two types of data presented: Descriptives and then the Between-Arm statistics (the adjusted Odds Ratios).
+
+Now, let’s look at what the analysts entered:
+<img src="_figs/10.31-Results-descriptives-1 (1).png">
+
+The data is organized by outcome (on the left). Within each outcome we have rows for each statistic (in this case, Total N, Events, Percentage). Since this was a cross-sectional study, there is only one timepoint.  The data is organized in three columns: the first two columns (or more, depending on the number of analysts you are using for the extraction) are analyst responses. The third (last) column is the consolidated record.
+
+Typically, if analysts have set up the structure of their extractions similarly (Arms and Outcomes have already been harmonized) and the usual fields are used, the fields of the consolidation record will appear automatically (i.e., no need to use the Add button) and the consolidation field should be auto-populated. If there are disagreements between analysts, the consolidation field will be empty.
+
+Analyst responses, especially when they disagree, should be checked against the information in the article. The correct response can either be copied from an analyst response or entered manually into the consolidated record.
+
+Sometimes, analysts will encounter statistics or need to enter additional information (e.g., notes). These will not automatically appear in the comparison tool consolidation record. However, you will see the write-in fields with a purple Add button in the consolidated record. These can be added to the consolidated record by clicking the Add button.
+
+#### Consolidating Between Arm Comparisons (BAC)
+Toggle from the descriptive statistics to the BAC or WAC comparisons by clicking among the top tabs.
+<img src="_figs/10.31b-results-tabs.png">
+
+When you first open the BAC comparisons page, you may not initially see any fields. You would see the outcomes, but before you could see the results you need to add the comparisons into the consolidated record. You would do this by clicking on the Add Comparisons button beside the outcome.
+<img src="_figs/10.33-add-comparisons.png">
+
+When you click on this, a window will pop up that will allow you to populate the comparison being made:
+<img src="_figs/10.34-populate-comparisons.png">
+
+With comparison added. Then click Add Comparison.
+<img src="_figs/10.35-save-comparison.png">
+
+Now, on the BAC (between arm comparison) tab on the Results comparison page, we see the adjusted odds ratios for both analysts and the consolidated field.
+<img src="_figs/10.32-BAC-results.png">
+
+As we did with the Descriptives, we would check to ensure accuracy, especially when there was disagreement between analysts.
+
+#### Consolidating Within Arm Comparisons (WAC)
+As with the between-arm comparisons, you will need to add the timepoint comparisons (when appropriate). So, in the following example, where measures were taken pre and post intervention. We click on the Add Comparisons link and then set up the comparison in the pop up window.
+<div style="text-align: center;">
+<img src="_figs/10.36-per-v-post.png">
+</div>
+
+When we do this, we see the fields available (note, in this example, only one of the analysts extracted the within-arm statistics.
+<img src="_figs/10.36b-wAC-1.png">
+
+Net comparisons (the within and between-arm differences) are consolidated in the same manner.
+
+
+## Consolidation Challenges
+The ideal situation for consolidation is when:
+<ul>
+<li>Analysts structure arms and outcomes the same way (or, similar enough that they can be harmonized)</li>
+<li>Authors report standard statistics (e.g., event and total n for binary outcomes, mean, SD and n for continuous outcomes)</li>
+<li>Analyst responses agree</li>
+</ul>
+
+However, unless you have well trained analysts and are drawing only on RCTS, consolidation can be substantially more of a challenge.
+
+Let’s take a look at an extraction that has a couple of challenges and talk about how we would address these.
+<img src="_figs/10.37-challengees.png">
+
+**Problem 1: Right Statistics, Wrong Tab**
+
+Both analysts created between arm comparison fields in the Descriptives tab (Adjusted Odds Ratios). These statistics should have been captured in the BAC fields. Note that VADRR did not automatically add these write in statistics (the consolidation field as an Add button).
+
+**Solution:** Transfer the between-arm statistics to the appropriate tab and do not add them here.
+
+**Problem 2: Non-Standard Statistics**
+
+There may be cases where an unusual statistic is reported and so the new statistic will need to be added. In the above example, in the two middle columns, you can see that both analysts entered a statistic that is not typically reported with binary outcomes (Weighted proportions). The new result did not appear on the same line because (even though you cannot see it in the example) one of the analysts had a trailing space in the write-in statistic name. Thus, even though both analysts reported the same statistics, they appear on different rows.
+
+**Solution:** We will click the Add button for only one of the Weighted Proportion fields and then (after confirming accuracy) copy and paste the analyst response to the consolidated record.
+
+**Problem 3: Radically Different Extraction Structures**
+
+With well trained analysts and if your project only contains clinical trials, this is unlikely to be an issue. However, with epidemiological research (especially research reporting on the results of generalized linear models), even trained analysts may structure their extractions in different ways. There are two options here:
+<ol>
+<li>Decide on the best extraction structure and ask the second analyst to redo the extraction using the preferred structure.</li>
+<li>Use only one of the analyst’s extraction structure (but make sure to confirm accuracy).</li>
+</ol>
+In the following example, there were three analysts. While all three analysts captured the main results, only one analyst thought to look into the study appendices to get the subgroup results (captured as different populations).
+<img src="_figs/10.38-subpopulations.png">
+
+We decided that we wanted to capture this additional information and so used the green Copy to Consolidated Extraction to copy the structure of the extraction we wanted directly to the consolidated record. (Note, the Copy to Consolidated Extraction button does not appear on the Interstitial Lung Disease row because we already clicked it, but note the similar button on the hypertension outcome row below it).
+
+This is an example of where it made more sense to use the structure of only one of the extractions rather than have the two additional analysts redo their extraction.
+
